@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIclicks – Wachstums-Potenzial-Rechner</title>
+<style>
+  :root{
+    --bg:#0b0e14;
+    --card:#141924;
+    --card2:#1b2130;
+    --text:#eef2f8;
+    --muted:#9aa7bd;
+    --line:#28303f;
+    --accent:#00e0c6;
+    --accent2:#3b82f6;
+    --accent-ink:#04231f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--text);
+    display:flex;justify-content:center;padding:24px;line-height:1.5;
+  }
+  .wrap{width:100%;max-width:860px}
+  .eyebrow{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:clamp(24px,4vw,34px);line-height:1.15;letter-spacing:-.02em;margin-bottom:8px}
+  .sub{color:var(--muted);font-size:16px;margin-bottom:24px;max-width:640px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.grid{grid-template-columns:1fr}}
+  label{display:block;font-size:14px;font-weight:600;margin-bottom:8px}
+  .hint{color:var(--muted);font-weight:400;font-size:12px}
+  input,select{
+    width:100%;background:var(--card2);border:1px solid var(--line);color:var(--text);
+    border-radius:10px;padding:13px 14px;font-size:16px;outline:none;transition:border-color .15s;
+  }
+  input:focus,select:focus{border-color:var(--accent)}
+  .field{margin-bottom:18px}
+  .result{
+    margin-top:8px;background:linear-gradient(160deg,var(--card2),#10131b);
+    border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;
+  }
+  .result .lab{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+  .result .big{font-size:clamp(28px,6vw,44px);font-weight:800;letter-spacing:-.02em;color:var(--accent)}
+  .result .row{display:flex;justify-content:space-around;gap:12px;margin-top:16px;flex-wrap:wrap}
+  .result .row div{flex:1;min-width:120px}
+  .result .row .n{font-size:22px;font-weight:700}
+  .result .row .t{font-size:12px;color:var(--muted);margin-top:2px}
+  .assump{font-size:12px;color:var(--muted);margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+  .disclaimer{font-size:12px;color:var(--muted);margin-top:14px;background:var(--card2);border-radius:10px;padding:12px 14px;border-left:3px solid var(--accent2)}
+  .cta{margin-top:22px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .cta h3{font-size:19px;margin-bottom:6px}
+  .cta p{color:var(--muted);font-size:14px;margin-bottom:16px}
+  .btn{
+    display:block;width:100%;background:var(--accent);color:var(--accent-ink);border:none;
+    border-radius:10px;padding:15px;font-size:16px;font-weight:700;cursor:pointer;transition:transform .08s,filter .15s;
+  }
+  .btn:hover{filter:brightness(1.06)}
+  .btn:active{transform:translateY(1px)}
+  .reassure{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  .ok{display:none;text-align:center;padding:10px 0}
+  .ok .big{color:var(--accent);font-size:22px;font-weight:700;margin-bottom:6px}
+  .footnote{color:var(--muted);font-size:11px;margin-top:18px;text-align:center}
+  a{color:var(--accent2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Wachstums-Potenzial-Rechner</div>
+  <h1>Was ist mit deinem Budget realistisch möglich?</h1>
+  <p class="sub">Gib deine Zahlen ein und sieh eine unverbindliche Orientierung, was mit sauber optimiertem Marketing branchenüblich erreichbar wäre. Eine Schätzung – kein Versprechen.</p>
+
+  <div class="card">
+    <div class="grid">
+      <div class="field">
+        <label>Branche <span class="hint">– bestimmt die Annahmen</span></label>
+        <select id="branche">
+          <option value="handwerk">Handwerk</option>
+          <option value="dienstleister">Dienstleister</option>
+          <option value="lokal">Lokales Geschäft</option>
+          <option value="ecommerce">E-Commerce / Onlineshop</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Monatliches Werbebudget (€) <span class="hint">– ohne Agenturhonorar</span></label>
+        <input id="budget" type="number" min="0" step="100" value="2000">
+      </div>
+      <div class="field">
+        <label>Ø Auftrags- / Bestellwert (€)</label>
+        <input id="wert" type="number" min="0" step="10" value="800">
+      </div>
+      <div class="field">
+        <label>Abschlussquote deiner Anfragen (%) <span class="hint" id="closeHint">– optional</span></label>
+        <input id="close" type="number" min="1" max="100" step="1" value="30">
+      </div>
+    </div>
+
+    <div class="result" id="result">
+      <div class="lab">Geschätzter möglicher Zusatzumsatz / Monat</div>
+      <div class="big" id="umsatz">– €</div>
+      <div class="row">
+        <div><div class="n" id="anfragen">–</div><div class="t">mögliche Anfragen / Monat</div></div>
+        <div><div class="n" id="auftraege">–</div><div class="t">mögliche Aufträge / Monat</div></div>
+        <div><div class="n" id="jahr">– €</div><div class="t">hochgerechnet / Jahr</div></div>
+      </div>
+      <div class="assump" id="assump"></div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Wichtig:</strong> Diese Berechnung ist eine unverbindliche Schätzung auf Basis branchenüblicher Durchschnittswerte und stellt <strong>keine Zusage oder Garantie</strong> dar. Tatsächliche Ergebnisse hängen von Markt, Angebot, Wettbewerb und Umsetzung ab.
+    </div>
+  </div>
+
+  <div class="cta">
+    <h3>Willst du deine echten Zahlen statt einer Schätzung?</h3>
+    <p>In der kostenlosen Wachstumsanalyse rechnen wir dein konkretes Potenzial an deinen tatsächlichen Daten durch – ehrlich, ohne Verkaufsdruck.</p>
+    <div id="form">
+      <div class="grid">
+        <div class="field" style="margin-bottom:12px"><input id="name" type="text" placeholder="Dein Name"></div>
+        <div class="field" style="margin-bottom:12px"><input id="mail" type="email" placeholder="E-Mail"></div>
+      </div>
+      <div class="field" style="margin-bottom:14px"><input id="tel" type="tel" placeholder="Telefon (für den Analyse-Call)"></div>
+      <button class="btn" onclick="submitLead()">Kostenlose Wachstumsanalyse anfordern</button>
+      <div class="reassure">Kostenlos &amp; unverbindlich · Antwort in 24 Stunden · Kein Verkaufsgespräch, ein Fahrplan</div>
+    </div>
+    <div class="ok" id="ok">
+      <div class="big">Danke, <span id="okname">–</span >!</div>
+      <div style="color:var(--muted);font-size:14px">Wir melden uns innerhalb von 24 Stunden mit deinem persönlichen Wachstums-Report.</div>
+    </div>
+  </div>
+
+  <div class="footnote">Annahmen transparent im Ergebnis ausgewiesen. AIclicks · Friedrichshafen am Bodensee</div>
+</div>
+
+<script>
+  // Branchen-Annahmen: konservative Kosten pro Anfrage (Lead) bzw. ROAS-Spanne. Bewusst vorsichtig.
+  const A = {
+    handwerk:     {cplLow:30, cplHigh:70, label:"Ø 30–70 € pro qualifizierter Anfrage (branchenüblich)"},
+    dienstleister:{cplLow:25, cplHigh:60, label:"Ø 25–60 € pro qualifizierter Anfrage (branchenüblich)"},
+    lokal:        {cplLow:15, cplHigh:45, label:"Ø 15–45 € pro Anfrage (branchenüblich)"},
+    ecommerce:    {roasLow:2.0, roasHigh:4.0, label:"ROAS-Spanne 2,0–4,0 (branchenüblich bei sauberer Optimierung)"}
+  };
+  const fmt = n => new Intl.NumberFormat('de-DE',{maximumFractionDigits:0}).format(Math.round(n));
+
+  function calc(){
+    const branche = document.getElementById('branche').value;
+    const budget = Math.max(0, +document.getElementById('budget').value || 0);
+    const wert   = Math.max(0, +document.getElementById('wert').value || 0);
+    const closeInput = Math.min(100, Math.max(1, +document.getElementById('close').value || 30))/100;
+    const closeHint = document.getElementById('closeHint');
+    const a = A[branche];
+    let umsatzLow, umsatzHigh, anfLow, anfHigh, aufLow, aufHigh, assumpText;
+
+    if(branche === 'ecommerce'){
+      closeHint.textContent = "– bei E-Commerce nicht nötig";
+      document.getElementById('close').disabled = true;
+      umsatzLow = budget * a.roasLow;
+      umsatzHigh = budget * a.roasHigh;
+      anfLow = wert>0 ? umsatzLow/wert : 0;
+      anfHigh = wert>0 ? umsatzHigh/wert : 0;
+      aufLow = anfLow; aufHigh = anfHigh; // bei Shop = Bestellungen
+      assumpText = "Annahme: " + a.label + ". Bestellungen = Umsatz ÷ Bestellwert.";
+      document.querySelectorAll('.t')[0].textContent = "mögliche Bestellungen / Monat";
+      document.querySelectorAll('.t')[1].textContent = "mögliche Bestellungen / Monat";
+    } else {
+      closeHint.textContent = "– optional";
+      document.getElementById('close').disabled = false;
+      anfLow = budget / a.cplHigh;   // teure Anfrage -> weniger
+      anfHigh = budget / a.cplLow;   // günstige Anfrage -> mehr
+      aufLow = anfLow * closeInput;
+      aufHigh = anfHigh * closeInput;
+      umsatzLow = aufLow * wert;
+      umsatzHigh = aufHigh * wert;
+      assumpText = "Annahmen: " + a.label + ", Abschlussquote " + Math.round(closeInput*100) + "%. Aufträge = Anfragen × Abschlussquote.";
+      document.querySelectorAll('.t')[0].textContent = "mögliche Anfragen / Monat";
+      document.querySelectorAll('.t')[1].textContent = "mögliche Aufträge / Monat";
+    }
+
+    document.getElementById('umsatz').textContent = fmt(umsatzLow) + " – " + fmt(umsatzHigh) + " €";
+    document.getElementById('anfragen').textContent = fmt(anfLow) + "–" + fmt(anfHigh);
+    document.getElementById('auftraege').textContent = fmt(aufLow) + "–" + fmt(aufHigh);
+    document.getElementById('jahr').textContent = fmt(umsatzLow*12) + " – " + fmt(umsatzHigh*12) + " €";
+    document.getElementById('assump').textContent = assumpText;
+  }
+
+  function submitLead(){
+    const name = document.getElementById('name').value.trim();
+    const mail = document.getElementById('mail').value.trim();
+    const tel  = document.getElementById('tel').value.trim();
+    if(!name || !mail || !tel){ alert("Bitte Name, E-Mail und Telefon ausfüllen."); return; }
+    // TODO: hier an CRM/Backend senden (z. B. Webhook). Aktuell nur Bestätigung.
+    // Übergabe der Rechner-Werte als Lead-Kontext:
+    // {name, mail, tel, branche, budget, wert, close, geschätzterUmsatz}
+    document.getElementById('form').style.display='none';
+    document.getElementById('okname').textContent = name.split(' ')[0];
+    document.getElementById('ok').style.display='block';
+  }
+
+  ['branche','budget','wert','close'].forEach(id=>{
+    document.getElementById(id).addEventListener('input', calc);
+    document.getElementById(id).addEventListener('change', calc);
+  });
+  calc();
+</script>
+</body>
+</html>
