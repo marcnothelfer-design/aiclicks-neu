@@ -13,6 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aiclicks.de/">
 <meta name="theme-color" content="#0b0e14">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
 <style>
 :root{--bg:#0b0e14;--bg2:#0f131c;--card:#141924;--card2:#1b2130;--text:#eef2f8;--muted:#9aa7bd;--line:#28303f;--accent:#00e0c6;--accent2:#3b82f6;--accent-ink:#04231f;--maxw:1120px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -43,7 +44,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,14,20,.85);backdrop-f
 .lang button{background:transparent;color:var(--muted);border:none;padding:6px 10px;cursor:pointer}
 .lang button.active{background:var(--card2);color:var(--accent)}
 .menu-btn{display:none;background:none;border:none;color:var(--text);font-size:26px;cursor:pointer}
-.hero{padding:84px 0 56px;text-align:center}
+.hero{padding:96px 0 64px;text-align:center;background:linear-gradient(rgba(11,14,20,.82),rgba(11,14,20,.93)),url('hero_background.jpg') center/cover no-repeat}
+.logo-svg{height:30px;width:auto;display:block}
+.video-showcase{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:900px;margin:26px auto 0}
+.video-showcase video{width:100%;display:block}
 .hero h1{font-size:clamp(34px,6vw,60px);margin-bottom:20px}
 .hero .sub{font-size:clamp(17px,2.2vw,21px);max-width:740px;margin:0 auto 28px}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
@@ -135,7 +139,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 0 28p
 
 <header>
   <div class="wrap nav">
-    <div class="logo">AI<span>clicks</span></div>
+    <a href="#" aria-label="AIclicks" style="display:flex;align-items:center"><img class="logo-svg" src="logo.svg" alt="AIclicks"></a>
     <nav class="nav-links" id="navlinks">
       <a href="#leistungen" data-i18n="nav_services">Leistungen</a>
       <a href="#ergebnisse" data-i18n="nav_results">Ergebnisse</a>
@@ -224,6 +228,17 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 0 28p
       </div>
     </div>
     <p class="mini" style="margin-top:14px" data-i18n="res_note">Beide Beispiele sind eigene Marken von AIclicks – mit eigenem Geld und eigenem Risiko aufgebaut. Genau dieses System setzen wir für dich ein.</p>
+  </div>
+</section>
+
+<section style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap center">
+    <div class="eyebrow" data-i18n="vid_eye">KI-Video in Aktion</div>
+    <h2 data-i18n="vid_h">So sehen Ads aus, die wir mit KI produzieren.</h2>
+    <p class="lead" style="margin:0 auto" data-i18n="vid_p">Ein Beispiel aus unserer eigenen Produktion – in Tagen erstellt, nicht in Wochen.</p>
+    <div class="video-showcase">
+      <video src="aiclicks-werbevideo-web.mp4" controls muted loop playsinline preload="metadata" poster="hero_background.jpg"></video>
+    </div>
   </div>
 </section>
 
@@ -326,7 +341,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 0 28p
 <section id="ueber" style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="about">
-      <div class="avatar"><img src="marc-nothelfer.jpg" alt="Marc Nothelfer, Gründer von AIclicks" onerror="this.remove();this.parentNode.textContent='[ Datei marc-nothelfer.jpg in den Ordner legen ]'"></div>
+      <div class="avatar"><img src="marc-nothelfer.png" alt="Marc Nothelfer, Gründer von AIclicks" onerror="this.remove();this.parentNode.textContent='[ Datei marc-nothelfer.png in den Ordner legen ]'"></div>
       <div>
         <div class="eyebrow" data-i18n="about_eye">Der Gründer</div>
         <h2 data-i18n="about_h">Wir bauen Marketing-Systeme.<br>Keine PowerPoints.</h2>
@@ -405,7 +420,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 0 28p
   <div class="wrap">
     <div class="foot">
       <div>
-        <div class="logo" style="margin-bottom:8px">AI<span>clicks</span></div>
+        <img class="logo-svg" src="logo.svg" alt="AIclicks" style="height:28px;margin-bottom:10px">
         <p style="font-size:14px" data-i18n="foot_tag">Marketing, das rechnet.<br>Friedrichshafen am Bodensee.</p>
       </div>
       <div>
@@ -485,6 +500,7 @@ var EN = {
  proc_1n:"01 · ANALYSIS", proc_1h:"We find the money left on the table.", proc_1p:"Free growth analysis of your channels, audience and numbers. You get a concrete plan – whether you work with us or not.",
  proc_2n:"02 · BUILD", proc_2h:"We build the engine.", proc_2p:"Ads, AI creatives and videos, clean tracking, automations. Live in days, not months.",
  proc_3n:"03 · SCALE", proc_3h:"We double down on what works.", proc_3p:"We test faster than any agency and scale what brings enquiries. You see where you stand every week.",
+ vid_eye:"AI video in action", vid_h:"This is what ads we produce with AI look like.", vid_p:"An example from our own production – made in days, not weeks.",
  serv_h:"Seven services. One engine.",
  serv_lead:"Bookable individually. Together they do more – because traffic without conversion burns money, and conversion without a content supply starves.",
  serv_1h:"Google Ads", serv_1p:"We capture the customers already searching for you. Every euro on the terms that buy.",
