@@ -44,10 +44,11 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,14,20,.85);backdrop-f
 .lang button{background:transparent;color:var(--muted);border:none;padding:6px 10px;cursor:pointer}
 .lang button.active{background:var(--card2);color:var(--accent)}
 .menu-btn{display:none;background:none;border:none;color:var(--text);font-size:26px;cursor:pointer}
-.hero{padding:96px 0 64px;text-align:center;background:linear-gradient(rgba(11,14,20,.82),rgba(11,14,20,.93)),url('hero_background.jpg') center/cover no-repeat}
+.hero{padding:96px 0 64px;text-align:center;background:linear-gradient(rgba(11,14,20,.70),rgba(11,14,20,.85)),url('hero-scene.png') center/cover no-repeat}
 .logo-svg{height:30px;width:auto;display:block}
-.video-showcase{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:900px;margin:26px auto 0}
-.video-showcase video{width:100%;display:block}
+.img-band{width:100%;height:clamp(240px,36vw,400px);background-size:cover;background-position:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.res-visual{width:100%;border-radius:14px;border:1px solid var(--line);margin-top:26px;display:block}
+.res-cap{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
 .hero h1{font-size:clamp(34px,6vw,60px);margin-bottom:20px}
 .hero .sub{font-size:clamp(17px,2.2vw,21px);max-width:740px;margin:0 auto 28px}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
@@ -66,6 +67,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,14,20,.85);backdrop-f
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
 .card h3{margin-bottom:8px}
 .card p{font-size:15px}
+.svc-icon{width:48px;height:48px;border-radius:12px;background:rgba(0,224,198,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.svc-icon svg{width:25px;height:25px;stroke:var(--accent);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
 .plist{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
 .plist .card h3{color:var(--text);font-size:17px}
@@ -211,6 +214,8 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 0 28p
   </div>
 </section>
 
+<div class="img-band" style="background-image:url('office.png')" role="img" aria-label="AIclicks – KI-Marketing-Studio"></div>
+
 <section id="ergebnisse">
   <div class="wrap">
     <div class="eyebrow" data-i18n="res_eye">Ergebnisse</div>
@@ -228,21 +233,12 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 0 28p
       </div>
     </div>
     <p class="mini" style="margin-top:14px" data-i18n="res_note">Beide Beispiele sind eigene Marken von AIclicks – mit eigenem Geld und eigenem Risiko aufgebaut. Genau dieses System setzen wir für dich ein.</p>
+    <img class="res-visual" src="dashboard.png" alt="Performance-Dashboard" loading="lazy">
+    <div class="res-cap" data-i18n="res_cap">Illustratives Performance-Dashboard – so behalten wir deine Zahlen jederzeit im Blick.</div>
   </div>
 </section>
 
-<section style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-  <div class="wrap center">
-    <div class="eyebrow" data-i18n="vid_eye">KI-Video in Aktion</div>
-    <h2 data-i18n="vid_h">So sehen Ads aus, die wir mit KI produzieren.</h2>
-    <p class="lead" style="margin:0 auto" data-i18n="vid_p">Ein Beispiel aus unserer eigenen Produktion – in Tagen erstellt, nicht in Wochen.</p>
-    <div class="video-showcase">
-      <video src="aiclicks-werbevideo-web.mp4" controls muted loop playsinline preload="metadata" poster="hero_background.jpg"></video>
-    </div>
-  </div>
-</section>
-
-<section style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section style="background:linear-gradient(rgba(15,19,28,.90),rgba(15,19,28,.95)),url('datawall.png') center/cover;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <h2 data-i18n="proc_h">In 14 Tagen von „wir hoffen“ zu „wir wissen“.</h2>
     <div class="steps" style="margin-top:26px">
@@ -258,16 +254,18 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 0 28p
     <h2 data-i18n="serv_h">Sieben Leistungen. Ein Motor.</h2>
     <p class="lead" data-i18n="serv_lead">Einzeln buchbar. Zusammen bringen sie mehr – weil Traffic ohne Conversion Geld verbrennt und Conversion ohne Content-Nachschub verhungert.</p>
     <div class="cards c3" style="margin-top:26px">
-      <div class="card"><h3 data-i18n="serv_1h">Google Ads</h3><p data-i18n="serv_1p">Wir holen die Kunden ab, die schon nach dir suchen. Jeder Euro auf Suchbegriffe, die kaufen.</p></div>
-      <div class="card"><h3 data-i18n="serv_2h">Meta Ads</h3><p data-i18n="serv_2p">Wir erzeugen Nachfrage, bevor sie sucht – Facebook &amp; Instagram, die aus kaltem Publikum warme Anfragen machen.</p></div>
-      <div class="card"><span class="tag" data-i18n="serv_amz_tag">Unsere Kernkompetenz</span><h3 data-i18n="serv_amz_h">Amazon Ads (PPC)</h3><p data-i18n="serv_amz_p">Wir skalieren deine Amazon-Produkte profitabel – mit datengetriebener PPC-Steuerung, die wir an unserer eigenen 7-stelligen Amazon-Marke perfektioniert haben.</p></div>
-      <div class="card"><h3 data-i18n="serv_3h">KI-Video</h3><p data-i18n="serv_3p">Werbevideos in Tagen statt Wochen, für einen Bruchteil der Kosten. So viele Varianten, wie der Algorithmus zum Testen braucht.</p></div>
-      <div class="card"><h3 data-i18n="serv_4h">Conversion-Optimierung</h3><p data-i18n="serv_4p">Mehr Kunden aus dem Traffic, den du schon hast. Oft der billigste Wachstumshebel überhaupt.</p></div>
-      <div class="card"><h3 data-i18n="serv_5h">Performance Marketing</h3><p data-i18n="serv_5p">Kein Kanal-Denken, sondern Umsatz-Denken. Budget dorthin, wo der nächste Euro am meisten bringt.</p></div>
-      <div class="card"><h3 data-i18n="serv_6h">KI-Automatisierungen</h3><p data-i18n="serv_6p">Follow-ups, Angebote, Reporting – automatisch. Kein Interessent geht verloren, während du arbeitest.</p></div>
+      <div class="card"><div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.2" y2="15.2"/></svg></div><h3 data-i18n="serv_1h">Google Ads</h3><p data-i18n="serv_1p">Wir holen die Kunden ab, die schon nach dir suchen. Jeder Euro auf Suchbegriffe, die kaufen.</p></div>
+      <div class="card"><div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="13" height="9" rx="2"/><rect x="8" y="11" width="13" height="9" rx="2"/></svg></div><h3 data-i18n="serv_2h">Meta Ads</h3><p data-i18n="serv_2p">Wir erzeugen Nachfrage, bevor sie sucht – Facebook &amp; Instagram, die aus kaltem Publikum warme Anfragen machen.</p></div>
+      <div class="card"><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 8 L12 4 L20 8 L12 12 Z"/><path d="M4 8 V16 L12 20 V12"/><path d="M20 8 V16 L12 20"/></svg></div><span class="tag" data-i18n="serv_amz_tag">Unsere Kernkompetenz</span><h3 data-i18n="serv_amz_h">Amazon Ads (PPC)</h3><p data-i18n="serv_amz_p">Wir skalieren deine Amazon-Produkte profitabel – mit datengetriebener PPC-Steuerung, die wir an unserer eigenen 7-stelligen Amazon-Marke perfektioniert haben.</p></div>
+      <div class="card"><div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M10 9 L15 12 L10 15 Z"/></svg></div><h3 data-i18n="serv_3h">KI-Video</h3><p data-i18n="serv_3p">Werbevideos in Tagen statt Wochen, für einen Bruchteil der Kosten. So viele Varianten, wie der Algorithmus zum Testen braucht.</p></div>
+      <div class="card"><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 5 H21 L14 13 V19 L10 21 V13 Z"/></svg></div><h3 data-i18n="serv_4h">Conversion-Optimierung</h3><p data-i18n="serv_4p">Mehr Kunden aus dem Traffic, den du schon hast. Oft der billigste Wachstumshebel überhaupt.</p></div>
+      <div class="card"><div class="svc-icon"><svg viewBox="0 0 24 24"><polyline points="4 16 9 11 13 14 20 6"/><polyline points="15 6 20 6 20 11"/></svg></div><h3 data-i18n="serv_5h">Performance Marketing</h3><p data-i18n="serv_5p">Kein Kanal-Denken, sondern Umsatz-Denken. Budget dorthin, wo der nächste Euro am meisten bringt.</p></div>
+      <div class="card"><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M13 3 L5 13 H11 L10 21 L19 10 H12 Z"/></svg></div><h3 data-i18n="serv_6h">KI-Automatisierungen</h3><p data-i18n="serv_6p">Follow-ups, Angebote, Reporting – automatisch. Kein Interessent geht verloren, während du arbeitest.</p></div>
     </div>
   </div>
 </section>
+
+<div class="img-band" style="background-image:url('studio.png')" role="img" aria-label="AIclicks Creative Studio – KI-Video-Produktion"></div>
 
 <section style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
@@ -496,6 +494,7 @@ var EN = {
  res_2tag:"Own brand · Shopify", res_2h:"9.7% conversion in a 2–3% market",
  res_2p:"Our own shop for personalised products: €286,042 revenue, 8,056 orders, conversion rates in peak months at 3–4× the industry average – with just a €28 basket.",
  res_note:"Both examples are AIclicks' own brands – built with our own money and our own risk. This is exactly the system we put to work for you.",
+ res_cap:"Illustrative performance dashboard – how we keep your numbers in view at all times.",
  proc_h:"From “we hope” to “we know” in 14 days.",
  proc_1n:"01 · ANALYSIS", proc_1h:"We find the money left on the table.", proc_1p:"Free growth analysis of your channels, audience and numbers. You get a concrete plan – whether you work with us or not.",
  proc_2n:"02 · BUILD", proc_2h:"We build the engine.", proc_2p:"Ads, AI creatives and videos, clean tracking, automations. Live in days, not months.",
