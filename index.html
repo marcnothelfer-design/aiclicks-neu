@@ -400,8 +400,31 @@ section,footer{position:relative;z-index:1}
   .nav-right .btn{display:none}
   .brand{font-size:17px}
 }
+/* ---- Cookie-Banner ---- */
+#cookiebar{position:fixed;left:16px;right:16px;bottom:16px;z-index:70;max-width:680px;margin:0 auto;background:linear-gradient(180deg,rgba(27,33,48,.97),rgba(20,25,36,.97));backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:var(--radius-sm);padding:18px 20px;box-shadow:var(--shadow);display:none}
+#cookiebar.show{display:block}
+#cookiebar p{font-size:13.5px;margin-bottom:12px}
+#cookiebar .cb-row{display:flex;gap:10px;flex-wrap:wrap}
+#cookiebar button{cursor:pointer;font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--text)}
+#cookiebar button.cb-all{background:var(--accent);color:var(--accent-ink);border-color:transparent}
 </style>
 <script>document.documentElement.classList.add('js')</script>
+
+<!-- Google Consent Mode v2 (Default: alles abgelehnt) + Google Ads Tag -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+gtag('js',new Date());gtag('config','AW-304314047');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-304314047"></script>
+
+<!-- Meta Pixel Stub (Init erst nach Consent durch Cookie-Banner) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+</script>
 </head>
 <body>
 <a class="skip-link" href="#leistungen">Zum Inhalt springen</a>
@@ -783,6 +806,15 @@ section,footer{position:relative;z-index:1}
   </div>
 </section>
 
+<!-- COOKIE BANNER -->
+<div id="cookiebar" role="dialog" aria-label="Cookie-Einwilligung">
+  <p><b>🍪 Cookies:</b> <span data-i18n="cb_txt">Wir nutzen Google Ads und Meta Pixel, um zu messen, welche Werbung funktioniert – erst nach deiner Zustimmung. Details in der</span> <a href="/datenschutz.html" data-i18n="cb_ds">Datenschutzerklärung</a>.</p>
+  <div class="cb-row">
+    <button class="cb-all" id="cbAll" data-i18n="cb_all">Alle akzeptieren</button>
+    <button id="cbNec" data-i18n="cb_nec">Nur notwendige</button>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer>
   <div class="wrap">
@@ -816,10 +848,54 @@ section,footer{position:relative;z-index:1}
 document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
 document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
 
+/* ===== Consent + Tracking (Google Ads AW-304314047 · Meta Pixel 1385284170005589) ===== */
+const AW='AW-304314047', FB_ID='1385284170005589';
+const CONV={form:'oAlWCN_4ms4bEL_tjZEB',phone:'pbH2COX4ms4bEL_tjZEB',pdf:'X9LICOL4ms4bEL_tjZEB'};
+function hasMarketingConsent(){
+  try{const c=JSON.parse(localStorage.getItem('cookie-consent')||'null');return !!(c&&c.marketing);}catch(e){return false;}
+}
+function applyConsent(marketing){
+  gtag('consent','update',{
+    ad_storage:marketing?'granted':'denied',ad_user_data:marketing?'granted':'denied',
+    ad_personalization:marketing?'granted':'denied',analytics_storage:marketing?'granted':'denied'
+  });
+  if(marketing&&window.fbq&&!window.__fbqInit){window.__fbqInit=true;fbq('init',FB_ID);fbq('track','PageView');}
+}
+function saveConsent(marketing){
+  try{localStorage.setItem('cookie-consent',JSON.stringify({necessary:true,analytics:marketing,marketing:marketing,timestamp:Date.now()}));}catch(e){}
+  applyConsent(marketing);
+  document.getElementById('cookiebar').classList.remove('show');
+}
+(function(){
+  let stored=null;try{stored=JSON.parse(localStorage.getItem('cookie-consent')||'null');}catch(e){}
+  if(stored){applyConsent(!!stored.marketing);}
+  else{document.getElementById('cookiebar').classList.add('show');}
+  document.getElementById('cbAll').addEventListener('click',()=>saveConsent(true));
+  document.getElementById('cbNec').addEventListener('click',()=>saveConsent(false));
+})();
+function trackConversion(label,value){
+  gtag('event','conversion',{send_to:AW+'/'+label,value:value||100.0,currency:'EUR'});
+}
+function trackFB(ev,params){
+  if(window.fbq&&window.__fbqInit)fbq('track',ev,params||{});
+}
+/* Klick-Events: Telefon, WhatsApp, Calendly */
+document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{
+  trackConversion(CONV.phone,150);trackFB('Contact',{content_name:'Phone Click'});
+}));
+document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>{
+  trackFB('Contact',{content_name:'WhatsApp Click'});
+}));
+document.querySelectorAll('a[href*="calendly"]').forEach(a=>a.addEventListener('click',()=>{
+  trackConversion(CONV.form,100);trackFB('Contact',{content_name:'Calendly Click'});
+}));
+
 /* Lead form -> mailto fallback */
 function sendLead(e){
   e.preventDefault();
   const f=e.target, g=n=>(f.querySelector('[name='+n+']')||{}).value||'';
+  trackConversion(CONV.form,100);
+  trackFB('Lead',{content_name:'Wachstumsanalyse',value:100,currency:'EUR'});
   const body=encodeURIComponent(
     'Name: '+g('name')+'\nE-Mail: '+g('email')+'\nTelefon: '+g('phone')+
     '\nWebsite/Firma: '+g('web')+'\nThema: '+g('topic')+'\nBudget: '+g('budget')+
@@ -891,6 +967,7 @@ const I18N={en:{
   f_name:"Name *",f_mail:"Email *",f_phone:"Phone",f_web:"Website or company",f_topic:"What's it about? *",f_t0:"Please choose…",f_t1:"AI Creatives (videos & images)",f_t2:"Ads Management (Google / Meta)",f_t3:"Amazon Ads (PPC)",f_t4:"Full Service – all from one hand",f_t6:"Website / landing page",f_t5:"Not sure yet",
   f_budget:"Monthly ad budget",f_b0:"No budget defined yet",f_b1:"under €1,000",f_b4:"over €10,000",
   f_msg:"Your biggest challenge",f_consent:"I have read the privacy policy and consent to the processing of my data to handle my request.",f_submit:"Request growth analysis",f_fine:"Free & non-binding · Reply within 24 hours · Not a sales call, a roadmap",
+  cb_txt:"We use Google Ads and Meta Pixel to measure which advertising works – only after your consent. Details in the",cb_ds:"privacy policy",cb_all:"Accept all",cb_nec:"Necessary only",
   ci1_t:"Book an appointment directly",ci1_s:"20 min · Zoom or phone · free",ci2_s:"Directly with Marc – no call centre",ci3_s:"Reply within 24 hours",ci4_s:"Message quickly & easily",ci_note:"I speak personally with every new client – no salesperson, no bot, no hold music.",
   foot_tag:"Marketing that adds up.<br>Friedrichshafen, Lake Constance.",foot_s:"Services",foot_aivid:"Ad Videos",foot_co:"Company",foot_res:"Results",foot_about:"About",foot_price:"Pricing",foot_roi:"Growth Calculator",foot_contact:"Contact",foot_legal:"Legal",foot_imp:"Imprint",foot_ds:"Privacy",foot_copy:"© 2026 AIclicks · Marc Nothelfer",foot_made:"Made in Germany · Google Ads & Meta Blueprint certified"
 }};
