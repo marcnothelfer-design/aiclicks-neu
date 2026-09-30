@@ -93,7 +93,7 @@ FOOT = """
       </div>
       <div>
         <h3>Leistungen</h3>
-        <a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/ki-werbevideos.html">KI-Werbevideos</a>
+        <a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a><a href="/website-in-5-tagen.html">Website in 5 Tagen</a><a href="/automatisierung.html">Automatisierung</a>
       </div>
       <div>
         <h3>Unternehmen</h3>
@@ -241,7 +241,7 @@ PAGES.append(dict(
     <li><strong>Das Konto läuft auf deinen Namen</strong> und du hast jederzeit Zugriff.</li>
     <li><strong>Keine Mindestlaufzeit.</strong> Wer gute Arbeit macht, braucht keine Vertragsbindung.</li>
   </ol>
-  <p>Google Ads ist stark, wenn Nachfrage existiert. Wenn dein Angebot neu ist oder erklärt werden muss, ergänzen wir mit <a href="/meta-ads-agentur.html">Meta Ads</a> und <a href="/ki-werbevideos.html">KI-Werbevideos</a>, die Nachfrage erst erzeugen.</p>
+  <p>Google Ads ist stark, wenn Nachfrage existiert. Wenn dein Angebot neu ist oder erklärt werden muss, ergänzen wir mit <a href="/meta-ads-agentur.html">Meta Ads</a> und <a href="/ki-werbevideos.html">Werbevideos</a>, die Nachfrage erst erzeugen.</p>
 </div></div></section>
 """ + PROCESS + GUAR,
     faq=[
@@ -258,7 +258,7 @@ PAGES.append(dict(
 PAGES.append(dict(
     slug="meta-ads-agentur.html", crumb="Meta Ads Agentur", image="og-image.jpg",
     title="Meta Ads Agentur – Facebook &amp; Instagram Ads | AIclicks",
-    desc="Meta Ads Agentur aus Friedrichshafen: Facebook- &amp; Instagram-Ads mit KI-Creatives, sauberem Tracking und ROAS-Fokus für Shops und lokale Betriebe. Ab 1.490 €/Monat.",
+    desc="Meta Ads Agentur aus Friedrichshafen: Facebook- &amp; Instagram-Ads mit starken Creatives, sauberem Tracking und ROAS-Fokus für Shops und lokale Betriebe. Ab 1.490 €/Monat.",
     service_name="Meta Ads Management (Facebook & Instagram Ads)", service_type="Meta Ads Agentur",
     audience="E-Commerce, lokale Betriebe, Dienstleister, Fitnessstudios", price="1490", unit="Monat",
     cta_h="Lass uns deine Meta-Kampagnen anschauen.",
@@ -269,7 +269,7 @@ PAGES.append(dict(
   <p class="eyebrow">Meta Ads Agentur · Facebook &amp; Instagram · Bodensee</p>
   <h1>Meta Ads, die Nachfrage erzeugen –<br>bevor jemand sucht.</h1>
   <p class="lead">AIclicks ist eine Meta Ads Agentur aus Friedrichshafen am Bodensee. Wir schalten Facebook- und Instagram-Anzeigen für Onlineshops, lokale Betriebe und Dienstleister – mit KI-produzierten Creatives im Wochentakt, sauberem Conversion-Tracking und einem Ziel: Bestellungen und Anfragen zu Kosten, die sich rechnen.</p>
-  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlose Konto-Analyse</a><a href="/ki-werbevideos.html" class="btn ghost">KI-Creatives ansehen</a></div>
+  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlose Konto-Analyse</a><a href="/ki-werbevideos.html" class="btn ghost">Werbevideos ansehen</a></div>
 </div></section>
 
 <section><div class="wrap"><div class="panel prose">
@@ -293,7 +293,7 @@ PAGES.append(dict(
     <thead><tr><th>Posten</th><th>Bei AIclicks</th></tr></thead>
     <tbody>
       <tr><td>Ads Management</td><td>ab 1.490 € / Monat – Setup, Kampagnenführung, Tracking, wöchentliches Reporting</td></tr>
-      <tr><td>Creatives</td><td>KI-Creative-Pakete ab 690 € oder im Full Service (ab 2.900 € / Monat) enthalten</td></tr>
+      <tr><td>Creatives</td><td>Werbevideo-Pakete ab 690 € – oder als monatlicher Nachschub im Ads-Paket</td></tr>
       <tr><td>Werbebudget</td><td>direkt an Meta; Empfehlung ab 1.000–1.500 € / Monat</td></tr>
       <tr><td>Setup-Gebühr / Laufzeit</td><td>keine / monatlich kündbar</td></tr>
     </tbody>
@@ -313,7 +313,7 @@ PAGES.append(dict(
 </div></div></section>
 """ + PROCESS + GUAR,
     faq=[
-        ("Was kostet Facebook- und Instagram-Werbung über eine Agentur?", "Bei AIclicks kostet Meta Ads Management ab 1.490 € pro Monat plus dein Werbebudget, das direkt an Meta geht. KI-Creatives gibt es als Paket ab 690 € oder im Full Service ab 2.900 € pro Monat inklusive. Keine Setup-Gebühr, monatlich kündbar."),
+        ("Was kostet Facebook- und Instagram-Werbung über eine Agentur?", "Bei AIclicks kostet Meta Ads Management ab 1.490 € pro Monat plus dein Werbebudget, das direkt an Meta geht. Werbevideos gibt es als Paket ab 690 € oder im Full Service ab 2.900 € pro Monat inklusive. Keine Setup-Gebühr, monatlich kündbar."),
         ("Wie viel Werbebudget brauche ich für Meta Ads?", "Sinnvoll wird es ab etwa 1.000–1.500 € Werbebudget pro Monat. Metas Algorithmus braucht rund 50 Conversions pro Woche und Anzeigengruppe, um die Lernphase zu verlassen – zu kleine Budgets bleiben dauerhaft im Lernmodus."),
         ("Warum sind Creatives bei Meta Ads so wichtig?", "Weil Meta das Targeting weitgehend automatisiert hat. Ob eine Anzeige performt, entscheidet in erster Linie das Creative: der Hook in den ersten zwei Sekunden, das Angebot und das Format. Deshalb testen wir jede Woche neue Varianten – KI macht das bezahlbar."),
         ("Funktionieren Meta Ads für lokale Betriebe am Bodensee?", "Ja, sehr gut – für Fitnessstudios, Praxen, Gastronomie, Handwerk und Dienstleister mit einem klaren Angebot. Wir nutzen Radius-Targeting rund um den Standort und Lead-Formulare oder WhatsApp als Kontaktweg."),
@@ -389,25 +389,25 @@ PAGES.append(dict(
 
 # ---------------------------------------------------------------- KI-WERBEVIDEOS
 PAGES.append(dict(
-    slug="ki-werbevideos.html", crumb="KI-Werbevideos", image="og-image.jpg",
-    title="KI-Werbevideos erstellen lassen ab 690 € | AIclicks",
-    desc="Werbevideos &amp; Bild-Anzeigen mit KI erstellen lassen: aus deinem Material in Tagen statt Wochen – für Meta, TikTok, YouTube und Amazon. Pakete ab 690 €.",
-    service_name="KI-Werbevideos & Ad Creatives", service_type="Ad Creative Production",
+    slug="ki-werbevideos.html", crumb="Werbevideos & Anzeigen", image="og-image.jpg",
+    title="Werbevideos &amp; Anzeigen erstellen lassen ab 690 € | AIclicks",
+    desc="Werbevideos &amp; Bild-Anzeigen erstellen lassen: aus deinem Material in Tagen statt Wochen – für Meta, TikTok, YouTube und Amazon. Pakete ab 690 €.",
+    service_name="Werbevideos & Anzeigen", service_type="Ad Creative Production",
     audience="Onlineshops, lokale Betriebe, Dienstleister, Amazon-Marken", price="690", unit="Paket",
     cta_h="Zeig uns dein Produkt – wir zeigen dir, was daraus wird.",
     cta_p="Schick uns Fotos oder Videos deines Angebots. In der kostenlosen Analyse zeigen wir dir, welche Creative-Formate für deine Zielgruppe funktionieren und was ein erstes Paket kostet.",
     body="""
 <section class="sub-hero"><div class="wrap">
-  <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › KI-Werbevideos</p>
-  <p class="eyebrow">KI-Werbevideos &amp; statische Ad Creatives</p>
+  <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Werbevideos &amp; Anzeigen</p>
+  <p class="eyebrow">Werbevideos &amp; Anzeigen für Meta, TikTok, YouTube und Amazon</p>
   <h1>Werbevideos in Tagen.<br>Nicht in Wochen.</h1>
-  <p class="lead">Wir produzieren Werbevideos und Bild-Anzeigen mit KI – aus deinem originalen Foto- und Videomaterial. Für Facebook, Instagram, TikTok, YouTube und Amazon. Mehr Varianten, schneller getestet, ab 690 € pro Paket. Ohne Filmteam, ohne Drehtag, ohne Wochen Wartezeit.</p>
+  <p class="lead">Wir produzieren Werbevideos und Bild-Anzeigen aus deinem vorhandenen Foto- und Videomaterial – mit moderner Produktionstechnik statt Filmteam. Für Facebook, Instagram, TikTok, YouTube und Amazon. Mehr Varianten, schneller getestet, ab 690 € pro Paket. Ohne Filmteam, ohne Drehtag, ohne Wochen Wartezeit.</p>
   <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlose Analyse</a><a href="/meta-ads-agentur.html" class="btn ghost">Creatives + Meta Ads</a></div>
 </div></section>
 
 <section><div class="wrap"><div class="panel prose">
-  <h2>Was sind KI-Werbevideos?</h2>
-  <div class="def"><p>KI-Werbevideos sind Video-Anzeigen, bei denen generative KI-Modelle (z. B. für Bild-zu-Video, Voice-over, Untertitel und Schnitt) die Produktion übernehmen, die früher Filmteam, Studio und Postproduktion erforderte. Aus vorhandenen Produktfotos, Handyvideos oder Renderings entstehen in Stunden fertige Clips in mehreren Formaten und Varianten. Strategie, Hook und Angebot definieren weiterhin Menschen – die KI produziert.</p></div>
+  <h2>Wie entstehen unsere Werbevideos?</h2>
+  <div class="def"><p>Unsere Werbevideos sind Video-Anzeigen, bei denen generative KI-Modelle (z. B. für Bild-zu-Video, Voice-over, Untertitel und Schnitt) die Produktion übernehmen, die früher Filmteam, Studio und Postproduktion erforderte. Aus vorhandenen Produktfotos, Handyvideos oder Renderings entstehen in Stunden fertige Clips in mehreren Formaten und Varianten. Strategie, Hook und Angebot definieren weiterhin Menschen – die KI produziert.</p></div>
   <p>Der Punkt ist nicht, dass KI „schöner“ produziert. Der Punkt ist <strong>Menge und Geschwindigkeit</strong>: Auf Meta, TikTok und YouTube entscheidet das Creative über 70–80 % der Performance, und ein Creative ist nach 2–4 Wochen verbraucht. Wer zehn Varianten pro Monat testen kann statt eine, gewinnt – und genau das macht KI bezahlbar.</p>
 
   <h2>Was du bekommst</h2>
@@ -421,7 +421,7 @@ PAGES.append(dict(
 
   <h2>Werbevideo erstellen lassen: Kosten im Vergleich</h2>
   <table class="tbl">
-    <thead><tr><th></th><th>KI-Creatives (AIclicks)</th><th>Klassische Videoproduktion</th></tr></thead>
+    <thead><tr><th></th><th>Werbevideos von AIclicks</th><th>Klassische Videoproduktion</th></tr></thead>
     <tbody>
       <tr><td>Preis</td><td>ab 690 € pro Paket (mehrere Videos + Bild-Varianten)</td><td>2.000–15.000 € pro Video (Dreh, Team, Schnitt)</td></tr>
       <tr><td>Lieferzeit</td><td>2–5 Werktage</td><td>3–8 Wochen</td></tr>
@@ -446,12 +446,152 @@ PAGES.append(dict(
 </div></div></section>
 """ + PROCESS + GUAR,
     faq=[
-        ("Was kostet ein Werbevideo mit KI?", "KI-Creative-Pakete bei AIclicks starten bei 690 € und enthalten mehrere Videos in verschiedenen Formaten plus Bild-Varianten. Ein klassisch produziertes Werbevideo kostet je nach Aufwand 2.000–15.000 €."),
+        ("Was kostet ein Werbevideo mit KI?", "Werbevideo-Pakete bei AIclicks starten bei 690 € und enthalten mehrere Videos in verschiedenen Formaten plus Bild-Varianten. Ein klassisch produziertes Werbevideo kostet je nach Aufwand 2.000–15.000 €."),
         ("Welches Material brauche ich?", "Produktfotos, kurze Handyvideos, Logo und Farben reichen in der Regel. Je mehr echtes Material, desto authentischer das Ergebnis. Renderings oder Herstellerbilder funktionieren ebenfalls."),
         ("Wie lange dauert die Produktion?", "Erste Entwürfe nach 2–3 Werktagen, fertige Lieferung meist innerhalb von 5 Werktagen inklusive einer Korrekturrunde."),
-        ("Für welche Plattformen eignen sich KI-Werbevideos?", "Meta (Facebook, Instagram Reels, Stories), TikTok, YouTube Shorts und In-Stream, Amazon Sponsored Brands Video sowie Landingpages und Produktseiten. Wir liefern jedes Video in den passenden Formaten."),
+        ("Für welche Plattformen eignen sich die Werbevideos?", "Meta (Facebook, Instagram Reels, Stories), TikTok, YouTube Shorts und In-Stream, Amazon Sponsored Brands Video sowie Landingpages und Produktseiten. Wir liefern jedes Video in den passenden Formaten."),
         ("Sieht man, dass es KI ist?", "Bei Produkt-Demos, Angebots-Clips und animierten Bildern in der Regel nicht. Wo es um Menschen und Emotion geht, kombinieren wir echtes Material mit KI-Elementen. Ehrlich ist: Für Performance-Ads zählt am Ende nur, ob das Video Bestellungen bringt – und das messen wir."),
-        ("Könnt ihr die Videos auch gleich schalten?", "Ja. Im Full Service (ab 2.900 € pro Monat) produzieren wir Creatives im Monatstakt und führen deine Google-, Meta- oder Amazon-Kampagnen – Creative-Produktion und Media-Steuerung greifen dann direkt ineinander."),
+        ("Könnt ihr die Videos auch gleich schalten?", "Ja. In unseren Ads-Paketen (ab 1.490 € pro Monat) produzieren wir Creatives im Monatstakt und führen deine Google-, Meta- oder Amazon-Kampagnen – Creative-Produktion und Media-Steuerung greifen dann direkt ineinander."),
+    ],
+))
+
+# ---------------------------------------------------------------- WEBSITE IN 5 TAGEN
+PAGES.append(dict(
+    slug="website-in-5-tagen.html", crumb="Website in 5 Tagen", image="og-image.jpg",
+    title="Website erstellen lassen in 5 Tagen – 1.990 € Festpreis | AIclicks",
+    desc="Website für Handwerk, Praxis &amp; Dienstleister in 5 Werktagen zum Festpreis: 1.990 € inkl. Texte, Design, Kontaktformular, Google-Optimierung. Aus Friedrichshafen.",
+    service_name="Website in 5 Tagen", service_type="Webdesign & Webentwicklung",
+    audience="Handwerk, Praxen, Kanzleien, Dienstleister, Gründer", price="1990", unit="Festpreis",
+    cta_h="Deine neue Website – in einer Woche online.",
+    cta_p="Schick uns deine aktuelle Website (oder einfach deinen Firmennamen). Wir sagen dir in 20 Minuten ehrlich, was wir daraus machen würden – kostenlos.",
+    body="""
+<section class="sub-hero"><div class="wrap">
+  <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Website in 5 Tagen</p>
+  <p class="eyebrow">Website erstellen lassen · Festpreis · Friedrichshafen am Bodensee</p>
+  <h1>Deine Website in 5 Tagen.<br>1.990 € Festpreis. Fertig.</h1>
+  <p class="lead">Eine professionelle Website für deinen Betrieb – Texte, Design, Kontaktformular, Google-Optimierung, mobil perfekt – innerhalb von fünf Werktagen online. Kein monatelanges Hin und Her, kein Baukasten, keine versteckten Kosten.</p>
+  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlos anfragen</a><a href="#preis" class="btn ghost">Was ist drin?</a></div>
+</div></section>
+
+<section><div class="wrap"><div class="panel prose">
+  <h2>Was ist „Website in 5 Tagen“?</h2>
+  <div class="def"><p>„Website in 5 Tagen“ ist ein Festpreis-Angebot von AIclicks für kleine und mittlere Betriebe: Innerhalb von fünf Werktagen nach dem Briefing geht eine komplette, suchmaschinenoptimierte Website mit bis zu fünf Unterseiten online – inklusive Texten, Design, Bildern, Kontaktformular, Impressum/Datenschutz und Google-Anbindung. Der Preis beträgt 1.990 € einmalig; es gibt keine Pflicht-Abos.</p></div>
+  <p>Die meisten Websites für Handwerker, Praxen und Dienstleister scheitern nicht am Design, sondern an drei Dingen: <strong>sie werden nie fertig</strong>, <strong>sie bringen keine Anfragen</strong> und <strong>niemand findet sie bei Google</strong>. Wir bauen deshalb keine Kunstwerke, sondern Websites, die genau eines tun: Besucher zu Anrufen und Anfragen machen.</p>
+
+  <h2 id="preis">Was im Festpreis enthalten ist</h2>
+  <table class="tbl">
+    <thead><tr><th>Leistung</th><th>Website in 5 Tagen (1.990 €)</th><th>Klassische Webagentur</th></tr></thead>
+    <tbody>
+      <tr><td>Umfang</td><td>Startseite + bis zu 4 Unterseiten (Leistungen, Über uns, Referenzen, Kontakt)</td><td>nach Angebot</td></tr>
+      <tr><td>Texte</td><td>inklusive – wir schreiben sie nach einem 30-Minuten-Gespräch</td><td>meist Kundensache oder Aufpreis</td></tr>
+      <tr><td>Design</td><td>individuell auf deine Farben, Logo und Branche</td><td>individuell</td></tr>
+      <tr><td>Google-Optimierung</td><td>Seitentitel, Beschreibungen, Struktur, Ladezeit, lokale Suchbegriffe, Google-Unternehmensprofil-Verknüpfung</td><td>oft Aufpreis</td></tr>
+      <tr><td>Kontakt &amp; Anfragen</td><td>Formular, Klick-zu-Anruf, WhatsApp-Button, Anfrage-Tracking</td><td>Formular</td></tr>
+      <tr><td>Rechtliches</td><td>Impressum, Datenschutz, Cookie-Hinweis vorbereitet</td><td>Kundensache</td></tr>
+      <tr><td>Dauer</td><td>5 Werktage nach Briefing</td><td>6–16 Wochen</td></tr>
+      <tr><td>Preis</td><td>1.990 € einmalig, Hosting ab 0 € (statisch) bzw. eigene Domain</td><td>4.000–15.000 € + monatliche Pflege</td></tr>
+    </tbody>
+  </table>
+  <p>Optional dazu: weitere Unterseiten (190 € je Seite), Blog/News-Bereich, Online-Terminbuchung, mehrsprachige Version oder eine Wartungs-Flatrate (49 €/Monat für Änderungen, Updates und Sicherheit). Nichts davon ist Pflicht.</p>
+
+  <h2>So läuft es ab</h2>
+  <ol>
+    <li><strong>Tag 0 – Briefing (30 Min):</strong> Was bietest du an, wer soll anrufen, was unterscheidet dich? Du schickst Logo, Fotos und ggf. deine alte Website.</li>
+    <li><strong>Tag 1–2 – Struktur und Texte:</strong> Wir schreiben alle Texte suchmaschinenfreundlich und in deiner Tonalität. Du liest gegen.</li>
+    <li><strong>Tag 3–4 – Design und Aufbau:</strong> Die Seite entsteht, mobil zuerst. Du bekommst einen Vorschau-Link und eine Korrekturrunde.</li>
+    <li><strong>Tag 5 – Live:</strong> Domain verbinden, Google Search Console und Unternehmensprofil anbinden, Formular und Tracking testen. Fertig.</li>
+  </ol>
+
+  <h2>Für wen das passt – und für wen nicht</h2>
+  <ul>
+    <li><strong>Passt:</strong> Handwerksbetriebe, Praxen, Kanzleien, Berater, Gastronomie, Studios, Gründer, regionale Dienstleister – alle, die eine saubere Visitenkarte im Netz brauchen, die Anfragen bringt.</li>
+    <li><strong>Passt nicht:</strong> Onlineshops mit Warenkorb (dafür <a href="/amazon-ppc-agentur.html">optimieren wir bestehende Shops</a>), Portale mit Login-Bereichen oder große Unternehmensseiten mit 30+ Seiten. Das geht auch – aber nicht in 5 Tagen und nicht zum Festpreis; dafür sprechen wir über ein <a href="/automatisierung.html">individuelles Projekt</a>.</li>
+  </ul>
+
+  <h2>Website ist da – und dann?</h2>
+  <p>Eine Website allein bringt selten Anfragen. Deshalb ist „Website in 5 Tagen“ bei uns der Einstieg: Wer will, schaltet danach <a href="/google-ads-agentur-bodensee.html">Google Ads</a> oder <a href="/meta-ads-agentur.html">Meta Ads</a> auf die neue Seite und bekommt ab dem ersten Monat messbar Anfragen. Beides greift ineinander – die Seite ist von Anfang an darauf gebaut.</p>
+</div></div></section>
+""" + GUAR,
+    faq=[
+        ("Was kostet eine Website bei AIclicks?", "1.990 € einmalig zum Festpreis: Startseite plus bis zu vier Unterseiten, Texte, Design, Kontaktformular, Google-Optimierung und rechtliche Seiten. Weitere Unterseiten kosten 190 € je Seite, eine optionale Wartungs-Flatrate 49 € pro Monat."),
+        ("Schafft ihr wirklich 5 Werktage?", "Ja – wenn das Briefing steht und wir Logo und Fotos haben. Der Prozess ist standardisiert und wir arbeiten mit modernen Werkzeugen, die Texte, Design und Technik parallel entstehen lassen. Verzögerungen entstehen fast nur, wenn Feedback länger auf sich warten lässt."),
+        ("Muss ich Texte und Fotos selbst liefern?", "Texte schreiben wir nach dem Briefing komplett für dich. Fotos: Eigene Bilder von Team, Werkstatt oder Projekten wirken am besten; wo sie fehlen, ergänzen wir professionelles Bildmaterial."),
+        ("Gehört mir die Website?", "Ja, vollständig – Code, Texte, Bilder und Domain gehören dir. Es gibt keine Bindung an uns, keine Lizenzgebühr und keine Pflicht-Wartung."),
+        ("Wird die Website bei Google gefunden?", "Sie wird technisch sauber, schnell und mit lokalen Suchbegriffen aufgebaut und wir verknüpfen sie mit deinem Google-Unternehmensprofil. Für umkämpfte Suchbegriffe braucht es darüber hinaus Zeit oder Google Ads – das besprechen wir ehrlich im Briefing."),
+        ("Kann ich später selbst Änderungen machen?", "Kleine Änderungen (Öffnungszeiten, Texte, Bilder) erledigen wir in der Wartungs-Flatrate innerhalb von 48 Stunden. Wer lieber selbst editieren möchte, bekommt auf Wunsch ein einfaches Redaktionssystem – das besprechen wir im Briefing."),
+    ],
+))
+
+# ---------------------------------------------------------------- AUTOMATISIERUNG
+PAGES.append(dict(
+    slug="automatisierung.html", crumb="Automatisierung", image="og-image.jpg",
+    title="Prozesse automatisieren lassen – Automatisierung für Betriebe | AIclicks",
+    desc="Automatisierung für kleine und mittlere Unternehmen: Anfragen, Angebote, Belege, Berichte und Wiederkehrendes laufen von selbst. Kostenloser Prozess-Check, kleine Automatisierungen ab 490 € Festpreis.",
+    service_name="Automatisierung & individuelle Lösungen", service_type="Prozessautomatisierung & Softwareentwicklung",
+    audience="Kleine und mittlere Unternehmen, Handwerk, Handel, Onlineshops, Dienstleister", price="490", unit="Projekt",
+    cta_h="Welche Aufgabe kostet dich jede Woche am meisten Zeit?",
+    cta_p="Erzähl uns in 20 Minuten, was bei euch täglich von Hand passiert. Wir sagen dir kostenlos, was sich automatisieren lässt, was es kostet – und was sich nicht lohnt.",
+    body="""
+<section class="sub-hero"><div class="wrap">
+  <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Automatisierung</p>
+  <p class="eyebrow">Automatisierung &amp; individuelle Lösungen · Friedrichshafen am Bodensee</p>
+  <h1>Abläufe, die von selbst laufen.<br>Statt jeden Tag von Hand.</h1>
+  <p class="lead">Anfragen beantworten, Angebote schreiben, Belege sortieren, Bestellungen übertragen, Berichte zusammenstellen – vieles davon macht in deinem Betrieb jemand jeden Tag per Hand. Wir bauen dir Abläufe, die das übernehmen. Kleine Automatisierungen ab 490 € Festpreis, individuelle Tools ab 1.990 €.</p>
+  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenloser Prozess-Check</a><a href="#beispiele" class="btn ghost">Beispiele ansehen</a></div>
+</div></section>
+
+<section><div class="wrap"><div class="panel prose">
+  <h2>Was bedeutet Automatisierung für einen Betrieb?</h2>
+  <div class="def"><p>Automatisierung im Unternehmen heißt: Wiederkehrende Aufgaben, die heute Menschen per Hand erledigen – Daten von A nach B übertragen, E-Mails beantworten, Dokumente erstellen, Zahlen zusammentragen – werden von Software übernommen, die deine bestehenden Programme miteinander verbindet. Bei AIclicks reicht das von kleinen Verknüpfungen zwischen zwei Tools (z. B. Anfrage-Formular → CRM → Antwort-Mail) bis zu individuell entwickelten Anwendungen, die es so noch nicht gibt.</p></div>
+  <p>Wir wissen, wovon wir reden: Unser eigener Onlineshop verkauft personalisierte Produkte in acht Länder – Bestellabwicklung, Produktion, Werbesteuerung und Buchhaltung laufen dort weitgehend automatisch. Ohne diese Abläufe wäre das mit einem kleinen Team nicht machbar. Genau dieses Wissen bauen wir jetzt für andere Betriebe.</p>
+
+  <h2 id="beispiele">Was wir typischerweise automatisieren</h2>
+  <table class="tbl">
+    <thead><tr><th>Bereich</th><th>Vorher (von Hand)</th><th>Nachher (automatisch)</th></tr></thead>
+    <tbody>
+      <tr><td>Anfragen</td><td>Mails lesen, Rückfragen stellen, ins Excel tippen, Tage später antworten</td><td>Anfrage wird sofort qualifiziert, beantwortet, in dein System eingetragen und dir mit Vorschlag vorgelegt</td></tr>
+      <tr><td>Angebote</td><td>Vorlage suchen, Preise raussuchen, PDF bauen, 45 Minuten pro Angebot</td><td>Angebot in wenigen Minuten aus Preisliste und Kundendaten, inklusive Nachfass-Mail nach 5 Tagen</td></tr>
+      <tr><td>Büro &amp; Buchhaltung</td><td>Belege sammeln, umbenennen, an den Steuerberater mailen</td><td>Belege werden erkannt, benannt, abgelegt und monatlich gebündelt übergeben</td></tr>
+      <tr><td>Onlineshop &amp; Amazon</td><td>Bestellungen übertragen, Lagerbestände abgleichen, Werbegebote anpassen</td><td>Bestellungen, Bestände und Werbebudgets synchronisieren sich nach deinen Regeln – rund um die Uhr</td></tr>
+      <tr><td>Bewertungen &amp; Kundenpflege</td><td>Vergessen, nach Bewertungen zu fragen</td><td>Nach jedem Auftrag automatisch Dankesnachricht und Bewertungsbitte, Geburtstags- und Wartungserinnerungen</td></tr>
+      <tr><td>Berichte</td><td>Zahlen aus 4 Programmen in eine Tabelle kopieren</td><td>Ein Dashboard oder eine Montagsmail mit allen Zahlen, ohne dass jemand etwas tut</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Individuelle Lösungen: wenn es das Tool noch nicht gibt</h2>
+  <p>Manchmal reicht Verbinden nicht – dann entwickeln wir das passende Werkzeug: einen Konfigurator für deine Website, ein internes Tool für Auftragsplanung, eine Schnittstelle zwischen zwei Systemen, die sich nicht verstehen, oder eine kleine App für dein Team. Dank moderner Entwicklungsmethoden entsteht so etwas heute in Tagen bis wenigen Wochen statt in Monaten – und zu Preisen, die auch für einen Zehn-Personen-Betrieb Sinn ergeben.</p>
+
+  <h2>Was kostet Automatisierung?</h2>
+  <table class="tbl">
+    <thead><tr><th>Paket</th><th>Beispiel</th><th>Preis</th></tr></thead>
+    <tbody>
+      <tr><td>Prozess-Check</td><td>20 Minuten Gespräch, danach eine Liste: was sich lohnt, was es kostet, was nicht</td><td>kostenlos</td></tr>
+      <tr><td>Kleine Automatisierung</td><td>Anfrage-Formular → Antwort-Mail + Eintrag in CRM/Excel; Beleg-Sortierung; Bewertungsanfrage nach Auftrag</td><td>ab 490 € Festpreis</td></tr>
+      <tr><td>Ablauf-Paket</td><td>Mehrere verknüpfte Schritte, z. B. komplette Angebotserstellung mit Nachfassen, oder Shop-/Amazon-Synchronisation</td><td>ab 1.490 € Festpreis</td></tr>
+      <tr><td>Individuelles Tool / Projekt</td><td>Eigene Anwendung, Konfigurator, Schnittstelle, internes Dashboard</td><td>ab 1.990 €, Festpreis nach Prozess-Check</td></tr>
+      <tr><td>Betreuung (optional)</td><td>Überwachung, Anpassungen, kleine Erweiterungen</td><td>ab 149 € / Monat</td></tr>
+    </tbody>
+  </table>
+  <p>Faustregel: Eine Aufgabe, die jemanden 30 Minuten am Tag kostet, kostet den Betrieb rund 3.000 € im Jahr. Die meisten Automatisierungen haben sich deshalb nach zwei bis vier Monaten bezahlt – und laufen dann weiter.</p>
+
+  <h2>So gehen wir vor</h2>
+  <ol>
+    <li><strong>Prozess-Check (kostenlos):</strong> Du zeigst uns, was täglich von Hand passiert. Wir priorisieren nach Zeitersparnis pro Euro.</li>
+    <li><strong>Festpreis-Angebot:</strong> Klar beschrieben, was gebaut wird, was es kostet und wann es läuft. Keine Stundenabrechnung.</li>
+    <li><strong>Umsetzung:</strong> Kleine Automatisierungen in 2–5 Werktagen, Projekte in 1–4 Wochen. Wir arbeiten mit deinen bestehenden Programmen – kein Systemwechsel nötig.</li>
+    <li><strong>Übergabe:</strong> Du bekommst eine Erklärung in einfacher Sprache und eine Dokumentation. Alles gehört dir und läuft in deinen Konten.</li>
+  </ol>
+  <p>Und wenn im Gespräch klar wird, dass sich etwas nicht lohnt, sagen wir das. Lieber ein ehrliches Nein als eine Automatisierung, die niemand braucht.</p>
+</div></div></section>
+""" + GUAR,
+    faq=[
+        ("Was kostet es, einen Prozess automatisieren zu lassen?", "Kleine Automatisierungen (zwei bis drei verknüpfte Schritte) kosten bei AIclicks ab 490 € Festpreis, umfangreichere Ablauf-Pakete ab 1.490 €, individuell entwickelte Tools ab 1.990 €. Vorab gibt es einen kostenlosen Prozess-Check, danach ein Festpreis-Angebot – keine Stundenabrechnung."),
+        ("Muss ich dafür neue Software kaufen?", "In den meisten Fällen nicht. Wir verbinden die Programme, die du bereits nutzt – E-Mail, Kalender, Excel oder Google Sheets, Shop-System, Buchhaltung, CRM. Nur wo ein Baustein wirklich fehlt, empfehlen wir ein passendes, meist günstiges Tool."),
+        ("Wie lange dauert die Umsetzung?", "Kleine Automatisierungen laufen nach 2–5 Werktagen, größere Ablauf-Pakete und individuelle Tools nach ein bis vier Wochen. Der Prozess-Check vorab dauert 20 Minuten."),
+        ("Was passiert, wenn etwas nicht mehr funktioniert?", "Jede Automatisierung bekommt eine Fehlerbenachrichtigung, und du erhältst eine Dokumentation. Mit der optionalen Betreuung ab 149 € pro Monat überwachen wir die Abläufe, passen sie an und erweitern sie bei Bedarf."),
+        ("Ist das nur für Onlineshops oder auch für Handwerk und Büro?", "Für beides. Bei Onlineshops und Amazon-Händlern geht es oft um Bestellungen, Bestände und Werbesteuerung; bei Handwerk, Praxen und Dienstleistern um Anfragen, Angebote, Terminerinnerungen, Belege und Bewertungsanfragen. Die Technik ist dieselbe – der Ablauf wird auf deinen Betrieb zugeschnitten."),
+        ("Könnt ihr auch etwas komplett Eigenes entwickeln?", "Ja. Wenn es das Werkzeug nicht gibt, entwickeln wir es: Konfiguratoren, interne Tools, Schnittstellen, Dashboards oder kleine Apps. Dank moderner Entwicklungsmethoden geht das heute in Tagen bis Wochen und zu Festpreisen ab 1.990 €."),
+        ("Wem gehört die Automatisierung danach?", "Dir. Alles läuft in deinen Konten und wird an dich übergeben – inklusive Dokumentation. Du bist nicht an uns gebunden."),
     ],
 ))
 

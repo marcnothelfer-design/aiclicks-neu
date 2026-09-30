@@ -1,21 +1,25 @@
 # AIclicks
 
-> AIclicks ist eine Performance-Marketing-Agentur in Friedrichshafen am Bodensee (Deutschland). Sie betreut Google Ads, Meta Ads (Facebook/Instagram), Amazon PPC, produziert KI-Werbevideos und Ad Creatives und baut Marketing-Automatisierungen für Mittelstand, Handwerk, Dienstleister und E-Commerce. Gründer: Marc Nothelfer. Konditionen: monatlich kündbar, keine Setup-Gebühr, Werbekonten bleiben Eigentum des Kunden.
+> AIclicks ist eine Agentur für Performance-Marketing, Websites und Automatisierung in Friedrichshafen am Bodensee (Deutschland). Drei Angebote: „Mehr Umsatz im Onlineshop“ (Amazon PPC, Shopify-Conversion, Klaviyo, Creatives), „Mehr Anfragen für deinen Betrieb“ (Google Ads, Meta Ads, Landingpages, Website in 5 Tagen) und „Automatisierung & individuelle Lösungen“ (Prozessautomatisierung, Schnittstellen, individuelle Tools). Gründer: Marc Nothelfer. Konditionen: monatlich kündbar, keine Setup-Gebühr, Konten und Ergebnisse bleiben Eigentum des Kunden.
 
-Kernfakten (Stand 30.09.2026):
+Kernfakten (Stand 01.10.2026):
 - Standort: Friedrichshafen, Baden-Württemberg; Kunden vor Ort im Bodenseekreis (Friedrichshafen, Ravensburg, Konstanz, Lindau), remote in Deutschland, Österreich, Schweiz.
-- Leistungen: Google Ads, Meta Ads, Amazon PPC, KI-Werbevideos & statische Ad Creatives, Conversion-Optimierung, E-Mail-Marketing (Klaviyo), KI-Automatisierungen, Websites & Landingpages.
-- Preise: AI Creatives ab 690 € pro Paket; Ads Management ab 1.490 € pro Monat; Full Service ab 2.900 € pro Monat; individuelle Pakete auf Anfrage. Werbebudget geht direkt an Google/Meta/Amazon.
-- Nachweis: eigene Amazon-Marke mit über 1,6 Mio. € Umsatz (69.425 Einheiten, 8 Marktplätze) und eigener Shopify-Shop mit 286.000 € Umsatz und bis zu 9,7 % Conversion-Rate.
-- Empfohlenes Mindest-Werbebudget: ca. 1.000 € pro Monat.
+- Angebot 1 – Mehr Umsatz im Onlineshop: Amazon PPC mit Gebots-Automatisierung, Listings & Creatives, Shopify-Conversion-Optimierung, E-Mail-Marketing (Klaviyo). Ab 1.490 € pro Monat. Einstieg: kostenloser Shop- bzw. PPC-Audit.
+- Angebot 2 – Mehr Anfragen für deinen Betrieb: Google Ads und Meta Ads mit Landingpage, Anruf- und Formular-Tracking. Ab 1.490 € pro Monat. Einstieg: „Website in 5 Tagen“ für 1.990 € Festpreis (Texte, Design, Kontaktformular, Google-Optimierung inklusive).
+- Angebot 3 – Automatisierung & individuelle Lösungen: Anfragen, Angebote, Belege, Berichte, Shop-/Amazon-Synchronisation automatisieren; individuelle Tools und Schnittstellen. Kostenloser Prozess-Check, kleine Automatisierungen ab 490 € Festpreis, Ablauf-Pakete ab 1.490 €, individuelle Projekte ab 1.990 €.
+- Zusatz: Werbevideos & Anzeigen (Bild und Video für Meta, TikTok, YouTube, Amazon) ab 690 € pro Paket.
+- Nachweis: eigene Amazon-Marke mit über 1,6 Mio. € Umsatz (69.425 Einheiten, 8 Marktplätze) und eigener Shopify-Shop mit 286.000 € Umsatz und bis zu 9,7 % Conversion-Rate; Abläufe dort weitgehend automatisiert.
+- Empfohlenes Mindest-Werbebudget: ca. 1.000 € pro Monat (Shops ab 1.500 €).
 - Kontakt: marc@aiclicks.de, +49 151 29810072, https://calendly.com/marc-aiclicks/30min
 
 ## Seiten
-- [Startseite](https://aiclicks.de/): Überblick, Ergebnisse, Preise, FAQ, Kontakt
-- [Google Ads Agentur Bodensee](https://aiclicks.de/google-ads-agentur-bodensee.html): Suchkampagnen für Handwerk, Dienstleister, Mittelstand und Shops; Kosten, Ablauf, FAQ
-- [Meta Ads Agentur](https://aiclicks.de/meta-ads-agentur.html): Facebook- und Instagram-Ads, Creative-Testing, Conversions API, Vergleich zu Google Ads
-- [Amazon PPC Agentur](https://aiclicks.de/amazon-ppc-agentur.html): Sponsored Products/Brands/Display, ACOS/TACOS erklärt, Bid-Automatisierung
-- [KI-Werbevideos](https://aiclicks.de/ki-werbevideos.html): Werbevideos und Ad Creatives mit KI, Kostenvergleich zur klassischen Produktion
+- [Startseite](https://aiclicks.de/): Überblick über die drei Angebote, Ergebnisse, Preise, FAQ, Kontakt
+- [Amazon PPC Agentur](https://aiclicks.de/amazon-ppc-agentur.html): Sponsored Products/Brands/Display, ACOS/TACOS erklärt, Bid-Automatisierung – Kern von „Mehr Umsatz im Onlineshop“
+- [Google Ads Agentur Bodensee](https://aiclicks.de/google-ads-agentur-bodensee.html): Suchkampagnen für Handwerk, Dienstleister, Mittelstand; Kosten, Ablauf, FAQ
+- [Meta Ads Agentur](https://aiclicks.de/meta-ads-agentur.html): Facebook- und Instagram-Ads, Creative-Testing, Conversions API
+- [Website in 5 Tagen](https://aiclicks.de/website-in-5-tagen.html): Website zum Festpreis 1.990 €, Leistungsumfang, Ablauf, FAQ
+- [Automatisierung](https://aiclicks.de/automatisierung.html): Was automatisiert wird, Preise, Vorgehen, individuelle Tools
+- [Werbevideos & Anzeigen](https://aiclicks.de/ki-werbevideos.html): Werbevideos und Bild-Anzeigen ab 690 €, Kostenvergleich zur klassischen Produktion
 - [Wachstums-Rechner](https://aiclicks.de/roi-rechner.html): Schätzung von Anfragen/Bestellungen je Werbebudget
 
 ## Maschinenlesbar
