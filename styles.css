@@ -168,7 +168,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 /* ---- Footer ---- */
 footer{border-top:1px solid var(--line);padding:48px 0 32px;background:var(--bg2)}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;margin-bottom:30px}
-.foot-grid h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+.foot-grid h3{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
 .foot-grid a{display:block;color:var(--muted);font-size:14.5px;margin-bottom:8px}
 .foot-grid a:hover{color:var(--text)}
 .foot-bottom{border-top:1px solid var(--line);padding-top:20px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}

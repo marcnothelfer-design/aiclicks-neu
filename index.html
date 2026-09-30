@@ -35,7 +35,8 @@
 <meta name="twitter:image" content="https://aiclicks.de/og-image.jpg">
 
 <!-- Performance: Hero-Bild früh laden -->
-<link rel="preload" as="image" href="/hero-bg2.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/hero-bg2-m.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/hero-bg2.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
 <!-- Structured Data -->
@@ -315,7 +316,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 /* ---- Footer ---- */
 footer{border-top:1px solid var(--line);padding:48px 0 32px;background:var(--bg2)}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;margin-bottom:30px}
-.foot-grid h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+.foot-grid h3{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
 .foot-grid a{display:block;color:var(--muted);font-size:14.5px;margin-bottom:8px}
 .foot-grid a:hover{color:var(--text)}
 .foot-bottom{border-top:1px solid var(--line);padding-top:20px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
@@ -401,6 +402,7 @@ section,footer{position:relative;z-index:1}
 .hero-bg{position:absolute;inset:-12% -5% 0 -5%;opacity:.36;z-index:0;pointer-events:none;will-change:transform;-webkit-mask-image:radial-gradient(70% 65% at 50% 35%,#000 40%,transparent 82%);mask-image:radial-gradient(70% 65% at 50% 35%,#000 40%,transparent 82%)}
 .hero-bg::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(58% 62% at 50% 46%,rgba(11,14,20,.66),rgba(11,14,20,.18) 68%,transparent 85%)}
 .hero-bg-img{position:absolute;inset:0;display:block;background-size:cover;background-position:center;will-change:transform;animation:kenburns 26s ease-in-out infinite alternate}
+@media (max-width:768px){.hero-bg-img{background-image:url('/hero-bg2-m.webp')!important}}
 @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.1)}}
 .hero .wrap{position:relative;z-index:2}
 .hero-glow{z-index:1}
@@ -805,12 +807,12 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
       </div>
       <div class="contact-grid">
         <form class="card" id="leadform" onsubmit="return sendLead(event)">
-          <div class="field"><label data-i18n="f_name">Name *</label><input required name="name"></div>
-          <div class="field"><label data-i18n="f_mail">E-Mail *</label><input required type="email" name="email"></div>
-          <div class="field"><label data-i18n="f_phone">Telefon</label><input name="phone"></div>
-          <div class="field"><label data-i18n="f_web">Website oder Firma</label><input name="web"></div>
-          <div class="field"><label data-i18n="f_topic">Worum geht es? *</label>
-            <select required name="topic">
+          <div class="field"><label for="ff-name" data-i18n="f_name">Name *</label><input id="ff-name" required name="name"></div>
+          <div class="field"><label for="ff-email" data-i18n="f_mail">E-Mail *</label><input id="ff-email" required type="email" name="email"></div>
+          <div class="field"><label for="ff-phone" data-i18n="f_phone">Telefon</label><input id="ff-phone" name="phone"></div>
+          <div class="field"><label for="ff-web" data-i18n="f_web">Website oder Firma</label><input id="ff-web" name="web"></div>
+          <div class="field"><label for="ff-topic" data-i18n="f_topic">Worum geht es? *</label>
+            <select id="ff-topic" required name="topic">
               <option value="" data-i18n="f_t0">Bitte wählen…</option>
               <option data-i18n="f_t1">AI Creatives (Videos &amp; Bilder)</option>
               <option data-i18n="f_t2">Ads Management (Google / Meta)</option>
@@ -820,8 +822,8 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
               <option data-i18n="f_t5">Noch nicht sicher</option>
             </select>
           </div>
-          <div class="field"><label data-i18n="f_budget">Monatliches Werbebudget</label>
-            <select name="budget">
+          <div class="field"><label for="ff-budget" data-i18n="f_budget">Monatliches Werbebudget</label>
+            <select id="ff-budget" name="budget">
               <option data-i18n="f_b0">Noch kein Budget definiert</option>
               <option data-i18n="f_b1">unter 1.000 €</option>
               <option>1.000 – 3.000 €</option>
@@ -829,8 +831,8 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
               <option data-i18n="f_b4">über 10.000 €</option>
             </select>
           </div>
-          <div class="field"><label data-i18n="f_msg">Deine größte Herausforderung</label><textarea name="msg" rows="3"></textarea></div>
-          <label class="consent"><input type="checkbox" required><span data-i18n="f_consent">Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
+          <div class="field"><label for="ff-msg" data-i18n="f_msg">Deine größte Herausforderung</label><textarea id="ff-msg" name="msg" rows="3"></textarea></div>
+          <label class="consent"><input type="checkbox" required aria-label="Datenschutz-Einwilligung"><span data-i18n="f_consent">Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
           <button class="btn" type="submit" style="width:100%" data-i18n="f_submit">Wachstumsanalyse anfordern</button>
           <p style="font-size:12.5px;margin-top:12px;text-align:center" data-i18n="f_fine">Kostenlos &amp; unverbindlich · Antwort in 24 Stunden · Kein Verkaufsgespräch, ein Fahrplan</p>
         </form>
@@ -865,15 +867,15 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
         <p style="font-size:14px" data-i18n="foot_tag">Performance-Marketing-Agentur<br>Friedrichshafen am Bodensee · <a href="tel:+4915129810072">+49 151 29810072</a></p>
       </div>
       <div>
-        <h4 data-i18n="foot_s">Leistungen</h4>
+        <h3 data-i18n="foot_s">Leistungen</h3>
         <a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/ki-werbevideos.html" data-i18n="foot_aivid">KI-Werbevideos</a>
       </div>
       <div>
-        <h4 data-i18n="foot_co">Unternehmen</h4>
+        <h3 data-i18n="foot_co">Unternehmen</h3>
         <a href="#ergebnisse" data-i18n="foot_res">Ergebnisse</a><a href="#ueber" data-i18n="foot_about">Über uns</a><a href="#preise" data-i18n="foot_price">Preise</a><a href="/roi-rechner.html" data-i18n="foot_roi">Wachstums-Rechner</a><a href="#kontakt" data-i18n="foot_contact">Kontakt</a>
       </div>
       <div>
-        <h4 data-i18n="foot_legal">Rechtliches</h4>
+        <h3 data-i18n="foot_legal">Rechtliches</h3>
         <a href="/impressum.html" data-i18n="foot_imp">Impressum</a><a href="/datenschutz.html" data-i18n="foot_ds">Datenschutz</a>
       </div>
     </div>
