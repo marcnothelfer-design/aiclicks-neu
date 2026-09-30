@@ -166,6 +166,9 @@ a{color:var(--accent);text-decoration:none}
 img{max-width:100%;display:block}
 .eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
 .card .more{display:inline-block;margin-top:12px;font-weight:700;font-size:14px}
+.midcta{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:26px;padding:18px 22px;border:1px solid rgba(0,224,198,.35);border-radius:var(--radius-sm);background:rgba(0,224,198,.06)}
+.midcta b{display:block;font-size:17px;margin-bottom:2px}
+.midcta span{color:var(--muted);font-size:14.5px}
 .card .more:hover{text-decoration:underline}
 
 /* ---- Card system: the rounded, bordered "Kästchen" everywhere ---- */
@@ -307,6 +310,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .consent{display:flex;gap:10px;font-size:13px;color:var(--muted);align-items:flex-start;margin:8px 0 16px}
 .consent input{width:auto;margin-top:4px}
 .ci{display:flex;flex-direction:column;gap:12px}
+.next{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--card2)}
+.next b{display:block;font-size:15px;margin-bottom:8px}
+.next ol{margin:0 0 0 18px;color:var(--muted);font-size:14px}
+.next li{margin-bottom:4px}
+.ff-ok{margin-top:14px;padding:16px;border-radius:12px;background:rgba(0,224,198,.1);border:1px solid rgba(0,224,198,.4)}
+.ff-ok b{display:block;margin-bottom:4px}
+.ff-ok span{color:var(--muted);font-size:14px}
 .ci a.crow,.ci .crow{display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--card2);color:var(--text);transition:border-color .2s}
 .ci a.crow:hover{border-color:var(--accent)}
 .ci .crow .em{font-size:22px}
@@ -439,6 +449,15 @@ section,footer{position:relative;z-index:1}
   .nav-right .btn{display:none}
   .brand{font-size:17px}
 }
+/* ---- Mobile Sticky CTA ---- */
+.mcta{display:none}
+@media(max-width:768px){
+  .mcta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(11,14,20,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+  .mcta a{flex:1;text-align:center;font-weight:700;font-size:13.5px;padding:12px 8px;border-radius:12px;border:1px solid var(--line);color:var(--text);background:var(--card2)}
+  .mcta a.primary{background:var(--accent);color:var(--accent-ink);border-color:transparent;flex:1.4}
+  body{padding-bottom:72px}
+  #cookiebar{bottom:84px}
+}
 /* ---- Cookie-Banner ---- */
 #cookiebar{position:fixed;left:16px;right:16px;bottom:16px;z-index:70;max-width:680px;margin:0 auto;background:linear-gradient(180deg,rgba(27,33,48,.97),rgba(20,25,36,.97));backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:var(--radius-sm);padding:18px 20px;box-shadow:var(--shadow);display:none}
 #cookiebar.show{display:block}
@@ -502,15 +521,15 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
   <div class="wrap">
     <p class="eyebrow" data-i18n="hero_eyebrow">Performance-Marketing-Agentur · Friedrichshafen am Bodensee</p>
     <h1 data-i18n="hero_h1">Mehr Kunden für dein Geschäft.<br>Ohne Rätselraten.</h1>
-    <p class="lead" data-i18n="hero_lead">Hi, wir sind AIclicks aus Friedrichshafen. Wir kümmern uns um deine Google Ads, Meta Ads und Amazon-Werbung, produzieren deine Werbevideos mit KI – und sorgen dafür, dass am Ende das rauskommt, was zählt: neue Anfragen und Bestellungen. Das Ganze haben wir vorher mit eigenem Geld ausprobiert: über 1,9 Mio. € Umsatz mit unseren eigenen Marken.</p>
+    <p class="lead" data-i18n="hero_lead">Wir kümmern uns um deine Google Ads, Meta Ads und Amazon-Werbung und produzieren deine Werbevideos mit KI – damit du planbar neue Anfragen und Bestellungen bekommst. Ausprobiert mit eigenem Geld: über 1,9 Mio. € Umsatz mit unseren eigenen Marken.</p>
     <div class="hero-cta">
-      <a href="#kontakt" class="btn" data-i18n="hero_cta1">Kostenlose Wachstumsanalyse</a>
+      <a href="#kontakt" class="btn" data-i18n="hero_cta1">Kostenlose Wachstumsanalyse sichern</a>
       <a href="#ergebnisse" class="btn ghost" data-i18n="hero_cta2">So arbeiten wir →</a>
     </div>
     <div class="hero-badges">
       <span><b>1,6 Mio. €</b> <span data-i18n="hero_b1">eigener Amazon-Umsatz</span></span>
       <span><b>9,7 %</b> <span data-i18n="hero_b2">Conversion im eigenen Shop</span></span>
-      <span><b data-i18n="hero_b3">Made in Germany</b></span>
+      <span><b data-i18n="hero_b3">Google Ads &amp; Meta Blueprint zertifiziert</b></span>
     </div>
   </div>
 </section>
@@ -599,6 +618,10 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
         </div>
       </div>
       <p style="margin-top:18px;font-size:14.5px" data-i18n="res_note">Beides sind unsere eigenen Marken – aufgebaut mit eigenem Geld und eigenem Risiko. Genau dieses Wissen bringen wir jetzt für dich mit.</p>
+      <div class="midcta">
+        <div><b data-i18n="mid1_h">Neugierig, was bei dir drin ist?</b><span data-i18n="mid1_p">20 Minuten, kostenlos, ohne Verkaufsdruck.</span></div>
+        <a href="#kontakt" class="btn" data-i18n="mid1_c">Analyse anfordern</a>
+      </div>
     </div>
   </div>
 </section>
@@ -640,6 +663,10 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
         <div class="card"><div class="svc-img"><img src="/svc-email.webp" alt="E-Mail-Marketing mit Klaviyo – Flows und Automationen, die Umsatz nachholen" width="1024" height="576" loading="lazy" decoding="async"></div><h3 data-i18n="s6_h">E-Mail-Marketing</h3><p data-i18n="s6_p">Newsletter, Flows und Automationen mit Klaviyo, die aus Käufern Stammkunden machen – in unserem eigenen Shop jeden Tag im Einsatz.</p></div>
         <div class="card"><div class="svc-img"><img src="/svc-automation.webp" alt="KI-Automatisierungen – Chatbots, Follow-ups und Reporting automatisch" width="1024" height="576" loading="lazy" decoding="async"></div><h3 data-i18n="s7_h">KI-Automatisierungen</h3><p data-i18n="s7_p">Chatbots und Telefon-Assistenten, die Anfragen sofort beantworten, plus automatische Follow-ups, Angebote und Bewertungsanfragen. So geht kein Interessent mehr verloren, während du arbeitest.</p></div>
         <div class="card"><div class="svc-img"><img src="/svc-homepage.webp" alt="Websites und Landingpages – conversion-optimiert gebaut" width="1024" height="576" loading="lazy" decoding="async"></div><h3 data-i18n="s8_h">Websites &amp; Landingpages</h3><p data-i18n="s8_p">Homepages und Landingpages, die Besucher zu Kunden machen – gebaut wie diese hier. Design, Text und Technik aus einer Hand, in Tagen live.</p></div>
+      </div>
+      <div class="midcta">
+        <div><b data-i18n="mid2_h">Nicht sicher, was du brauchst?</b><span data-i18n="mid2_p">Kein Problem – das finden wir im Gespräch zusammen raus.</span></div>
+        <a href="#kontakt" class="btn" data-i18n="mid2_c">Kurz sprechen</a>
       </div>
     </div>
   </div>
@@ -806,11 +833,14 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
         <p data-i18n="ct_p">In 20 Minuten schauen wir gemeinsam auf deine Situation, und du erfährst, wo bei dir das größte Potenzial liegt. Kostenlos, unverbindlich – und du entscheidest danach in Ruhe, ob wir zusammenarbeiten.</p>
       </div>
       <div class="contact-grid">
-        <form class="card" id="leadform" onsubmit="return sendLead(event)">
-          <div class="field"><label for="ff-name" data-i18n="f_name">Name *</label><input id="ff-name" required name="name"></div>
-          <div class="field"><label for="ff-email" data-i18n="f_mail">E-Mail *</label><input id="ff-email" required type="email" name="email"></div>
-          <div class="field"><label for="ff-phone" data-i18n="f_phone">Telefon</label><input id="ff-phone" name="phone"></div>
-          <div class="field"><label for="ff-web" data-i18n="f_web">Website oder Firma</label><input id="ff-web" name="web"></div>
+        <form class="card" id="leadform" onsubmit="return sendLead(event)" action="https://formsubmit.co/marc@aiclicks.de" method="POST">
+          <input type="hidden" name="_subject" value="Neue Wachstumsanalyse-Anfrage über aiclicks.de">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="field"><label for="ff-name" data-i18n="f_name">Name *</label><input id="ff-name" required name="name" autocomplete="name"></div>
+          <div class="field"><label for="ff-email" data-i18n="f_mail">E-Mail *</label><input id="ff-email" required type="email" name="email" autocomplete="email"></div>
+          <div class="field"><label for="ff-phone" data-i18n="f_phone">Telefon (für einen kurzen Rückruf)</label><input id="ff-phone" name="phone" type="tel" autocomplete="tel"></div>
           <div class="field"><label for="ff-topic" data-i18n="f_topic">Worum geht es? *</label>
             <select id="ff-topic" required name="topic">
               <option value="" data-i18n="f_t0">Bitte wählen…</option>
@@ -822,21 +852,14 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
               <option data-i18n="f_t5">Noch nicht sicher</option>
             </select>
           </div>
-          <div class="field"><label for="ff-budget" data-i18n="f_budget">Monatliches Werbebudget</label>
-            <select id="ff-budget" name="budget">
-              <option data-i18n="f_b0">Noch kein Budget definiert</option>
-              <option data-i18n="f_b1">unter 1.000 €</option>
-              <option>1.000 – 3.000 €</option>
-              <option>3.000 – 10.000 €</option>
-              <option data-i18n="f_b4">über 10.000 €</option>
-            </select>
-          </div>
           <div class="field"><label for="ff-msg" data-i18n="f_msg">Was beschäftigt dich gerade am meisten?</label><textarea id="ff-msg" name="msg" rows="3"></textarea></div>
           <label class="consent"><input type="checkbox" required aria-label="Datenschutz-Einwilligung"><span data-i18n="f_consent">Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
-          <button class="btn" type="submit" style="width:100%" data-i18n="f_submit">Kostenlose Analyse anfordern</button>
+          <button class="btn" type="submit" style="width:100%" id="ff-submit" data-i18n="f_submit">Kostenlose Analyse anfordern</button>
+          <div id="ff-ok" class="ff-ok" hidden><b data-i18n="f_ok_h">Danke – ist angekommen!</b><span data-i18n="f_ok_p">Marc meldet sich innerhalb von 24 Stunden persönlich bei dir. Wenn es schneller gehen soll: einfach anrufen oder WhatsApp schreiben.</span></div>
           <p style="font-size:12.5px;margin-top:12px;text-align:center" data-i18n="f_fine">Kostenlos &amp; unverbindlich · Antwort innerhalb von 24 Stunden · Kein Verkaufsgespräch, ein Plan</p>
         </form>
         <div class="ci">
+          <div class="next"><b data-i18n="nx_h">So geht es nach deiner Anfrage weiter</b><ol><li data-i18n="nx_1">Marc meldet sich innerhalb von 24 Stunden bei dir.</li><li data-i18n="nx_2">Kurzes Gespräch (20 Min): deine Ziele, deine Zahlen, dein Markt.</li><li data-i18n="nx_3">Du bekommst einen konkreten Plan – und entscheidest in Ruhe.</li></ol></div>
           <a class="crow" href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener"><span class="em">📅</span><span><span class="t" data-i18n="ci1_t">Direkt Termin buchen</span><br><span class="s" data-i18n="ci1_s">20 Min · Zoom oder Telefon · kostenlos</span></span></a>
           <a class="crow" href="tel:+4915129810072"><span class="em">📞</span><span><span class="t">+49 151 29810072</span><br><span class="s" data-i18n="ci2_s">Direkt mit Marc – kein Callcenter</span></span></a>
           <a class="crow" href="mailto:marc@aiclicks.de"><span class="em">✉️</span><span><span class="t">marc@aiclicks.de</span><br><span class="s" data-i18n="ci3_s">Antwort innerhalb von 24 Stunden</span></span></a>
@@ -848,6 +871,13 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
   </div>
 </section>
 </main>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mcta" aria-label="Schnellkontakt">
+  <a href="tel:+4915129810072">📞 <span data-i18n="mc_call">Anrufen</span></a>
+  <a href="https://wa.me/4915129810072" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <a href="#kontakt" class="primary" data-i18n="mc_cta">Kostenlose Analyse</a>
+</div>
 
 <!-- COOKIE BANNER -->
 <div id="cookiebar" role="dialog" aria-label="Cookie-Einwilligung">
@@ -937,24 +967,30 @@ document.querySelectorAll('a[href*="calendly"]').forEach(a=>a.addEventListener('
 function sendLead(e){
   e.preventDefault();
   const f=e.target, g=n=>(f.querySelector('[name='+n+']')||{}).value||'';
+  const btn=document.getElementById('ff-submit'); btn.disabled=true; btn.textContent='Wird gesendet…';
   trackConversion(CONV.form,100);
   trackFB('Lead',{content_name:'Wachstumsanalyse',value:100,currency:'EUR'});
-  const body=encodeURIComponent(
-    'Name: '+g('name')+'\nE-Mail: '+g('email')+'\nTelefon: '+g('phone')+
-    '\nWebsite/Firma: '+g('web')+'\nThema: '+g('topic')+'\nBudget: '+g('budget')+
-    '\n\nHerausforderung:\n'+g('msg'));
-  window.location.href='mailto:marc@aiclicks.de?subject='+encodeURIComponent('Wachstumsanalyse-Anfrage – '+g('name'))+'&body='+body;
+  const data=new FormData(f);
+  fetch('https://formsubmit.co/ajax/marc@aiclicks.de',{method:'POST',headers:{'Accept':'application/json'},body:data})
+    .then(r=>r.json()).then(j=>{
+      if(j&&(j.success==='true'||j.success===true)){f.querySelectorAll('.field,.consent,#ff-submit').forEach(el=>el.hidden=true);document.getElementById('ff-ok').hidden=false;}
+      else throw new Error('send failed');
+    }).catch(()=>{
+      btn.disabled=false; btn.textContent='Kostenlose Analyse anfordern';
+      const body=encodeURIComponent('Name: '+g('name')+'\nE-Mail: '+g('email')+'\nTelefon: '+g('phone')+'\nThema: '+g('topic')+'\n\nNachricht:\n'+g('msg'));
+      window.location.href='mailto:marc@aiclicks.de?subject='+encodeURIComponent('Wachstumsanalyse-Anfrage – '+g('name'))+'&body='+body;
+    });
   return false;
 }
 
 /* i18n DE/EN */
 const I18N={en:{
-  nav_services:"Services",nav_results:"Results",nav_pricing:"Pricing",nav_about:"About",nav_cta:"Free call",
+  nav_services:"Services",nav_results:"Results",nav_pricing:"Pricing",nav_about:"About",mid1_h:"Curious what's possible for you?",mid1_p:"20 minutes, free, no sales pressure.",mid1_c:"Request analysis",mid2_h:"Not sure what you need?",mid2_p:"No problem – we'll figure it out together in a quick call.",mid2_c:"Let's talk",f_ok_h:"Thanks – received!",f_ok_p:"Marc will get back to you personally within 24 hours. Need it faster? Just call or WhatsApp.",nx_h:"What happens after you send this",nx_1:"Marc gets back to you within 24 hours.",nx_2:"A short 20-minute call: your goals, your numbers, your market.",nx_3:"You get a concrete plan – and decide at your own pace.",mc_call:"Call",mc_cta:"Free analysis",nav_cta:"Free call",
   hero_eyebrow:"Performance Marketing Agency · Friedrichshafen, Lake Constance",
   hero_h1:"More customers for your business.<br>No guesswork.",
-  hero_lead:"Hi, we're AIclicks from Friedrichshafen. We run your Google Ads, Meta Ads and Amazon advertising, produce your ad videos with AI – and make sure you get what actually matters: new enquiries and orders. We tested all of it with our own money first: over €1.9M in revenue with our own brands.",
-  hero_cta1:"Free Growth Analysis",hero_cta2:"How we work →",
-  hero_b1:"own Amazon revenue",hero_b2:"conversion in our own shop",hero_b3:"Made in Germany",
+  hero_lead:"We run your Google Ads, Meta Ads and Amazon advertising and produce your ad videos with AI – so you get new enquiries and orders you can plan on. Tested with our own money: over €1.9M in revenue with our own brands.",
+  hero_cta1:"Get my free growth analysis",hero_cta2:"How we work →",
+  hero_b1:"own Amazon revenue",hero_b2:"conversion in our own shop",hero_b3:"Google Ads &amp; Meta Blueprint certified",
   proof1:"Amazon revenue (own brand)",proof2:"Shopify revenue (own shop)",proof3:"products sold",proof4a:"markets",proof4:"scaled internationally",
   prob_h:"Marketing often feels like a gamble.<br>It doesn't have to.",
   prob_p:"Sound familiar? You ran ads, maybe hired an agency, and got a report full of numbers – but still couldn't tell what it actually achieved. That's not on you. Usually three things are missing:",
@@ -1007,7 +1043,7 @@ const I18N={en:{
   faq5_q:"Do you also do Amazon PPC?",faq5_a:"Yes – Amazon Ads are one of our core competencies. We scaled our own Amazon brand past €1.6M with data-driven PPC and put exactly that knowledge to work for you.",
   faq3_q:"What is an AI marketing agency – and isn't \"AI\" just a buzzword?",faq3_a:"An AI marketing agency uses generative AI to produce ad videos, image ads and copy, and to automate reporting and follow-ups. The effect: far more creative variants to test in days instead of weeks. For us AI is a tool, not a sales pitch – strategy, audiences and budgets are decided by people.",faq7_q:"Where is AIclicks based and which regions do you serve?",faq7_a:"AIclicks is based in Friedrichshafen on Lake Constance (Germany). We serve clients in Friedrichshafen, Ravensburg, Konstanz, Lindau and the Bodenseekreis on site, and work remotely via video call across Germany, Austria and Switzerland.",faq6_q:"Who is AIclicks worth it for?",faq6_a:"For SMEs, trades, service providers and e-commerce with at least ~€1,000 monthly marketing budget who want predictably more customers. Not the right partner if you're looking for the cheapest provider.",
   ct_eye:"Free · No sales pressure",ct_h:"Let's just talk.",ct_p:"In 20 minutes we look at your situation together and you'll learn where your biggest potential lies. Free, no obligation – and afterwards you decide in peace whether we work together.",
-  f_name:"Name *",f_mail:"Email *",f_phone:"Phone",f_web:"Website or company",f_topic:"What's it about? *",f_t0:"Please choose…",f_t1:"AI Creatives (videos & images)",f_t2:"Ads Management (Google / Meta)",f_t3:"Amazon Ads (PPC)",f_t4:"Full Service – all from one hand",f_t6:"Website / landing page",f_t5:"Not sure yet",
+  f_name:"Name *",f_mail:"Email *",f_phone:"Phone (for a quick call back)",f_web:"Website or company",f_topic:"What's it about? *",f_t0:"Please choose…",f_t1:"AI Creatives (videos & images)",f_t2:"Ads Management (Google / Meta)",f_t3:"Amazon Ads (PPC)",f_t4:"Full Service – all from one hand",f_t6:"Website / landing page",f_t5:"Not sure yet",
   f_budget:"Monthly ad budget",f_b0:"No budget defined yet",f_b1:"under €1,000",f_b4:"over €10,000",
   f_msg:"What's on your mind right now?",f_consent:"I have read the privacy policy and consent to the processing of my data to handle my request.",f_submit:"Request free analysis",f_fine:"Free & non-binding · Reply within 24 hours · Not a sales call, a roadmap",
   cb_txt:"We use Google Ads and Meta Pixel to measure which advertising works – only after your consent. Details in the",cb_ds:"privacy policy",cb_all:"Accept all",cb_nec:"Necessary only",
