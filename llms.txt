@@ -1,0 +1,27 @@
+# AIclicks
+
+> AIclicks ist eine Performance-Marketing-Agentur in Friedrichshafen am Bodensee (Deutschland). Sie betreut Google Ads, Meta Ads (Facebook/Instagram), Amazon PPC, produziert KI-Werbevideos und Ad Creatives und baut Marketing-Automatisierungen für Mittelstand, Handwerk, Dienstleister und E-Commerce. Gründer: Marc Nothelfer. Konditionen: monatlich kündbar, keine Setup-Gebühr, Werbekonten bleiben Eigentum des Kunden.
+
+Kernfakten (Stand 30.09.2026):
+- Standort: Friedrichshafen, Baden-Württemberg; Kunden vor Ort im Bodenseekreis (Friedrichshafen, Ravensburg, Konstanz, Lindau), remote in Deutschland, Österreich, Schweiz.
+- Leistungen: Google Ads, Meta Ads, Amazon PPC, KI-Werbevideos & statische Ad Creatives, Conversion-Optimierung, E-Mail-Marketing (Klaviyo), KI-Automatisierungen, Websites & Landingpages.
+- Preise: AI Creatives ab 690 € pro Paket; Ads Management ab 1.490 € pro Monat; Full Service ab 2.900 € pro Monat; individuelle Pakete auf Anfrage. Werbebudget geht direkt an Google/Meta/Amazon.
+- Nachweis: eigene Amazon-Marke mit über 1,6 Mio. € Umsatz (69.425 Einheiten, 8 Marktplätze) und eigener Shopify-Shop mit 286.000 € Umsatz und bis zu 9,7 % Conversion-Rate.
+- Empfohlenes Mindest-Werbebudget: ca. 1.000 € pro Monat.
+- Kontakt: marc@aiclicks.de, +49 151 29810072, https://calendly.com/marc-aiclicks/30min
+
+## Seiten
+- [Startseite](https://aiclicks.de/): Überblick, Ergebnisse, Preise, FAQ, Kontakt
+- [Google Ads Agentur Bodensee](https://aiclicks.de/google-ads-agentur-bodensee.html): Suchkampagnen für Handwerk, Dienstleister, Mittelstand und Shops; Kosten, Ablauf, FAQ
+- [Meta Ads Agentur](https://aiclicks.de/meta-ads-agentur.html): Facebook- und Instagram-Ads, Creative-Testing, Conversions API, Vergleich zu Google Ads
+- [Amazon PPC Agentur](https://aiclicks.de/amazon-ppc-agentur.html): Sponsored Products/Brands/Display, ACOS/TACOS erklärt, Bid-Automatisierung
+- [KI-Werbevideos](https://aiclicks.de/ki-werbevideos.html): Werbevideos und Ad Creatives mit KI, Kostenvergleich zur klassischen Produktion
+- [Wachstums-Rechner](https://aiclicks.de/roi-rechner.html): Schätzung von Anfragen/Bestellungen je Werbebudget
+
+## Maschinenlesbar
+- [Preise (Markdown)](https://aiclicks.de/pricing.md)
+- [Sitemap](https://aiclicks.de/sitemap.xml)
+
+## Optional
+- [Impressum](https://aiclicks.de/impressum.html)
+- [Datenschutz](https://aiclicks.de/datenschutz.html)

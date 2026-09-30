@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aiclicks.de/</loc><lastmod>2026-07-10</lastmod><priority>1.0</priority></url>
-  <url><loc>https://aiclicks.de/roi-rechner.html</loc><lastmod>2026-07-10</lastmod><priority>0.6</priority></url>
-  <url><loc>https://aiclicks.de/impressum.html</loc><priority>0.2</priority></url>
-  <url><loc>https://aiclicks.de/datenschutz.html</loc><priority>0.2</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://aiclicks.de/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>1.0</priority><image:image><image:loc>https://aiclicks.de/og-image.jpg</image:loc><image:title>AIclicks – Performance-Marketing-Agentur am Bodensee</image:title></image:image></url>
+  <url><loc>https://aiclicks.de/google-ads-agentur-bodensee.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aiclicks.de/meta-ads-agentur.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aiclicks.de/amazon-ppc-agentur.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aiclicks.de/ki-werbevideos.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aiclicks.de/roi-rechner.html</loc><lastmod>2026-09-30</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
 </urlset>
