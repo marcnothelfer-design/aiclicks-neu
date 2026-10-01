@@ -6,8 +6,8 @@ Der Ordner _build/ wird von GitHub Pages nicht veröffentlicht (Unterstrich)."""
 import json, pathlib, html, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TODAY = "2026-09-30"
-TODAY_DE = "30.09.2026"
+TODAY = "2026-10-01"
+TODAY_DE = "01.10.2026"
 
 HEAD = """<!DOCTYPE html>
 <html lang="de">
@@ -18,9 +18,12 @@ HEAD = """<!DOCTYPE html>
 <meta name="description" content="{desc}">
 <meta name="author" content="Marc Nothelfer – AIclicks">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<meta name="theme-color" content="#0b0e14">
+<meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://aiclicks.de/{slug}">
-<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/styles.css">
 <meta name="geo.region" content="DE-BW">
 <meta name="geo.placename" content="Friedrichshafen">
@@ -53,16 +56,17 @@ try{{const c=JSON.parse(localStorage.getItem('cookie-consent')||'null');if(c&&c.
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/"><img src="/logo.svg" alt="AIclicks Logo" width="30" height="30"><span>AI<b>clicks</b></span></a>
+    <a class="brand" href="/"><img src="/icon.svg" alt="AIclicks Logo" width="28" height="28"><span>AI<b>clicks</b></span></a>
     <nav id="navlinks" aria-label="Hauptnavigation">
       <a href="/#leistungen">Leistungen</a>
-      <a href="/#ergebnisse">Ergebnisse</a>
+      <a href="/#ablauf">Ablauf</a>
       <a href="/#preise">Preise</a>
       <a href="/#ueber">Über uns</a>
+      <a href="/#faq">FAQ</a>
     </nav>
     <div class="nav-right">
-      <a href="/#kontakt" class="btn">Wachstumsanalyse</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false">☰</button>
+      <a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false">Menü</button>
     </div>
   </div>
 </header>
@@ -71,15 +75,17 @@ try{{const c=JSON.parse(localStorage.getItem('cookie-consent')||'null');if(c&&c.
 
 FOOT = """
 <!-- CTA -->
-<section id="kontakt">
+<section id="kontakt" class="cta-band">
   <div class="wrap">
-    <div class="panel cta-box">
-      <p class="eyebrow">Kostenlos · Kein Pitch</p>
-      <h2>{cta_h}</h2>
-      <p>{cta_p}</p>
-      <a href="/#kontakt" class="btn">Kostenlose Wachstumsanalyse anfordern</a>
-      <p style="margin-top:14px;font-size:14px">Oder direkt: <a href="tel:+4915129810072">+49 151 29810072</a> · <a href="mailto:marc@aiclicks.de">marc@aiclicks.de</a> · <a href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener">Termin buchen</a></p>
-      <p class="updated">Autor: <a href="/#ueber">Marc Nothelfer</a>, Gründer AIclicks · Zuletzt aktualisiert: {today_de}</p>
+    <div class="inner">
+      <div>
+        <p class="eyebrow">Kostenlos · Kein Pitch</p>
+        <h2>{cta_h}</h2>
+        <p>{cta_p}</p>
+        <p style="margin-top:16px;font-size:14.5px">Oder direkt: <a href="tel:+4915129810072" style="color:#fff">+49 151 29810072</a> · <a href="mailto:marc@aiclicks.de" style="color:#fff">marc@aiclicks.de</a> · <a href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener" style="color:#fff">Termin buchen</a></p>
+        <p style="margin-top:10px;font-size:13.5px">Autor: <a href="/#ueber" style="color:#fff">Marc Nothelfer</a>, Gründer AIclicks · Zuletzt aktualisiert: {today_de}</p>
+      </div>
+      <div><a href="/#kontakt" class="btn lg">Kostenloses Erstgespräch anfordern</a></div>
     </div>
   </div>
 </section>
@@ -88,16 +94,16 @@ FOOT = """
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="/" style="margin-bottom:12px"><img src="/logo.svg" alt="AIclicks" style="width:26px;height:26px"><span>AI<b style="color:var(--accent)">clicks</b></span></a>
-        <p style="font-size:14px">Performance-Marketing-Agentur<br>Friedrichshafen am Bodensee · <a href="tel:+4915129810072">+49 151 29810072</a></p>
+        <a class="brand" href="/"><img src="/icon.svg" alt="" width="28" height="28"><span>AI<b>clicks</b></span></a>
+        <p style="margin-top:12px">Agentur für Performance-Marketing, Websites und Automatisierung aus Friedrichshafen am Bodensee · <a href="tel:+4915129810072">+49 151 29810072</a></p>
       </div>
       <div>
         <h3>Leistungen</h3>
-        <a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a><a href="/website-in-5-tagen.html">Website in 5 Tagen</a><a href="/automatisierung.html">Automatisierung</a>
+        <a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/website-in-5-tagen.html">Website in 5 Tagen</a><a href="/automatisierung.html">Automatisierung</a><a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a>
       </div>
       <div>
         <h3>Unternehmen</h3>
-        <a href="/#ergebnisse">Ergebnisse</a><a href="/#ueber">Über uns</a><a href="/#preise">Preise</a><a href="/roi-rechner.html">Wachstums-Rechner</a><a href="/#kontakt">Kontakt</a>
+        <a href="/#ablauf">Ablauf</a><a href="/#ueber">Über uns</a><a href="/#preise">Preise</a><a href="/roi-rechner.html">Wachstums-Rechner</a><a href="/#kontakt">Kontakt</a>
       </div>
       <div>
         <h3>Rechtliches</h3>
@@ -106,7 +112,7 @@ FOOT = """
     </div>
     <div class="foot-bottom">
       <span>© 2026 AIclicks · Marc Nothelfer · Friedrichshafen</span>
-      <span>Made in Germany · Google Ads &amp; Meta Blueprint zertifiziert</span>
+      <span>Monatlich kündbar · Keine Setup-Gebühr · Deine Konten gehören dir</span>
     </div>
   </div>
 </footer>
@@ -118,7 +124,7 @@ document.getElementById('menuBtn').addEventListener('click',function(){{var n=do
 """
 
 def faq_html(faq):
-    out = ['<section><div class="wrap"><div class="section-head"><h2>Häufige Fragen</h2></div><div class="faq">']
+    out = ['<section class="soft"><div class="wrap"><div class="section-head center"><h2>Häufige Fragen</h2></div><div class="faq">']
     for q, a in faq:
         out.append(f'<details class="faqit"><summary>{q}</summary><div class="ans">{a}</div></details>')
     out.append('</div></div></section>')
@@ -162,25 +168,25 @@ def build(p):
     print("wrote", p["slug"], len(body))
 
 PROCESS = """
-<section><div class="wrap"><div class="panel">
+<section class="soft"><div class="wrap">
   <div class="section-head"><h2>So läuft die Zusammenarbeit ab</h2><p>Drei Schritte, keine Überraschungen. Der erste ist kostenlos.</p></div>
-  <div class="grid3">
-    <div class="card step"><div class="no">01 · Analyse</div><h3>Kostenlose Wachstumsanalyse</h3><p>Wir prüfen bestehende Konten, Zielgruppe, Tracking und Zahlen. Du bekommst einen konkreten Plan – ob du mit uns arbeitest oder nicht.</p></div>
-    <div class="card step"><div class="no">02 · Aufbau</div><h3>Kampagnen, Creatives, Tracking</h3><p>Setup in Tagen, nicht Monaten: Kampagnenstruktur, Conversion-Tracking, erste Creative-Varianten und Landingpage-Check.</p></div>
-    <div class="card step"><div class="no">03 · Skalierung</div><h3>Testen, messen, skalieren</h3><p>Wöchentliches Reporting mit einer Zahl, die zählt: Kosten pro Anfrage bzw. Bestellung. Was funktioniert, bekommt mehr Budget.</p></div>
+  <div class="steps">
+    <div class="step"><div class="no">01 · ANALYSE</div><h3>Kostenloses Erstgespräch</h3><p>Wir prüfen bestehende Konten, Zielgruppe, Tracking und Zahlen. Du bekommst einen konkreten Plan – ob du mit uns arbeitest oder nicht.</p></div>
+    <div class="step"><div class="no">02 · AUFBAU</div><h3>Kampagnen, Creatives, Tracking</h3><p>Setup in Tagen, nicht Monaten: Kampagnenstruktur, Conversion-Tracking, erste Creative-Varianten und Landingpage-Check.</p></div>
+    <div class="step"><div class="no">03 · SKALIERUNG</div><h3>Testen, messen, skalieren</h3><p>Wöchentliches Reporting mit einer Zahl, die zählt: Kosten pro Anfrage bzw. Bestellung. Was funktioniert, bekommt mehr Budget.</p></div>
   </div>
-</div></div></section>
+</div></section>
 """
 
 GUAR = """
-<section><div class="wrap"><div class="panel">
+<section class="tight"><div class="wrap">
   <div class="section-head"><h2>Konditionen ohne Kleingedrucktes</h2></div>
-  <div class="grid3 guar">
-    <div class="card"><div class="g"><span class="ic">✓</span><div><h3>Monatlich kündbar</h3><p>Keine Mindestlaufzeit, keine Setup-Gebühr.</p></div></div></div>
-    <div class="card"><div class="g"><span class="ic">✓</span><div><h3>Deine Konten gehören dir</h3><p>Werbekonten, Daten und Creatives bleiben in deinem Besitz – auch nach dem Ende der Zusammenarbeit.</p></div></div></div>
-    <div class="card"><div class="g"><span class="ic">✓</span><div><h3>Wöchentliches Reporting</h3><p>Du siehst jede Woche, was wir tun und was es bringt. Direkter Draht zu Marc, kein Callcenter.</p></div></div></div>
+  <div class="steps">
+    <div class="step"><h3>Monatlich kündbar</h3><p>Keine Mindestlaufzeit, keine Setup-Gebühr.</p></div>
+    <div class="step"><h3>Deine Konten gehören dir</h3><p>Werbekonten, Daten und Creatives bleiben in deinem Besitz – auch nach dem Ende der Zusammenarbeit.</p></div>
+    <div class="step"><h3>Wöchentliches Reporting</h3><p>Du siehst jede Woche, was wir tun und was es bringt. Direkter Draht zu Marc, kein Callcenter.</p></div>
   </div>
-</div></div></section>
+</div></section>
 """
 
 PAGES = []
@@ -200,10 +206,10 @@ PAGES.append(dict(
   <p class="eyebrow">Google Ads Agentur · Friedrichshafen am Bodensee</p>
   <h1>Google Ads, die Anfragen bringen.<br>Nicht nur Klicks.</h1>
   <p class="lead">AIclicks ist eine Google Ads Agentur aus Friedrichshafen am Bodensee. Wir bauen Suchkampagnen für Handwerk, Dienstleister, Mittelstand und Onlineshops, die auf eine Zahl optimiert werden: Kosten pro Anfrage bzw. Bestellung. Ab 1.490 € im Monat, monatlich kündbar.</p>
-  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlose Konto-Analyse</a><a href="/#preise" class="btn ghost">Preise ansehen</a></div>
+  <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/#preise" class="btn secondary">Preise ansehen</a></div>
 </div></section>
 
-<section><div class="wrap"><div class="panel prose">
+<section class="tight"><div class="wrap"><div class="prose">
   <h2>Was macht eine Google Ads Agentur?</h2>
   <div class="def"><p>Eine Google Ads Agentur plant, erstellt und optimiert bezahlte Anzeigen im Google-Netzwerk (Suche, Shopping, YouTube, Display, Performance Max). Sie wählt Suchbegriffe mit Kaufabsicht aus, schreibt Anzeigentexte, richtet Conversion-Tracking ein und steuert Gebote und Budgets so, dass jede Anfrage möglichst wenig kostet. Bezahlt wird das Werbebudget direkt an Google; die Agentur erhält ein separates Honorar.</p></div>
   <p>Der Unterschied zwischen guten und schlechten Google-Ads-Konten liegt selten in der Plattform, sondern in drei Dingen: <strong>welche Suchbegriffe Geld bekommen</strong>, <strong>ob Conversions überhaupt sauber gemessen werden</strong> und <strong>ob jemand wöchentlich an den Stellschrauben dreht</strong>. Genau das ist unser Job.</p>
@@ -269,10 +275,10 @@ PAGES.append(dict(
   <p class="eyebrow">Meta Ads Agentur · Facebook &amp; Instagram · Bodensee</p>
   <h1>Meta Ads, die Nachfrage erzeugen –<br>bevor jemand sucht.</h1>
   <p class="lead">AIclicks ist eine Meta Ads Agentur aus Friedrichshafen am Bodensee. Wir schalten Facebook- und Instagram-Anzeigen für Onlineshops, lokale Betriebe und Dienstleister – mit KI-produzierten Creatives im Wochentakt, sauberem Conversion-Tracking und einem Ziel: Bestellungen und Anfragen zu Kosten, die sich rechnen.</p>
-  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlose Konto-Analyse</a><a href="/ki-werbevideos.html" class="btn ghost">Werbevideos ansehen</a></div>
+  <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/ki-werbevideos.html" class="btn secondary">Werbevideos ansehen</a></div>
 </div></section>
 
-<section><div class="wrap"><div class="panel prose">
+<section class="tight"><div class="wrap"><div class="prose">
   <h2>Was macht eine Meta Ads Agentur?</h2>
   <div class="def"><p>Eine Meta Ads Agentur plant und steuert bezahlte Werbung auf Facebook, Instagram, Messenger und im Audience Network. Anders als bei Google Ads sucht dort niemand aktiv nach deinem Produkt – Meta Ads erzeugen Nachfrage durch Creatives, die im Feed stoppen. Entscheidend sind deshalb Creative-Tests, Zielgruppen-Signale (Pixel, Conversions API) und eine Kampagnenstruktur, die Metas Algorithmus genug Daten zum Lernen gibt.</p></div>
   <p>2026 entscheidet auf Meta zu rund 70–80 % das Creative über Erfolg oder Misserfolg – Targeting übernimmt der Algorithmus weitgehend selbst (Advantage+). Wer nur alle paar Wochen ein neues Video hat, verliert. Deshalb produzieren wir Creatives mit KI: <a href="/ki-werbevideos.html">mehr Varianten, schneller, günstiger</a>.</p>
@@ -336,10 +342,10 @@ PAGES.append(dict(
   <p class="eyebrow">Amazon PPC Agentur · Sponsored Products, Brands &amp; Display</p>
   <h1>Amazon PPC von Leuten,<br>die selbst 7-stellig auf Amazon verkaufen.</h1>
   <p class="lead">AIclicks ist eine Amazon PPC Agentur mit eigener Amazon-Marke: über 1,6 Mio. € Umsatz, 69.425 verkaufte Einheiten und acht internationale Marktplätze – gesteuert mit datengetriebener PPC-Automatisierung. Genau dieses System setzen wir für dein Amazon-Werbekonto ein.</p>
-  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenloser PPC-Audit</a><a href="/#ergebnisse" class="btn ghost">Unsere eigenen Zahlen</a></div>
+  <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloser PPC-Audit</a><a href="/#ergebnisse" class="btn secondary">Unsere eigenen Zahlen</a></div>
 </div></section>
 
-<section><div class="wrap"><div class="panel prose">
+<section class="tight"><div class="wrap"><div class="prose">
   <h2>Was macht eine Amazon PPC Agentur?</h2>
   <div class="def"><p>Eine Amazon PPC Agentur steuert bezahlte Anzeigen auf Amazon (Sponsored Products, Sponsored Brands, Sponsored Display) für Seller und Vendoren. Sie strukturiert Kampagnen nach Keywords und Produkten, passt Gebote anhand von ACOS- und Margen-Zielen an, verschiebt Suchbegriffe aus automatischen in manuelle Kampagnen (Keyword-Harvesting) und optimiert Listings, damit Werbeklicks auch konvertieren. Ziel ist profitables Wachstum: mehr organisches Ranking bei sinkendem TACOS.</p></div>
   <p>Die meisten Amazon-Werbekonten haben dasselbe Problem: Automatische Kampagnen laufen jahrelang unangetastet, Gebote werden nach Gefühl gesetzt, und niemand kennt den Break-even-ACOS pro Produkt. Wir haben dieses Problem an der eigenen Marke gelöst – mit Regeln statt Bauchgefühl.</p>
@@ -402,10 +408,10 @@ PAGES.append(dict(
   <p class="eyebrow">Werbevideos &amp; Anzeigen für Meta, TikTok, YouTube und Amazon</p>
   <h1>Werbevideos in Tagen.<br>Nicht in Wochen.</h1>
   <p class="lead">Wir produzieren Werbevideos und Bild-Anzeigen aus deinem vorhandenen Foto- und Videomaterial – mit moderner Produktionstechnik statt Filmteam. Für Facebook, Instagram, TikTok, YouTube und Amazon. Mehr Varianten, schneller getestet, ab 690 € pro Paket. Ohne Filmteam, ohne Drehtag, ohne Wochen Wartezeit.</p>
-  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlose Analyse</a><a href="/meta-ads-agentur.html" class="btn ghost">Creatives + Meta Ads</a></div>
+  <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/meta-ads-agentur.html" class="btn secondary">Creatives + Meta Ads</a></div>
 </div></section>
 
-<section><div class="wrap"><div class="panel prose">
+<section class="tight"><div class="wrap"><div class="prose">
   <h2>Wie entstehen unsere Werbevideos?</h2>
   <div class="def"><p>Unsere Werbevideos sind Video-Anzeigen, bei denen generative KI-Modelle (z. B. für Bild-zu-Video, Voice-over, Untertitel und Schnitt) die Produktion übernehmen, die früher Filmteam, Studio und Postproduktion erforderte. Aus vorhandenen Produktfotos, Handyvideos oder Renderings entstehen in Stunden fertige Clips in mehreren Formaten und Varianten. Strategie, Hook und Angebot definieren weiterhin Menschen – die KI produziert.</p></div>
   <p>Der Punkt ist nicht, dass KI „schöner“ produziert. Der Punkt ist <strong>Menge und Geschwindigkeit</strong>: Auf Meta, TikTok und YouTube entscheidet das Creative über 70–80 % der Performance, und ein Creative ist nach 2–4 Wochen verbraucht. Wer zehn Varianten pro Monat testen kann statt eine, gewinnt – und genau das macht KI bezahlbar.</p>
@@ -470,10 +476,10 @@ PAGES.append(dict(
   <p class="eyebrow">Website erstellen lassen · Festpreis · Friedrichshafen am Bodensee</p>
   <h1>Deine Website in 5 Tagen.<br>1.990 € Festpreis. Fertig.</h1>
   <p class="lead">Eine professionelle Website für deinen Betrieb – Texte, Design, Kontaktformular, Google-Optimierung, mobil perfekt – innerhalb von fünf Werktagen online. Kein monatelanges Hin und Her, kein Baukasten, keine versteckten Kosten.</p>
-  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenlos anfragen</a><a href="#preis" class="btn ghost">Was ist drin?</a></div>
+  <div class="cta-row"><a href="/#kontakt" class="btn">Kostenlos anfragen</a><a href="#preis" class="btn secondary">Was ist drin?</a></div>
 </div></section>
 
-<section><div class="wrap"><div class="panel prose">
+<section class="tight"><div class="wrap"><div class="prose">
   <h2>Was ist „Website in 5 Tagen“?</h2>
   <div class="def"><p>„Website in 5 Tagen“ ist ein Festpreis-Angebot von AIclicks für kleine und mittlere Betriebe: Innerhalb von fünf Werktagen nach dem Briefing geht eine komplette, suchmaschinenoptimierte Website mit bis zu fünf Unterseiten online – inklusive Texten, Design, Bildern, Kontaktformular, Impressum/Datenschutz und Google-Anbindung. Der Preis beträgt 1.990 € einmalig; es gibt keine Pflicht-Abos.</p></div>
   <p>Die meisten Websites für Handwerker, Praxen und Dienstleister scheitern nicht am Design, sondern an drei Dingen: <strong>sie werden nie fertig</strong>, <strong>sie bringen keine Anfragen</strong> und <strong>niemand findet sie bei Google</strong>. Wir bauen deshalb keine Kunstwerke, sondern Websites, die genau eines tun: Besucher zu Anrufen und Anfragen machen.</p>
@@ -537,10 +543,10 @@ PAGES.append(dict(
   <p class="eyebrow">Automatisierung &amp; individuelle Lösungen · Friedrichshafen am Bodensee</p>
   <h1>Abläufe, die von selbst laufen.<br>Statt jeden Tag von Hand.</h1>
   <p class="lead">Anfragen beantworten, Angebote schreiben, Belege sortieren, Bestellungen übertragen, Berichte zusammenstellen – vieles davon macht in deinem Betrieb jemand jeden Tag per Hand. Wir bauen dir Abläufe, die das übernehmen. Kleine Automatisierungen ab 490 € Festpreis, individuelle Tools ab 1.990 €.</p>
-  <div class="hero-cta"><a href="/#kontakt" class="btn">Kostenloser Prozess-Check</a><a href="#beispiele" class="btn ghost">Beispiele ansehen</a></div>
+  <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloser Prozess-Check</a><a href="#beispiele" class="btn secondary">Beispiele ansehen</a></div>
 </div></section>
 
-<section><div class="wrap"><div class="panel prose">
+<section class="tight"><div class="wrap"><div class="prose">
   <h2>Was bedeutet Automatisierung für einen Betrieb?</h2>
   <div class="def"><p>Automatisierung im Unternehmen heißt: Wiederkehrende Aufgaben, die heute Menschen per Hand erledigen – Daten von A nach B übertragen, E-Mails beantworten, Dokumente erstellen, Zahlen zusammentragen – werden von Software übernommen, die deine bestehenden Programme miteinander verbindet. Bei AIclicks reicht das von kleinen Verknüpfungen zwischen zwei Tools (z. B. Anfrage-Formular → CRM → Antwort-Mail) bis zu individuell entwickelten Anwendungen, die es so noch nicht gibt.</p></div>
   <p>Wir wissen, wovon wir reden: Unser eigener Onlineshop verkauft personalisierte Produkte in acht Länder – Bestellabwicklung, Produktion, Werbesteuerung und Buchhaltung laufen dort weitgehend automatisch. Ohne diese Abläufe wäre das mit einem kleinen Team nicht machbar. Genau dieses Wissen bauen wir jetzt für andere Betriebe.</p>

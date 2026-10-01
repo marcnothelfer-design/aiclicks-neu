@@ -7,16 +7,12 @@
 <meta name="description" content="Mehr Umsatz im Onlineshop, mehr Anfragen für Dienstleister, Abläufe automatisiert: Google Ads, Meta Ads, Amazon PPC, Websites &amp; Automatisierung aus Friedrichshafen.">
 <meta name="author" content="Marc Nothelfer – AIclicks">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#0b0e14">
+<meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://aiclicks.de/">
-<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="alternate" type="text/plain" href="https://aiclicks.de/llms.txt" title="LLM-Kontext">
-
-<!-- Local SEO / Geo -->
 <meta name="geo.region" content="DE-BW">
 <meta name="geo.placename" content="Friedrichshafen">
-
-<!-- Open Graph -->
 <meta property="og:title" content="AIclicks – Mehr Kunden für dein Geschäft. Ohne Rätselraten.">
 <meta property="og:description" content="Mehr Umsatz im Onlineshop, mehr Anfragen für deinen Betrieb, Abläufe die von selbst laufen – Google Ads, Meta Ads, Amazon PPC, Websites & Automatisierung aus Friedrichshafen. Monatlich kündbar.">
 <meta property="og:type" content="website">
@@ -27,19 +23,15 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="AIclicks – Performance-Marketing-Agentur am Bodensee">
-
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AIclicks – Mehr Kunden für dein Geschäft. Ohne Rätselraten.">
 <meta name="twitter:description" content="Mehr Umsatz im Onlineshop, mehr Anfragen für deinen Betrieb, Abläufe die von selbst laufen – Google Ads, Meta Ads, Amazon PPC, Websites & Automatisierung aus Friedrichshafen. Monatlich kündbar.">
 <meta name="twitter:image" content="https://aiclicks.de/og-image.jpg">
-
-<!-- Performance: Hero-Bild früh laden -->
-<link rel="preload" as="image" href="/hero-bg2-m.webp" fetchpriority="high" media="(max-width: 768px)">
-<link rel="preload" as="image" href="/hero-bg2.webp" fetchpriority="high" media="(min-width: 769px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/styles.css">
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-
-<!-- Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -150,334 +142,7 @@
   ]
 }
 </script>
-<style>
-:root{
-  --bg:#0b0e14;--bg2:#0f131c;--card:#141924;--card2:#1b2130;
-  --text:#eef2f8;--muted:#9aa7bd;--line:#28303f;
-  --accent:#00e0c6;--accent2:#3b82f6;--accent-ink:#04231f;
-  --radius:22px;--radius-sm:14px;--maxw:1120px;
-  --shadow:0 20px 50px -20px rgba(0,0,0,.6);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
-section{padding:56px 0}
-h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800}
-h2{font-size:clamp(26px,4vw,38px);margin-bottom:14px}
-h3{font-size:20px}
-p{color:var(--muted)}
-a{color:var(--accent);text-decoration:none}
-img{max-width:100%;display:block}
-.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
-.card .more{display:inline-block;margin-top:12px;font-weight:700;font-size:14px}
-.offer .ol{list-style:none;margin:12px 0 4px;display:flex;flex-direction:column;gap:7px}
-.offer .ol li{position:relative;padding-left:22px;font-size:14px;color:var(--text)}
-.offer .ol li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
-.also{text-align:center;font-size:14px;margin-top:22px}
-.also a{font-weight:600}
-.midcta{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:26px;padding:18px 22px;border:1px solid rgba(0,224,198,.35);border-radius:var(--radius-sm);background:rgba(0,224,198,.06)}
-.midcta b{display:block;font-size:17px;margin-bottom:2px}
-.midcta span{color:var(--muted);font-size:14.5px}
-.card .more:hover{text-decoration:underline}
-
-/* ---- Card system: the rounded, bordered "Kästchen" everywhere ---- */
-.panel{
-  background:linear-gradient(180deg,var(--card),var(--bg2));
-  border:1px solid var(--line);border-radius:var(--radius);
-  padding:32px;box-shadow:var(--shadow);
-}
-.card{
-  background:linear-gradient(180deg,var(--card2),var(--card));
-  border:1px solid var(--line);border-radius:var(--radius-sm);
-  padding:24px;transition:border-color .2s,transform .2s;
-}
-.card:hover{border-color:rgba(0,224,198,.45);transform:translateY(-3px)}
-
-.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:14px 24px;border-radius:12px;border:1px solid transparent;transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(0,224,198,.6)}
-.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
-.btn.ghost:hover{border-color:var(--accent);box-shadow:none}
-
-/* ---- Header ---- */
-header{position:sticky;top:0;z-index:50;background:rgba(11,14,20,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--text)}
-.brand img{width:30px;height:30px}
-.brand span b{color:var(--accent)}
-#navlinks{display:flex;gap:26px;align-items:center}
-#navlinks a{color:var(--muted);font-weight:600;font-size:15px}
-#navlinks a:hover{color:var(--text)}
-.nav-right{display:flex;align-items:center;gap:14px}
-.lang{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.lang button{background:transparent;color:var(--muted);border:0;padding:6px 10px;font-weight:700;cursor:pointer;font-size:13px}
-.lang button.active{background:var(--card2);color:var(--accent)}
-.menu-btn{display:none;background:transparent;border:1px solid var(--line);border-radius:10px;color:var(--text);padding:8px 10px;cursor:pointer}
-
-/* ---- Hero ---- */
-.hero{position:relative;text-align:center;padding:72px 0 40px;overflow:hidden}
-.hero-glow{position:absolute;inset:0;background:radial-gradient(60% 55% at 78% 30%,rgba(0,224,198,.16),transparent 70%),radial-gradient(50% 50% at 20% 80%,rgba(59,130,246,.10),transparent 70%);pointer-events:none}
-.hero h1{font-size:clamp(38px,6.5vw,68px);margin:14px 0 18px;text-shadow:0 2px 24px rgba(0,0,0,.7),0 1px 4px rgba(0,0,0,.55)}
-.hero p.lead{max-width:720px;margin:0 auto 26px;font-size:clamp(16px,2.2vw,19px);color:#cdd8ea;text-shadow:0 1px 16px rgba(0,0,0,.75),0 1px 3px rgba(0,0,0,.6)}
-.hero .eyebrow{text-shadow:0 1px 12px rgba(0,0,0,.8)}
-.hero-badges{text-shadow:0 1px 10px rgba(0,0,0,.75)}
-.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
-.hero-badges{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;font-size:14px;color:var(--muted)}
-.hero-badges b{color:var(--text)}
-
-/* ---- Proof stats ---- */
-.proof .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.stat{text-align:center}
-.stat .num{font-size:clamp(26px,3.4vw,34px);font-weight:800;color:var(--accent)}
-.stat .lbl{font-size:13.5px;color:var(--muted);margin-top:4px}
-
-/* ---- Generic grids ---- */
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.grid4c{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.section-head{text-align:center;max-width:760px;margin:0 auto 34px}
-
-/* ---- VS-Vergleich ---- */
-.vs{display:grid;grid-template-columns:1fr 56px 1fr;align-items:stretch}
-.vs-col{padding:26px 24px;border-radius:var(--radius-sm)}
-.vs-old{background:rgba(20,25,36,.5);border:1px solid var(--line)}
-.vs-new{background:linear-gradient(180deg,rgba(0,224,198,.10),rgba(0,224,198,.03));border:1px solid rgba(0,224,198,.45);box-shadow:0 24px 60px -28px rgba(0,224,198,.45)}
-.vs-head{font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
-.vs-old .vs-head{color:var(--muted)}
-.vs-new .vs-head{color:var(--accent)}
-.vs-item{display:flex;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line);font-size:15px}
-.vs-old .vs-item{color:var(--muted)}
-.vs-new .vs-item{color:var(--text);font-weight:600;border-top-color:rgba(0,224,198,.18)}
-.vi{flex:0 0 auto;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800}
-.vs-old .vi{background:rgba(154,167,189,.12);color:#8d99ad}
-.vs-new .vi{background:rgba(0,224,198,.16);color:var(--accent);box-shadow:0 0 12px rgba(0,224,198,.35)}
-.vs-badge{align-self:center;justify-self:center;width:44px;height:44px;border-radius:50%;background:var(--card2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:var(--muted)}
-
-/* ---- Results ---- */
-.case .num{color:var(--accent);font-weight:800}
-.figimg{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;margin-top:8px}
-.figimg img{width:100%}
-.figcap{font-size:12.5px;color:var(--muted);text-align:center;margin-top:8px}
-
-/* ---- Process ---- */
-.step .no{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.08em}
-
-/* ---- Services with images ---- */
-.svc-img{border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-bottom:16px;aspect-ratio:16/9}
-.svc-img img{width:100%;height:100%;object-fit:cover}
-.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(0,224,198,.4);border-radius:999px;padding:3px 10px;margin-bottom:10px}
-
-/* ---- Pricing ---- */
-.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
-.price{display:flex;flex-direction:column;overflow:hidden;padding:0}
-.price .pimg{aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line)}
-.price .pimg img{width:100%;height:100%;object-fit:cover}
-.price .pbody{padding:24px;display:flex;flex-direction:column;flex:1}
-.price.feat{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 24px 60px -24px rgba(0,224,198,.35)}
-.price .tag{position:absolute;top:14px;right:14px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:800;padding:4px 12px;border-radius:999px}
-.price h3{margin-bottom:6px}
-.price .amt{font-size:26px;font-weight:800;color:var(--text);margin-bottom:2px}
-.price .amt small{font-size:14px;color:var(--muted);font-weight:600}
-.price ul{list-style:none;margin:14px 0 20px;display:flex;flex-direction:column;gap:9px}
-.price li{position:relative;padding-left:24px;font-size:14.5px;color:var(--text)}
-.price li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
-.price .btn{margin-top:auto;text-align:center}
-.pos{position:relative}
-.price-note{margin-top:20px;text-align:center;font-size:14.5px;color:var(--muted)}
-
-/* ---- Guarantee ---- */
-.guar .g{display:flex;gap:14px;align-items:flex-start}
-.guar .g .ic{color:var(--accent);font-weight:800;font-size:18px;flex:0 0 auto}
-
-/* ---- Founder ---- */
-.founder{display:flex;flex-direction:column;gap:22px}
-.f-head{display:flex;align-items:center;gap:16px}
-.f-port{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:center 3%;border:2px solid rgba(0,224,198,.4);flex:0 0 auto}
-.f-name{font-weight:800;font-size:19px;color:var(--text);line-height:1.2}
-.f-role{color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
-.f-tags{color:var(--muted);font-size:13px;margin-top:6px}
-
-/* ---- FAQ (leicht umrandet) ---- */
-.faq{display:flex;flex-direction:column;gap:12px;max-width:820px;margin:0 auto}
-details.faqit{border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--card2);padding:0;overflow:hidden;transition:border-color .2s}
-details.faqit[open]{border-color:rgba(0,224,198,.45)}
-details.faqit summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:16.5px;display:flex;justify-content:space-between;align-items:center;gap:16px}
-details.faqit summary::-webkit-details-marker{display:none}
-details.faqit summary:after{content:"+";color:var(--accent);font-size:22px;font-weight:800;transition:transform .2s}
-details.faqit[open] summary:after{transform:rotate(45deg)}
-details.faqit .ans{padding:0 22px 20px;color:var(--muted);font-size:15px}
-
-/* ---- Contact ---- */
-.contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
-.field{margin-bottom:14px}
-.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px;font-weight:600}
-.field input,.field select,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px 14px;font-size:15px;font-family:inherit}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,224,198,.18)}
-/* Sichtbarer Tastatur-Fokus überall */
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
-.skip-link{position:absolute;left:-9999px;top:0;z-index:100;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:10px 18px;border-radius:0 0 12px 0}
-.skip-link:focus{left:0}
-.consent{display:flex;gap:10px;font-size:13px;color:var(--muted);align-items:flex-start;margin:8px 0 16px}
-.consent input{width:auto;margin-top:4px}
-.ci{display:flex;flex-direction:column;gap:12px}
-.next{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--card2)}
-.next b{display:block;font-size:15px;margin-bottom:8px}
-.next ol{margin:0 0 0 18px;color:var(--muted);font-size:14px}
-.next li{margin-bottom:4px}
-.ff-ok{margin-top:14px;padding:16px;border-radius:12px;background:rgba(0,224,198,.1);border:1px solid rgba(0,224,198,.4)}
-.ff-ok b{display:block;margin-bottom:4px}
-.ff-ok span{color:var(--muted);font-size:14px}
-.ci a.crow,.ci .crow{display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--card2);color:var(--text);transition:border-color .2s}
-.ci a.crow:hover{border-color:var(--accent)}
-.ci .crow .em{font-size:22px}
-.ci .crow .t{font-weight:700;font-size:15px}
-.ci .crow .s{font-size:13px;color:var(--muted)}
-
-/* ---- Footer ---- */
-footer{border-top:1px solid var(--line);padding:48px 0 32px;background:var(--bg2)}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;margin-bottom:30px}
-.foot-grid h3{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
-.foot-grid a{display:block;color:var(--muted);font-size:14.5px;margin-bottom:8px}
-.foot-grid a:hover{color:var(--text)}
-.foot-bottom{border-top:1px solid var(--line);padding-top:20px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-
-/* ---- Scroll reveal ---- */
-.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.reveal.in{opacity:1;transform:none}
-.reveal-l{opacity:0;transform:translateX(-40px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.reveal-r{opacity:0;transform:translateX(40px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.reveal-l.in,.reveal-r.in{opacity:1;transform:none}
-/* gestaffelte Kind-Elemente (Cards, Stats) */
-.reveal-s{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
-.reveal-s.in{opacity:1;transform:none}
-.reveal-o{opacity:0;transition:opacity .6s ease var(--d,0s)}
-.reveal-o.in{opacity:1}
-
-/* ---- Hero entrance ---- */
-@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
-.js .hero .eyebrow,.js .hero p.lead,.js .hero-cta,.js .hero-badges{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
-.js .hero .eyebrow{animation-delay:.05s}
-.js .hero p.lead{animation-delay:.35s}
-.js .hero-cta{animation-delay:.5s}
-.js .hero-badges{animation-delay:.65s}
-/* Kinetic typography (Wort-Masken, von GSAP animiert) */
-.kw{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
-.kwi{display:inline-block;will-change:transform}
-@keyframes glowPulse{0%,100%{opacity:.8}50%{opacity:1}}
-.js .hero-glow{animation:glowPulse 7s ease-in-out infinite}
-
-/* ---- Button sheen ---- */
-.btn{position:relative;overflow:hidden}
-.btn:not(.ghost)::after{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:left .55s ease;pointer-events:none}
-.btn:not(.ghost):hover::after{left:130%}
-
-/* ---- Card hover glow ---- */
-.card:hover{box-shadow:0 18px 44px -20px rgba(0,224,198,.28)}
-.svc-img img{transition:filter .4s ease}
-.card:hover .svc-img img{filter:brightness(1.14) saturate(1.12)}
-
-/* ---- FAQ open animation ---- */
-@keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
-details.faqit[open] .ans{animation:faqIn .35s ease}
-
-/* ---- Smart header + scroll progress ---- */
-header{transition:transform .35s ease}
-header.hid{transform:translateY(-100%)}
-#scrollbar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:60;pointer-events:none}
-
-/* ---- Mobile menu ---- */
-@keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
-#navlinks.open{animation:menuIn .25s ease}
-
-/* ---- Contact rows ---- */
-.ci a.crow{transition:border-color .2s,transform .2s}
-.ci a.crow:hover{transform:translateX(4px)}
-
-/* ---- Aurora background ---- */
-.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-.aurora span{position:absolute;width:62vmax;height:62vmax;border-radius:50%;filter:blur(90px);opacity:.15;will-change:transform}
-.aurora span:nth-child(1){background:radial-gradient(circle,#00e0c6,transparent 60%);top:-24vmax;left:-12vmax;animation:aur1 38s ease-in-out infinite alternate}
-.aurora span:nth-child(2){background:radial-gradient(circle,#3b82f6,transparent 60%);bottom:-28vmax;right:-16vmax;animation:aur2 46s ease-in-out infinite alternate}
-.aurora span:nth-child(3){background:radial-gradient(circle,#00e0c6,transparent 65%);top:38%;left:56%;width:40vmax;height:40vmax;opacity:.09;animation:aur3 52s ease-in-out infinite alternate}
-@keyframes aur1{to{transform:translate(12vmax,10vmax) scale(1.15)}}
-@keyframes aur2{to{transform:translate(-10vmax,-12vmax) scale(1.08)}}
-@keyframes aur3{to{transform:translate(-8vmax,6vmax)}}
-section,footer{position:relative;z-index:1}
-
-/* ---- Glassmorphism panels ---- */
-.panel{background:linear-gradient(180deg,rgba(20,25,36,.72),rgba(15,19,28,.8));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-.card{background:linear-gradient(180deg,rgba(27,33,48,.82),rgba(20,25,36,.85))}
-
-/* ---- Bento grid (Leistungen) ---- */
-@media(min-width:901px){
-  #leistungen .grid3 .span2{grid-column:span 2}
-}
-
-/* ---- Hero particles ---- */
-#fx{position:absolute;inset:0;z-index:1;pointer-events:none}
-
-/* ---- Parallax ---- */
-.parallax{will-change:transform}
-.pimg img,.svc-img img,.figimg img{will-change:transform;transform:scale(1.12)}
-.hero-bg{position:absolute;inset:-12% -5% 0 -5%;opacity:.36;z-index:0;pointer-events:none;will-change:transform;-webkit-mask-image:radial-gradient(70% 65% at 50% 35%,#000 40%,transparent 82%);mask-image:radial-gradient(70% 65% at 50% 35%,#000 40%,transparent 82%)}
-.hero-bg::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(58% 62% at 50% 46%,rgba(11,14,20,.66),rgba(11,14,20,.18) 68%,transparent 85%)}
-.hero-bg-img{position:absolute;inset:0;display:block;background-size:cover;background-position:center;will-change:transform;animation:kenburns 26s ease-in-out infinite alternate}
-@media (max-width:768px){.hero-bg-img{background-image:url('/hero-bg2-m.webp')!important}}
-@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.1)}}
-.hero .wrap{position:relative;z-index:2}
-.hero-glow{z-index:1}
-
-/* count-up number keeps space */
-.stat .num{font-variant-numeric:tabular-nums}
-
-@media (prefers-reduced-motion: reduce){
-  .reveal,.reveal-l,.reveal-r,.reveal-s,.reveal-o{opacity:1!important;transform:none!important;transition:none}
-  .parallax,.hero-bg{transform:none!important}
-  .hero-bg-img{animation:none}
-  .pimg img,.svc-img img,.figimg img{transform:none}
-  .js .hero .eyebrow,.js .hero h1,.js .hero p.lead,.js .hero-cta,.js .hero-badges{opacity:1;animation:none}
-  .js .hero-glow{animation:none}
-  .aurora span{animation:none}
-  #fx{display:none}
-  details.faqit[open] .ans{animation:none}
-  header{transition:none}
-  .btn:not(.ghost)::after{display:none}
-}
-
-/* ---- Responsive ---- */
-@media(max-width:900px){
-  .grid3,.grid4c,.grid2,.price-grid,.proof .grid4,.contact-grid,.founder,.foot-grid{grid-template-columns:1fr}
-  .proof .grid4{grid-template-columns:1fr 1fr}
-  #navlinks{display:none}
-  .menu-btn{display:block}
-  #navlinks.open{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--line);padding:16px 20px;gap:14px}
-  .f-head{justify-content:center;text-align:left}
-  .vs{grid-template-columns:1fr;gap:0}
-  .vs-badge{margin:10px auto}
-}
-@media(max-width:640px){
-  .nav-right .btn{display:none}
-  .brand{font-size:17px}
-}
-/* ---- Mobile Sticky CTA ---- */
-.mcta{display:none}
-@media(max-width:768px){
-  .mcta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(11,14,20,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
-  .mcta a{flex:1;text-align:center;font-weight:700;font-size:13.5px;padding:12px 8px;border-radius:12px;border:1px solid var(--line);color:var(--text);background:var(--card2)}
-  .mcta a.primary{background:var(--accent);color:var(--accent-ink);border-color:transparent;flex:1.4}
-  body{padding-bottom:72px}
-  #cookiebar{bottom:84px}
-}
-/* ---- Cookie-Banner ---- */
-#cookiebar{position:fixed;left:16px;right:16px;bottom:16px;z-index:70;max-width:680px;margin:0 auto;background:linear-gradient(180deg,rgba(27,33,48,.97),rgba(20,25,36,.97));backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:var(--radius-sm);padding:18px 20px;box-shadow:var(--shadow);display:none}
-#cookiebar.show{display:block}
-#cookiebar p{font-size:13.5px;margin-bottom:12px}
-#cookiebar .cb-row{display:flex;gap:10px;flex-wrap:wrap}
-#cookiebar button{cursor:pointer;font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--text)}
-#cookiebar button.cb-all{background:var(--accent);color:var(--accent-ink);border-color:transparent}
-</style>
 <script>document.documentElement.classList.add('js')</script>
-
 <!-- Google Consent Mode v2 (Default: alles abgelehnt) + Google Ads Tag -->
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
@@ -485,8 +150,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 gtag('js',new Date());gtag('config','AW-304314047');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-304314047"></script>
-
-<!-- Meta Pixel: Script wird erst NACH Marketing-Consent geladen (DSGVO + Performance) -->
+<!-- Meta Pixel: wird erst nach Marketing-Consent geladen -->
 <script>
 function loadFbq(){if(window.fbq)return;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -496,228 +160,128 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 </head>
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
-<div id="scrollbar"></div>
-<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
 
-<!-- HEADER -->
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="/logo.svg" alt="AIclicks Logo"><span>AI<b>clicks</b></span></a>
-    <nav id="navlinks">
-      <a href="#leistungen" data-i18n="nav_services">Leistungen</a>
-      <a href="#ergebnisse" data-i18n="nav_results">Ergebnisse</a>
-      <a href="#preise" data-i18n="nav_pricing">Preise</a>
-      <a href="#ueber" data-i18n="nav_about">Über uns</a>
+    <a class="brand" href="/"><img src="/icon.svg" alt="AIclicks Logo" width="28" height="28"><span>AI<b>clicks</b></span></a>
+    <nav id="navlinks" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#preise">Preise</a>
+      <a href="#ueber">Über uns</a>
+      <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-right">
-      <div class="lang">
-        <button data-lang="de" class="active">DE</button>
-        <button data-lang="en">EN</button>
-      </div>
-      <a href="#kontakt" class="btn" data-i18n="nav_cta">Erstgespräch</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+      <a href="#kontakt" class="btn">Kostenloses Erstgespräch</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen" aria-controls="navlinks">Menü</button>
     </div>
   </div>
 </header>
 
-<span id="top"></span>
 <main id="main">
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg parallax" id="heroBg" data-speed="0.25"><span class="hero-bg-img" style="background-image:url('/hero-bg2.webp')"></span></div>
-  <div class="hero-glow parallax" data-speed="0.12"></div>
-  <canvas id="fx" aria-hidden="true"></canvas>
-  <div class="wrap">
-    <p class="eyebrow" data-i18n="hero_eyebrow">Performance-Marketing-Agentur · Friedrichshafen am Bodensee</p>
-    <h1 data-i18n="hero_h1">Mehr Kunden für dein Geschäft.<br>Ohne Rätselraten.</h1>
-    <p class="lead" data-i18n="hero_lead">Wir bringen deinem Onlineshop mehr Umsatz, deinem Betrieb mehr Anfragen – und nehmen dir die Abläufe ab, die dich jeden Tag Zeit kosten. Ausprobiert mit eigenem Geld: über 1,9 Mio. € Umsatz mit unseren eigenen Marken.</p>
-    <div class="hero-cta">
-      <a href="#kontakt" class="btn" data-i18n="hero_cta1">Kostenlose Wachstumsanalyse sichern</a>
-      <a href="#ergebnisse" class="btn ghost" data-i18n="hero_cta2">So arbeiten wir →</a>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Marketing, Websites &amp; Automatisierung · Friedrichshafen am Bodensee</span>
+      <h1>Mehr Kunden für dein Geschäft.<br>Ohne Rätselraten.</h1>
+      <p class="lead">Wir bringen Onlineshops mehr Umsatz, Betrieben mehr Anfragen – und nehmen dir die Abläufe ab, die jeden Tag Zeit fressen. Ausprobiert mit eigenem Geld: über 1,9 Mio. € Umsatz mit unseren eigenen Marken.</p>
+      <div class="cta-row">
+        <a href="#kontakt" class="btn lg">Kostenloses Erstgespräch</a>
+        <a href="#leistungen" class="btn secondary lg">Was wir machen</a>
+      </div>
+      <div class="trust"><span>Monatlich kündbar</span><span>Keine Setup-Gebühr</span><span>Du sprichst direkt mit dem Gründer</span></div>
     </div>
-    <div class="hero-badges">
-      <span><b>1,6 Mio. €</b> <span data-i18n="hero_b1">eigener Amazon-Umsatz</span></span>
-      <span><b>9,7 %</b> <span data-i18n="hero_b2">Conversion im eigenen Shop</span></span>
-      <span><b data-i18n="hero_b3">Google Ads &amp; Meta Blueprint zertifiziert</b></span>
+    <div class="hero-visual">
+      <img src="/marc-nothelfer.webp" alt="Marc Nothelfer, Gründer von AIclicks" width="720" height="720" fetchpriority="high" decoding="async">
+      <div class="stat-float"><b>Marc Nothelfer</b><span>Gründer · bei AIclicks sprichst du immer direkt mit ihm – kein Vertrieb, kein Callcenter</span></div>
     </div>
   </div>
 </section>
 
 <!-- PROOF -->
-<section class="proof">
-  <div class="wrap">
-    <div class="panel">
-      <div class="grid4">
-        <div class="stat"><div class="num"><span class="cnt" data-target="1.6" data-decimals="1" data-suffix=" Mio. €">1,6 Mio. €</span></div><div class="lbl" data-i18n="proof1">Amazon-Umsatz (eigene Marke)</div></div>
-        <div class="stat"><div class="num"><span class="cnt" data-target="286000" data-suffix=" €">286.000 €</span></div><div class="lbl" data-i18n="proof2">Shopify-Umsatz (eigener Shop)</div></div>
-        <div class="stat"><div class="num"><span class="cnt" data-target="69425">69.425</span></div><div class="lbl" data-i18n="proof3">verkaufte Produkte</div></div>
-        <div class="stat"><div class="num"><span class="cnt" data-target="8">8</span> <span data-i18n="proof4a">Märkte</span></div><div class="lbl" data-i18n="proof4">international skaliert</div></div>
-      </div>
-    </div>
+<div class="proof">
+  <div class="wrap proof-grid">
+    <div class="proof-item"><b>1.616.822 €</b><span>Umsatz mit der eigenen Amazon-Marke, 69.425 verkaufte Einheiten</span></div>
+    <div class="proof-item"><b>9,7 %</b><span>Conversion-Rate im eigenen Shopify-Shop – Branchenschnitt sind 1–3 %</span></div>
+    <div class="proof-item"><b>24 h</b><span>Antwort auf jede Anfrage – persönlich von Marc, kein Callcenter</span></div>
   </div>
-</section>
+</div>
 
-<!-- PROBLEM -->
-<section>
+<!-- OFFERS -->
+<section id="leistungen">
   <div class="wrap">
-    <div class="panel">
-      <div class="section-head">
-        <h2 data-i18n="prob_h">Marketing fühlt sich oft an wie ein Glücksspiel.<br>Muss es aber nicht.</h2>
-        <p data-i18n="prob_p">Du kennst das vielleicht: Anzeigen geschaltet, vielleicht sogar eine Agentur beauftragt, am Ende ein Report voller Zahlen – und trotzdem das Gefühl, nicht genau zu wissen, was das Ganze gebracht hat. Das liegt nicht an dir. Meistens fehlen einfach drei Dinge:</p>
-      </div>
-      <div class="grid3">
-        <div class="card"><h3 data-i18n="prob1_h">Ein klares Ziel</h3><p data-i18n="prob1_p">Nicht Klicks oder Reichweite, sondern die eine Frage: Was kostet dich eine neue Anfrage – und lohnt sich das?</p></div>
-        <div class="card"><h3 data-i18n="prob2_h">Tempo</h3><p data-i18n="prob2_p">Wer nur alle paar Wochen etwas Neues ausprobiert, lernt zu langsam. Wir testen jede Woche.</p></div>
-        <div class="card"><h3 data-i18n="prob3_h">Jemand, der es selbst gemacht hat</h3><p data-i18n="prob3_p">Marketing-Theorie gibt es genug. Wir haben mit unseren eigenen Marken echtes Geld verdient – und wissen, was funktioniert.</p></div>
-      </div>
+    <div class="section-head">
+      <span class="eyebrow">Drei Wege, wie wir dir helfen</span>
+      <h2>Such dir aus, was dich gerade am meisten weiterbringt.</h2>
+      <p>Alles aus einer Hand, alles monatlich kündbar. Und wenn du nicht sicher bist, was du brauchst: Das klären wir im kostenlosen Erstgespräch.</p>
     </div>
-  </div>
-</section>
 
-<!-- MECHANISM / COMPARISON -->
-<section>
-  <div class="wrap">
-    <div class="panel" id="mechPanel">
-      <div class="section-head">
-        <div class="eyebrow" data-i18n="mech_eye">So arbeiten wir</div>
-        <h2 data-i18n="mech_h">Wir kümmern uns um alles –<br>du siehst jede Woche, was es bringt.</h2>
-        <p data-i18n="mech_p">Wir nehmen dir das Thema komplett ab: Strategie, Anzeigen, Creatives, Website, Tracking, Automatisierung. Mit modernen Werkzeugen produzieren wir schneller und günstiger als klassische Agenturen – die Entscheidungen treffen aber Menschen, die wissen, wie sich der eigene Werbe-Euro anfühlt. Und weil das keine Theorie ist: Genau so haben wir unsere eigenen Marken aufgebaut.</p>
+    <div class="offer reveal">
+      <div>
+        <div class="num">01 <small>Für Onlineshops &amp; Amazon-Händler</small></div>
+        <h3>Mehr Umsatz im Onlineshop</h3>
+        <p>Amazon-Werbung mit Automatisierung, bessere Listings, Shop-Conversion und E-Mail-Flows – von jemandem, der es selbst auf 1,6 Mio. € gebracht hat.</p>
+        <ul class="checks">
+          <li>Amazon PPC, Sponsored Brands &amp; Display mit automatischer Gebotssteuerung</li>
+          <li>Listings, Bilder &amp; Werbevideos, die verkaufen</li>
+          <li>Shopify-Conversion, Google Shopping &amp; Klaviyo-Flows</li>
+        </ul>
+        <div class="cta-row"><a href="#kontakt" class="btn">Kostenlosen Shop-Audit anfordern</a><a href="/amazon-ppc-agentur.html" class="link">Mehr zu Amazon &amp; Shop</a></div>
+        <div class="price-line"><b>ab 1.490 € / Monat</b> · Werbebudget geht direkt an Amazon, Google oder Meta</div>
       </div>
-      <div class="vs">
-        <div class="vs-col vs-old">
-          <div class="vs-head" data-i18n="cmp_c1">Wie es oft läuft</div>
-          <div class="vs-item"><span class="vi">✗</span><span data-i18n="cmp_1a">Neues Werbevideo dauert Wochen</span></div>
-          <div class="vs-item"><span class="vi">✗</span><span data-i18n="cmp_2a">Abrechnung nach Stunden</span></div>
-          <div class="vs-item"><span class="vi">✗</span><span data-i18n="cmp_3a">Entscheidungen nach Bauchgefühl</span></div>
-          <div class="vs-item"><span class="vi">✗</span><span data-i18n="cmp_4a">Viele Einzelmaßnahmen</span></div>
-          <div class="vs-item"><span class="vi">✗</span><span data-i18n="cmp_5a">Report voller Zahlen</span></div>
-        </div>
-        <div class="vs-badge">VS</div>
-        <div class="vs-col vs-new">
-          <div class="vs-head">⚡ AIclicks</div>
-          <div class="vs-item"><span class="vi">✓</span><span data-i18n="cmp_1b">Neue Creatives in wenigen Tagen</span></div>
-          <div class="vs-item"><span class="vi">✓</span><span data-i18n="cmp_2b">Fokus auf deine Ergebnisse</span></div>
-          <div class="vs-item"><span class="vi">✓</span><span data-i18n="cmp_3b">Daten, KI und eigene Erfahrung</span></div>
-          <div class="vs-item"><span class="vi">✓</span><span data-i18n="cmp_4b">Alles greift ineinander</span></div>
-          <div class="vs-item"><span class="vi">✓</span><span data-i18n="cmp_5b">Eine Zahl, die du verstehst: was dich ein Kunde kostet</span></div>
-        </div>
-      </div>
+      <div class="offer-media"><div class="fact"><span class="fl">Unser eigener Nachweis</span><b>1,6 Mio. €</b><p>Umsatz mit der eigenen Amazon-Marke – 69.425 Einheiten in 8 Ländern, gesteuert mit genau der PPC-Automatisierung, die du bekommst.</p><div class="fact-row"><div><b>9,7 %</b><span>Conversion im eigenen Shopify-Shop</span></div><div><b>286.000 €</b><span>Shop-Umsatz, Klaviyo-Flows inklusive</span></div></div></div></div>
     </div>
-  </div>
-</section>
 
-<!-- RESULTS -->
-<section id="ergebnisse">
-  <div class="wrap">
-    <div class="panel">
-      <div class="section-head">
-        <div class="eyebrow" data-i18n="res_eye">Das haben wir selbst geschafft</div>
-        <h2 data-i18n="res_h">Wir erzählen dir nicht, wie Marketing geht.<br>Wir haben es selbst gemacht.</h2>
+    <div class="offer reveal">
+      <div>
+        <div class="num">02 <small>Für Handwerk, Praxen &amp; Dienstleister</small></div>
+        <h3>Mehr Anfragen für deinen Betrieb</h3>
+        <p>Google Ads für alle, die schon nach dir suchen. Meta Ads für alle, die dich noch nicht kennen. Und eine Website, die die Anfrage auch einsammelt.</p>
+        <ul class="checks">
+          <li>Google Ads &amp; Meta Ads mit Anruf- und Formular-Tracking</li>
+          <li>Website in 5 Tagen zum Festpreis – inklusive Texten und Google-Optimierung</li>
+          <li>Wöchentliches Reporting auf eine Zahl: Kosten pro Anfrage</li>
+        </ul>
+        <div class="cta-row"><a href="#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/google-ads-agentur-bodensee.html" class="link">Mehr zu Google &amp; Meta Ads</a></div>
+        <div class="price-line"><b>ab 1.490 € / Monat</b> · Website in 5 Tagen: <b>1.990 € Festpreis</b></div>
       </div>
-      <div class="grid2">
-        <div class="card case">
-          <div class="badge" data-i18n="res1_badge">Eigene Marke · Amazon</div>
-          <h3 data-i18n="res1_h">Über 1,6 Mio. € Umsatz mit eigener Amazon-Marke</h3>
-          <p data-i18n="res1_p">Mit KI haben wir Zehntausende Designs produziert und die Amazon-Werbung datengetrieben gesteuert – so ist unsere eigene Marke über 8 Länder gewachsen: <b style="color:var(--text)">1.616.822 € Umsatz</b>, über 326.000 € Gewinn, 69.425 verkaufte Einheiten.</p>
-        </div>
-        <div class="card case">
-          <div class="badge" data-i18n="res2_badge">Eigene Marke · Shopify</div>
-          <h3 data-i18n="res2_h">9,7 % Conversion – wo 2–3 % normal sind</h3>
-          <p data-i18n="res2_p">Unser eigener Shop für personalisierte Geschenke: <b style="color:var(--text)">286.042 € Umsatz</b>, 8.056 Bestellungen und in Spitzenmonaten drei- bis viermal so viel Conversion wie der Branchenschnitt – bei nur 28 € Warenkorb.</p>
-        </div>
-      </div>
-      <p style="margin-top:18px;font-size:14.5px" data-i18n="res_note">Beides sind unsere eigenen Marken – aufgebaut mit eigenem Geld und eigenem Risiko. Genau dieses Wissen bringen wir jetzt für dich mit.</p>
-      <div class="midcta">
-        <div><b data-i18n="mid1_h">Neugierig, was bei dir drin ist?</b><span data-i18n="mid1_p">20 Minuten, kostenlos, ohne Verkaufsdruck.</span></div>
-        <a href="#kontakt" class="btn" data-i18n="mid1_c">Analyse anfordern</a>
-      </div>
+      <div class="offer-media"><div class="fact"><span class="fl">Rechenbeispiel Handwerk</span><b>20–35 Anfragen</b><p>pro Monat bei 1.500 € Werbebudget und 40–80 € je Anfrage. Ein einziger Auftrag bringt im Handwerk oft 3.000–10.000 € – ab dem ersten zusätzlichen Kunden ist das Honorar bezahlt.</p><div class="fact-row"><div><b>5 Tage</b><span>bis deine neue Website online ist</span></div><div><b>1 Zahl</b><span>Kosten pro Anfrage – jede Woche im Reporting</span></div></div></div></div>
     </div>
+
+    <div class="offer reveal">
+      <div>
+        <div class="num">03 <small>Für jeden Betrieb mit Zeitfressern</small></div>
+        <h3>Abläufe, die von allein laufen</h3>
+        <p>Angebote in Minuten statt Stunden, Anfragen rund um die Uhr beantwortet, Belege, die sich selbst sortieren – und kleine Tools, die genau euren Ablauf abbilden.</p>
+        <ul class="checks">
+          <li>Anfragen automatisch beantworten, qualifizieren und eintragen</li>
+          <li>Angebote, Nachfassen, Bewertungsanfragen, Büro-Automatisierung</li>
+          <li>Individuelle Tools, Schnittstellen und Dashboards</li>
+        </ul>
+        <div class="cta-row"><a href="#kontakt" class="btn">Kostenlosen Prozess-Check anfordern</a><a href="/automatisierung.html" class="link">Mehr zu Automatisierung</a></div>
+        <div class="price-line">Kleine Automatisierungen <b>ab 490 € Festpreis</b> · Tools &amp; Projekte ab 1.990 €</div>
+      </div>
+      <div class="offer-media"><div class="fact"><span class="fl">Faustregel</span><b>≈ 3.000 € / Jahr</b><p>kostet eine Aufgabe, die jemanden jeden Tag 30 Minuten beschäftigt. Die meisten Automatisierungen haben sich deshalb nach 2–4 Monaten bezahlt – und laufen dann einfach weiter.</p><div class="fact-row"><div><b>2–5 Tage</b><span>bis eine kleine Automatisierung läuft</span></div><div><b>0 Systemwechsel</b><span>wir verbinden, was du schon nutzt</span></div></div></div></div>
+    </div>
+
+    <p class="fine" style="margin-top:36px">Auch einzeln buchbar: <a href="/google-ads-agentur-bodensee.html">Google Ads</a> · <a href="/meta-ads-agentur.html">Meta Ads</a> · <a href="/amazon-ppc-agentur.html">Amazon PPC</a> · <a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a> · <a href="/website-in-5-tagen.html">Website in 5 Tagen</a> · <a href="/automatisierung.html">Automatisierung</a></p>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section>
+<section id="ablauf" class="soft">
   <div class="wrap">
-    <div class="panel">
-      <div class="section-head"><h2 data-i18n="proc_h">So starten wir zusammen – in drei entspannten Schritten.</h2></div>
-      <div class="grid3">
-        <div class="card step"><div class="no">01 · <span data-i18n="proc1_t">Analyse</span></div><h3 data-i18n="proc1_h">Wir schauen gemeinsam drauf.</h3><p data-i18n="proc1_p">In einem kostenlosen 20-Minuten-Gespräch schauen wir uns deine Situation, deine Zahlen und deine Ziele an. Du bekommst einen konkreten Plan – auch wenn du ihn danach ohne uns umsetzt.</p></div>
-        <div class="card step"><div class="no">02 · <span data-i18n="proc2_t">Aufbau</span></div><h3 data-i18n="proc2_h">Wir bauen es für dich auf.</h3><p data-i18n="proc2_p">Anzeigen, KI-Creatives, sauberes Tracking und die passenden Automatisierungen. In wenigen Tagen live – nicht in Monaten.</p></div>
-        <div class="card step"><div class="no">03 · <span data-i18n="proc3_t">Wachstum</span></div><h3 data-i18n="proc3_h">Wir verstärken, was funktioniert.</h3><p data-i18n="proc3_p">Wir testen laufend, drehen an den richtigen Stellschrauben und geben dem mehr Budget, was Anfragen bringt. Jede Woche weißt du, wo du stehst.</p></div>
-      </div>
+    <div class="section-head">
+      <span class="eyebrow">So läuft es ab</span>
+      <h2>Drei Schritte. Keine Überraschungen.</h2>
+      <p>Der erste Schritt ist kostenlos – und du entscheidest danach in Ruhe, ob wir zusammenarbeiten.</p>
     </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="leistungen">
-  <div class="wrap">
-    <div class="panel">
-      <div class="section-head">
-        <h2 data-i18n="svc_h">Drei Wege, wie wir dir helfen.</h2>
-        <p data-i18n="svc_p">Such dir aus, was gerade am meisten bringt – oder kombiniere. Alles aus einer Hand, alles monatlich kündbar.</p>
-      </div>
-      <div class="grid3 offers">
-        <div class="card offer" style="border-color:rgba(0,224,198,.4)">
-          <div class="svc-img"><img src="/svc-amazon-ppc.webp" alt="Mehr Umsatz im Onlineshop – Amazon Ads, Shopify, E-Mail-Marketing" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="badge" data-i18n="o1_badge">Für Onlineshops &amp; Amazon-Händler</div>
-          <h3 data-i18n="o1_h">Mehr Umsatz im Onlineshop</h3>
-          <p data-i18n="o1_p">Amazon-Werbung mit Automatisierung, Listings, Werbevideos, Shop-Conversion und E-Mail-Flows – von jemandem, der es selbst auf 1,6 Mio. € gebracht hat.</p>
-          <ul class="ol">
-            <li data-i18n="o1_1">Amazon PPC, Sponsored Brands &amp; Display</li>
-            <li data-i18n="o1_2">Listings, Bilder &amp; Werbevideos</li>
-            <li data-i18n="o1_3">Shopify-Conversion &amp; Klaviyo-Flows</li>
-            <li data-i18n="o1_4">Google Shopping &amp; Meta Ads</li>
-          </ul>
-          <a class="more" href="/amazon-ppc-agentur.html" data-i18n="o1_more">Mehr zu Amazon &amp; Shop →</a>
-        </div>
-        <div class="card offer">
-          <div class="svc-img"><img src="/svc-google-ads.webp" alt="Mehr Anfragen für Dienstleister – Google Ads, Meta Ads, Website" width="1024" height="576" loading="lazy" decoding="async"></div>
-          <div class="badge" data-i18n="o2_badge">Für Handwerk &amp; Dienstleister</div>
-          <h3 data-i18n="o2_h">Mehr Anfragen für deinen Betrieb</h3>
-          <p data-i18n="o2_p">Google Ads für alle, die schon nach dir suchen, Meta Ads für alle, die dich noch nicht kennen – und eine Website, die die Anfrage auch einsammelt.</p>
-          <ul class="ol">
-            <li data-i18n="o2_1">Google Ads &amp; Meta Ads</li>
-            <li data-i18n="o2_2">Website in 5 Tagen zum Festpreis</li>
-            <li data-i18n="o2_3">Landingpages &amp; Anruf-Tracking</li>
-            <li data-i18n="o2_4">Google-Unternehmensprofil</li>
-          </ul>
-          <a class="more" href="/google-ads-agentur-bodensee.html" data-i18n="o2_more">Mehr zu Anfragen →</a>
-        </div>
-        <div class="card offer">
-          <div class="svc-img"><img src="/svc-automation.webp" alt="Automatisierung und individuelle Lösungen – Abläufe, die von allein laufen" width="1024" height="576" loading="lazy" decoding="async"></div>
-          <div class="badge" data-i18n="o3_badge">Für jeden Betrieb mit Zeitfressern</div>
-          <h3 data-i18n="o3_h">Abläufe, die von allein laufen</h3>
-          <p data-i18n="o3_p">Angebote in Minuten statt Stunden, Anfragen rund um die Uhr beantwortet, Belege, die sich selbst sortieren – und kleine Tools, die genau euren Ablauf abbilden.</p>
-          <ul class="ol">
-            <li data-i18n="o3_1">Anfragen automatisch beantworten &amp; qualifizieren</li>
-            <li data-i18n="o3_2">Angebote, Follow-ups, Bewertungsanfragen</li>
-            <li data-i18n="o3_3">Büro-Automatisierung (Mails, Belege, Reports)</li>
-            <li data-i18n="o3_4">Individuelle Tools &amp; Rechner</li>
-          </ul>
-          <a class="more" href="/automatisierung.html" data-i18n="o3_more">Mehr zu Automatisierung →</a>
-        </div>
-      </div>
-      <p class="also" data-i18n="svc_also">Einzeln buchbar: <a href="/google-ads-agentur-bodensee.html">Google Ads</a> · <a href="/meta-ads-agentur.html">Meta Ads</a> · <a href="/amazon-ppc-agentur.html">Amazon PPC</a> · <a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a> · <a href="/website-in-5-tagen.html">Website in 5 Tagen</a> · <a href="/automatisierung.html">Automatisierung</a></p>
-      <div class="midcta">
-        <div><b data-i18n="mid2_h">Nicht sicher, was du brauchst?</b><span data-i18n="mid2_p">Kein Problem – das finden wir im Gespräch zusammen raus.</span></div>
-        <a href="#kontakt" class="btn" data-i18n="mid2_c">Kurz sprechen</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AUDIENCE -->
-<section>
-  <div class="wrap">
-    <div class="panel">
-      <div class="section-head"><h2 data-i18n="aud_h">Für wen wir da sind.</h2></div>
-      <div class="grid3">
-        <div class="card"><h3 data-i18n="aud1_h">Onlineshops &amp; Amazon-Händler</h3><p data-i18n="aud1_p">Profitables Wachstum statt nur Umsatz – auf Shopify, im eigenen Shop und auf Amazon, in Deutschland und Europa.</p></div>
-        <div class="card"><h3 data-i18n="aud2_h">Handwerk &amp; Dienstleister</h3><p data-i18n="aud2_p">Volle Auftragsbücher mit Anfragen aus deiner Region. Du machst deinen Job, wir füllen den Kalender.</p></div>
-        <div class="card"><h3 data-i18n="aud3_h">Betriebe mit zu wenig Zeit</h3><p data-i18n="aud3_p">Wenn Angebote, Anfragen, Belege und Reports jeden Tag Stunden kosten – wir bauen die Abläufe, die das für dich erledigen.</p></div>
-      </div>
+    <div class="steps">
+      <div class="step reveal"><div class="no">SCHRITT 1 · KOSTENLOS</div><h3>Erstgespräch</h3><p>20 Minuten: deine Ziele, deine Zahlen, dein Markt. Wir schauen uns bestehende Konten, Website und Abläufe an und sagen dir ehrlich, wo das größte Potenzial liegt.</p></div>
+      <div class="step reveal"><div class="no">SCHRITT 2 · IN TAGEN</div><h3>Aufbau</h3><p>Kampagnen, Website oder Automatisierung – wir bauen es auf, inklusive sauberem Tracking. Setup in Tagen, nicht in Monaten.</p></div>
+      <div class="step reveal"><div class="no">SCHRITT 3 · LAUFEND</div><h3>Messen &amp; verbessern</h3><p>Wöchentlich bekommst du die eine Zahl, die zählt: Kosten pro Anfrage oder Bestellung. Was funktioniert, bekommt mehr – was nicht, fliegt raus.</p></div>
     </div>
   </div>
 </section>
@@ -725,174 +289,119 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 <!-- PRICING -->
 <section id="preise">
   <div class="wrap">
-    <div class="panel">
-      <div class="section-head">
-        <h2 data-i18n="pr_h">Faire Preise. Keine Überraschungen.</h2>
-        <p data-i18n="pr_p">Du weißt vorher, was es kostet. Keine Setup-Gebühr, keine Mindestlaufzeit, monatlich kündbar. Werbebudget geht direkt an Google, Meta oder Amazon – nicht an uns.</p>
-      </div>
-      <div class="price-grid">
-        <div class="card price feat pos">
-          <div class="tag" data-i18n="pk_feat">★ Empfohlen</div>
-          <div class="pimg"><img src="/price-fullservice.webp" alt="Mehr Umsatz im Onlineshop" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="pbody">
-            <h3 data-i18n="pk1_h">Mehr Umsatz im Onlineshop</h3>
-            <div class="amt">ab 1.490 € <small data-i18n="pk_mo">/Monat</small></div>
-            <ul>
-              <li data-i18n="pk1_1">Amazon PPC oder Shop-Ads</li>
-              <li data-i18n="pk1_2">Listings, Bilder &amp; Videos</li>
-              <li data-i18n="pk1_3">E-Mail-Flows &amp; Conversion</li>
-              <li data-i18n="pk1_4">Wöchentliches Reporting</li>
-            </ul>
-            <a href="#kontakt" class="btn" data-i18n="pk1_cta">Kostenlosen Shop-Audit anfordern</a>
-          </div>
-        </div>
-        <div class="card price pos">
-          <div class="pimg"><img src="/price-ads.webp" alt="Mehr Anfragen für Dienstleister" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="pbody">
-            <h3 data-i18n="pk2_h">Mehr Anfragen für deinen Betrieb</h3>
-            <div class="amt">ab 1.490 € <small data-i18n="pk_mo">/Monat</small></div>
-            <ul>
-              <li data-i18n="pk2_1">Google Ads und/oder Meta Ads</li>
-              <li data-i18n="pk2_2">Landingpage &amp; Anruf-Tracking</li>
-              <li data-i18n="pk2_3">Laufende Optimierung</li>
-              <li data-i18n="pk2_4">Wöchentliches Reporting</li>
-            </ul>
-            <a href="#kontakt" class="btn ghost" data-i18n="pk_cta">Unverbindlich anfragen</a>
-          </div>
-        </div>
-        <div class="card price pos">
-          <div class="pimg"><img src="/svc-homepage.webp" alt="Website in 5 Tagen" width="1024" height="576" loading="lazy" decoding="async"></div>
-          <div class="pbody">
-            <h3 data-i18n="pk3_h">Website in 5 Tagen</h3>
-            <div class="amt">1.990 € <small data-i18n="pk_fix">Festpreis</small></div>
-            <ul>
-              <li data-i18n="pk3_1">Design, Texte &amp; Technik</li>
-              <li data-i18n="pk3_2">Kontaktformular, Tracking, SEO-Basis</li>
-              <li data-i18n="pk3_3">Google-Unternehmensprofil</li>
-              <li data-i18n="pk3_4">Impressum &amp; Datenschutz</li>
-            </ul>
-            <a href="/website-in-5-tagen.html" class="btn ghost" data-i18n="pk3_cta">Details ansehen</a>
-          </div>
-        </div>
-        <div class="card price pos">
-          <div class="pimg"><img src="/svc-automation.webp" alt="Automatisierung und individuelle Lösungen" width="1024" height="576" loading="lazy" decoding="async"></div>
-          <div class="pbody">
-            <h3 data-i18n="pk4_h">Automatisierung &amp; Lösungen</h3>
-            <div class="amt">ab 490 € <small data-i18n="pk_fix">Festpreis</small></div>
-            <ul>
-              <li data-i18n="pk4_1">Kostenloser Prozess-Check</li>
-              <li data-i18n="pk4_2">Festpreis-Angebot vorab</li>
-              <li data-i18n="pk4_3">Kleine Automatisierungen ab 490 €</li>
-              <li data-i18n="pk4_4">Tools &amp; Projekte ab 1.990 €</li>
-            </ul>
-            <a href="#kontakt" class="btn ghost" data-i18n="pk4_cta">Prozess-Check anfordern</a>
-          </div>
-        </div>
-      </div>
-      <p class="price-note" data-i18n="pr_note">Werbevideos &amp; Anzeigen gibt es auch einzeln als Paket ab 690 €. Und zum Einordnen: Ein einziger neuer Auftrag im Handwerk bringt oft 3.000–10.000 € – ab dem ersten zusätzlichen Kunden hat es sich für dich gelohnt.</p>
+    <div class="section-head center">
+      <span class="eyebrow">Preise</span>
+      <h2>Du weißt vorher, was es kostet.</h2>
+      <p>Keine Setup-Gebühr, keine Mindestlaufzeit, monatlich kündbar. Werbebudget geht immer direkt an Google, Meta oder Amazon – nicht an uns.</p>
     </div>
-  </div>
-</section>
-
-<!-- GUARANTEE -->
-<section>
-  <div class="wrap">
-    <div class="panel">
-      <div class="section-head"><h2 data-i18n="guar_h">Du gehst kein Risiko ein.</h2><p data-i18n="guar_p">Wir wollen, dass du bleibst, weil es sich lohnt – nicht, weil ein Vertrag dich hält.</p></div>
-      <div class="grid3 guar">
-        <div class="card"><div class="g"><span class="ic">✓</span><div><h3 data-i18n="g1_h">Keine Mindestlaufzeit.</h3><p data-i18n="g1_p">Monatlich kündbar, ohne Wenn und Aber.</p></div></div></div>
-        <div class="card"><div class="g"><span class="ic">✓</span><div><h3 data-i18n="g2_h">Volle Transparenz.</h3><p data-i18n="g2_p">Du siehst jede Woche, was wir tun und was es bringt. Keine Setup-Gebühr.</p></div></div></div>
-        <div class="card"><div class="g"><span class="ic">✓</span><div><h3 data-i18n="g3_h">Deine Konten &amp; Daten gehören dir.</h3><p data-i18n="g3_p">Immer – auch wenn wir irgendwann getrennte Wege gehen.</p></div></div></div>
+    <div class="plans reveal">
+      <div class="plan featured">
+        <div class="pn">Mehr Umsatz im Onlineshop</div>
+        <div class="pp">ab 1.490 €<small>/ Monat</small></div>
+        <div class="pd">Amazon PPC oder Shop-Ads, Listings &amp; Creatives, E-Mail-Flows, Conversion.</div>
+        <ul><li>Gebots-Automatisierung inklusive</li><li>Wöchentliches Reporting</li><li>Einstieg: kostenloser Shop-Audit</li></ul>
+        <a href="#kontakt" class="btn">Shop-Audit anfordern</a>
+      </div>
+      <div class="plan">
+        <div class="pn">Mehr Anfragen für deinen Betrieb</div>
+        <div class="pp">ab 1.490 €<small>/ Monat</small></div>
+        <div class="pd">Google Ads und/oder Meta Ads mit Landingpage und Anruf-Tracking.</div>
+        <ul><li>Laufende Optimierung</li><li>Wöchentliches Reporting</li><li>Empfohlenes Werbebudget ab 1.000 €</li></ul>
+        <a href="#kontakt" class="btn secondary">Erstgespräch</a>
+      </div>
+      <div class="plan">
+        <div class="pn">Website in 5 Tagen</div>
+        <div class="pp">1.990 €<small>Festpreis</small></div>
+        <div class="pd">Komplette Website für Handwerk, Praxen und Dienstleister – in 5 Werktagen online.</div>
+        <ul><li>Texte, Design &amp; Technik</li><li>Kontaktformular &amp; Tracking</li><li>Google-Optimierung inklusive</li></ul>
+        <a href="/website-in-5-tagen.html" class="btn secondary">Details ansehen</a>
+      </div>
+      <div class="plan">
+        <div class="pn">Automatisierung &amp; Lösungen</div>
+        <div class="pp">ab 490 €<small>Festpreis</small></div>
+        <div class="pd">Vom kostenlosen Prozess-Check bis zum individuellen Tool – immer zum Festpreis.</div>
+        <ul><li>Kleine Automatisierung ab 490 €</li><li>Ablauf-Paket ab 1.490 €</li><li>Tools &amp; Projekte ab 1.990 €</li></ul>
+        <a href="#kontakt" class="btn secondary">Prozess-Check anfordern</a>
       </div>
     </div>
+    <p class="pricing-note">Alle Preise netto. Werbevideos &amp; Anzeigen als Zusatz ab 690 € pro Paket. Nicht sicher, was passt? <a href="#kontakt">Kurz sprechen</a> – wir sagen dir ehrlich, was sinnvoll ist.</p>
   </div>
 </section>
 
 <!-- FOUNDER -->
-<section id="ueber">
-  <div class="wrap">
-    <div class="panel">
-      <div class="founder">
-        <div class="f-head">
-          <img class="f-port" src="/marc-nothelfer.webp" alt="Marc Nothelfer, Gründer von AIclicks" width="112" height="112" loading="lazy" decoding="async">
-          <div>
-            <div class="f-name">Marc Nothelfer</div>
-            <div class="f-role" data-i18n="fnd_role">Gründer AIclicks</div>
-            <div class="f-tags">Performance Marketing · E-Commerce · Ad Creatives</div>
-          </div>
-        </div>
-        <div>
-          <div class="eyebrow" data-i18n="fnd_eye">Wer dahintersteckt</div>
-          <h2 data-i18n="fnd_h">Hi, ich bin Marc.<br>Schön, dass du hier bist.</h2>
-          <p data-i18n="fnd_p1">Ich habe AIclicks gegründet, weil ich gesehen habe, wie viele Unternehmen für Marketing zahlen, ohne zu wissen, was es ihnen bringt. Bevor ich Marketing für andere gemacht habe, habe ich es für mich selbst gemacht – mit eigenem Geld und eigenem Risiko: eine Amazon-Marke auf über 1,6 Mio. € Umsatz gebracht und einen eigenen Shop mit bis zu 9,7 % Conversion aufgebaut.</p>
-          <p style="margin-top:12px" data-i18n="fnd_p2">Deshalb weiß ich, wie sich jeder Werbe-Euro anfühlt – und genau so gehe ich mit deinem Budget um: als wäre es meins. Und ja, du sprichst bei uns immer direkt mit mir. <b style="color:var(--text)">— Marc</b></p>
-        </div>
-      </div>
+<section id="ueber" class="soft">
+  <div class="wrap founder">
+    <img src="/marc-nothelfer.webp" alt="Marc Nothelfer, Gründer von AIclicks" width="640" height="640" loading="lazy" decoding="async">
+    <div>
+      <span class="eyebrow">Wer dahintersteckt</span>
+      <blockquote>„Bevor ich Marketing für andere gemacht habe, habe ich es für mich selbst gemacht – mit eigenem Geld und eigenem Risiko. Deshalb weiß ich, wie sich jeder Werbe-Euro anfühlt. Und genau so gehe ich mit deinem Budget um: als wäre es meins."</blockquote>
+      <p>Marc hat AIclicks gegründet, weil er gesehen hat, wie viele Unternehmen für Marketing zahlen, ohne zu wissen, was es bringt. Vorher: eine eigene Amazon-Marke auf über 1,6 Mio. € Umsatz gebracht, einen eigenen Shop mit bis zu 9,7 % Conversion aufgebaut – und die Abläufe dahinter so automatisiert, dass ein kleines Team acht Länder beliefern kann.</p>
+      <p class="sig" style="margin-top:18px"><b>Marc Nothelfer</b>Gründer AIclicks · Friedrichshafen am Bodensee · Du sprichst immer direkt mit ihm.</p>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section>
+<section id="faq">
   <div class="wrap">
-    <div class="section-head"><h2 data-i18n="faq_h">Fragen, die uns oft gestellt werden.</h2></div>
+    <div class="section-head center">
+      <span class="eyebrow">Häufige Fragen</span>
+      <h2>Was Kunden uns vorher fragen.</h2>
+    </div>
     <div class="faq">
-      <details class="faqit"><summary data-i18n="faq1_q">Was kostet AIclicks?</summary><div class="ans" data-i18n="faq1_a">„Mehr Umsatz im Onlineshop“ und „Mehr Anfragen für deinen Betrieb“ jeweils ab 1.490 € im Monat, die Website in 5 Tagen 1.990 € Festpreis, Automatisierungen ab 490 € Festpreis, Werbevideos &amp; Anzeigen ab 690 € pro Paket. Dein Werbebudget geht direkt an Google, Meta oder Amazon. Keine Setup-Gebühr, keine versteckten Kosten – im Erstgespräch sagen wir dir vorher, was für dich sinnvoll ist.</div></details>
-      <details class="faqit"><summary data-i18n="faq2_q">Muss ich mich langfristig binden?</summary><div class="ans" data-i18n="faq2_a">Nein. Alle Pakete sind monatlich kündbar – ohne Setup-Gebühr und ohne Kleingedrucktes.</div></details>
-      <details class="faqit"><summary data-i18n="faq3_q">Wie könnt ihr schneller und günstiger sein als andere Agenturen?</summary><div class="ans" data-i18n="faq3_a">Weil wir Produktion und Routine konsequent automatisieren – Werbevideos, Anzeigen-Varianten, Texte, Reporting – und selbst zwei Marken betreiben, an denen wir jede Methode zuerst testen. Die Zeit, die wir dadurch sparen, steckt in Strategie und Optimierung. Du merkst es an einem: bessere Zahlen, schneller.</div></details>
-      <details class="faqit"><summary data-i18n="faq4_q">Wann sehe ich Ergebnisse?</summary><div class="ans" data-i18n="faq4_a">Erste Daten siehst du schon nach wenigen Tagen, belastbare Ergebnisse meist nach 30–90 Tagen. Im Erstgespräch sagen wir dir ehrlich, was in deinem Fall realistisch ist – ohne Pauschalversprechen.</div></details>
-      <details class="faqit"><summary data-i18n="faq5_q">Macht ihr auch Amazon PPC?</summary><div class="ans" data-i18n="faq5_a">Ja – Amazon Ads sind eine unserer Kernkompetenzen. Wir haben unsere eigene Amazon-Marke mit datengetriebener PPC-Steuerung auf über 1,6 Mio. € skaliert und setzen genau dieses Wissen für dich ein.</div></details>
-      <details class="faqit"><summary data-i18n="faq6_q">Für wen lohnt sich AIclicks?</summary><div class="ans" data-i18n="faq6_a">Für Mittelstand, Handwerk, Dienstleister und Onlineshops ab etwa 1.000 € Marketing-Budget im Monat, die planbar mehr Kunden wollen. Wenn du vor allem den günstigsten Anbieter suchst, sind wir wahrscheinlich nicht die richtige Wahl – und sagen dir das auch ehrlich.</div></details>
-      <details class="faqit"><summary data-i18n="faq8_q">Was kostet eine Website bei euch?</summary><div class="ans" data-i18n="faq8_a">Eine komplette Website für Handwerk und Dienstleister kostet 1.990 € Festpreis und ist in 5 Werktagen online – inklusive Texten, Kontaktformular, Tracking, SEO-Grundlagen, Google-Unternehmensprofil und Rechtstexten. Größere Seiten oder Shops kalkulieren wir vorab zum Festpreis.</div></details>
-      <details class="faqit"><summary data-i18n="faq9_q">Welche Abläufe könnt ihr automatisieren?</summary><div class="ans" data-i18n="faq9_a">Typische Beispiele: Anfragen automatisch beantworten und qualifizieren (Website, WhatsApp, Telefon), Angebote aus Vorlagen erstellen, Follow-ups und Bewertungsanfragen versenden, Belege und Rechnungen sortieren, Berichte automatisch zusammenstellen – und kleine individuelle Tools wie Preisrechner oder interne Übersichten. Im kostenlosen Prozess-Check schauen wir, was bei dir am meisten Zeit spart.</div></details>
-      <details class="faqit"><summary data-i18n="faq7_q">Wo sitzt AIclicks und für welche Regionen arbeitet ihr?</summary><div class="ans" data-i18n="faq7_a">AIclicks sitzt in Friedrichshafen am Bodensee (Baden-Württemberg). Kunden aus Friedrichshafen, Ravensburg, Konstanz, Lindau und dem Bodenseekreis betreuen wir auch vor Ort; deutschlandweit sowie in Österreich und der Schweiz arbeiten wir remote per Video-Call – Ergebnisse sind nicht ortsgebunden.</div></details>
+      <details class="faqit"><summary>Was kostet AIclicks?</summary><div class="ans">„Mehr Umsatz im Onlineshop" und „Mehr Anfragen für deinen Betrieb" jeweils ab 1.490 € im Monat, die Website in 5 Tagen 1.990 € Festpreis, Automatisierungen ab 490 € Festpreis, Werbevideos &amp; Anzeigen ab 690 € pro Paket. Dein Werbebudget geht direkt an Google, Meta oder Amazon. Keine Setup-Gebühr, keine versteckten Kosten – im Erstgespräch sagen wir dir vorher, was für dich sinnvoll ist.</div></details>
+      <details class="faqit"><summary>Muss ich mich langfristig binden?</summary><div class="ans">Nein. Alle Pakete sind monatlich kündbar – ohne Setup-Gebühr und ohne Kleingedrucktes.</div></details>
+      <details class="faqit"><summary>Wie könnt ihr schneller und günstiger sein als andere Agenturen?</summary><div class="ans">Weil wir Produktion und Routine konsequent automatisieren – Werbevideos, Anzeigen-Varianten, Texte, Reporting – und selbst zwei Marken betreiben, an denen wir jede Methode zuerst testen. Die Zeit, die wir dadurch sparen, steckt in Strategie und Optimierung. Du merkst es an einem: bessere Zahlen, schneller.</div></details>
+      <details class="faqit"><summary>Wann sehe ich Ergebnisse?</summary><div class="ans">Erste Daten siehst du schon nach wenigen Tagen, belastbare Ergebnisse meist nach 30–90 Tagen. Im Erstgespräch sagen wir dir ehrlich, was in deinem Fall realistisch ist – ohne Pauschalversprechen.</div></details>
+      <details class="faqit"><summary>Macht ihr auch Amazon PPC?</summary><div class="ans">Ja – Amazon Ads sind eine unserer Kernkompetenzen. Wir haben unsere eigene Amazon-Marke mit datengetriebener PPC-Steuerung auf über 1,6 Mio. € skaliert und setzen genau dieses Wissen für dich ein.</div></details>
+      <details class="faqit"><summary>Für wen lohnt sich AIclicks?</summary><div class="ans">Für Mittelstand, Handwerk, Dienstleister und Onlineshops ab etwa 1.000 € Marketing-Budget im Monat, die planbar mehr Kunden wollen. Wenn du vor allem den günstigsten Anbieter suchst, sind wir wahrscheinlich nicht die richtige Wahl – und sagen dir das auch ehrlich.</div></details>
+      <details class="faqit"><summary>Was kostet eine Website bei euch?</summary><div class="ans">Eine komplette Website für Handwerk und Dienstleister kostet 1.990 € Festpreis und ist in 5 Werktagen online – inklusive Texten, Kontaktformular, Tracking, SEO-Grundlagen, Google-Unternehmensprofil und Rechtstexten. Größere Seiten oder Shops kalkulieren wir vorab zum Festpreis.</div></details>
+      <details class="faqit"><summary>Welche Abläufe könnt ihr automatisieren?</summary><div class="ans">Typische Beispiele: Anfragen automatisch beantworten und qualifizieren (Website, WhatsApp, Telefon), Angebote aus Vorlagen erstellen, Follow-ups und Bewertungsanfragen versenden, Belege und Rechnungen sortieren, Berichte automatisch zusammenstellen – und kleine individuelle Tools wie Preisrechner oder interne Übersichten. Im kostenlosen Prozess-Check schauen wir, was bei dir am meisten Zeit spart.</div></details>
+      <details class="faqit"><summary>Wo sitzt AIclicks und für welche Regionen arbeitet ihr?</summary><div class="ans">AIclicks sitzt in Friedrichshafen am Bodensee (Baden-Württemberg). Kunden aus Friedrichshafen, Ravensburg, Konstanz, Lindau und dem Bodenseekreis betreuen wir auch vor Ort; deutschlandweit sowie in Österreich und der Schweiz arbeiten wir remote per Video-Call – Ergebnisse sind nicht ortsgebunden.</div></details>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="kontakt">
+<section id="kontakt" class="soft">
   <div class="wrap">
-    <div class="panel">
-      <div class="section-head">
-        <div class="eyebrow" data-i18n="ct_eye">Kostenlos · Ohne Verkaufsdruck</div>
-        <h2 data-i18n="ct_h">Lass uns einfach mal reden.</h2>
-        <p data-i18n="ct_p">In 20 Minuten schauen wir gemeinsam auf deine Situation, und du erfährst, wo bei dir das größte Potenzial liegt. Kostenlos, unverbindlich – und du entscheidest danach in Ruhe, ob wir zusammenarbeiten.</p>
-      </div>
-      <div class="contact-grid">
-        <form class="card" id="leadform" onsubmit="return sendLead(event)" action="https://formsubmit.co/marc@aiclicks.de" method="POST">
-          <input type="hidden" name="_subject" value="Neue Wachstumsanalyse-Anfrage über aiclicks.de">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <div class="field"><label for="ff-name" data-i18n="f_name">Name *</label><input id="ff-name" required name="name" autocomplete="name"></div>
-          <div class="field"><label for="ff-email" data-i18n="f_mail">E-Mail *</label><input id="ff-email" required type="email" name="email" autocomplete="email"></div>
-          <div class="field"><label for="ff-phone" data-i18n="f_phone">Telefon (für einen kurzen Rückruf)</label><input id="ff-phone" name="phone" type="tel" autocomplete="tel"></div>
-          <div class="field"><label for="ff-topic" data-i18n="f_topic">Worum geht es? *</label>
-            <select id="ff-topic" required name="topic">
-              <option value="" data-i18n="f_t0">Bitte wählen…</option>
-              <option data-i18n="f_t1">Mehr Umsatz im Onlineshop (Amazon / Shopify)</option>
-              <option data-i18n="f_t2">Mehr Anfragen (Google / Meta Ads)</option>
-              <option data-i18n="f_t6">Website in 5 Tagen</option>
-              <option data-i18n="f_t7">Automatisierung / individuelle Lösung</option>
-              <option data-i18n="f_t3">Werbevideos &amp; Anzeigen</option>
-              <option data-i18n="f_t5">Noch nicht sicher</option>
-            </select>
-          </div>
-          <div class="field"><label for="ff-msg" data-i18n="f_msg">Was beschäftigt dich gerade am meisten?</label><textarea id="ff-msg" name="msg" rows="3"></textarea></div>
-          <label class="consent"><input type="checkbox" required aria-label="Datenschutz-Einwilligung"><span data-i18n="f_consent">Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
-          <button class="btn" type="submit" style="width:100%" id="ff-submit" data-i18n="f_submit">Kostenlose Analyse anfordern</button>
-          <div id="ff-ok" class="ff-ok" hidden><b data-i18n="f_ok_h">Danke – ist angekommen!</b><span data-i18n="f_ok_p">Marc meldet sich innerhalb von 24 Stunden persönlich bei dir. Wenn es schneller gehen soll: einfach anrufen oder WhatsApp schreiben.</span></div>
-          <p style="font-size:12.5px;margin-top:12px;text-align:center" data-i18n="f_fine">Kostenlos &amp; unverbindlich · Antwort innerhalb von 24 Stunden · Kein Verkaufsgespräch, ein Plan</p>
-        </form>
-        <div class="ci">
-          <div class="next"><b data-i18n="nx_h">So geht es nach deiner Anfrage weiter</b><ol><li data-i18n="nx_1">Marc meldet sich innerhalb von 24 Stunden bei dir.</li><li data-i18n="nx_2">Kurzes Gespräch (20 Min): deine Ziele, deine Zahlen, dein Markt.</li><li data-i18n="nx_3">Du bekommst einen konkreten Plan – und entscheidest in Ruhe.</li></ol></div>
-          <a class="crow" href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener"><span class="em">📅</span><span><span class="t" data-i18n="ci1_t">Direkt Termin buchen</span><br><span class="s" data-i18n="ci1_s">20 Min · Zoom oder Telefon · kostenlos</span></span></a>
-          <a class="crow" href="tel:+4915129810072"><span class="em">📞</span><span><span class="t">+49 151 29810072</span><br><span class="s" data-i18n="ci2_s">Direkt mit Marc – kein Callcenter</span></span></a>
-          <a class="crow" href="mailto:marc@aiclicks.de"><span class="em">✉️</span><span><span class="t">marc@aiclicks.de</span><br><span class="s" data-i18n="ci3_s">Antwort innerhalb von 24 Stunden</span></span></a>
-          <a class="crow" href="https://wa.me/4915129810072" target="_blank" rel="noopener"><span class="em">💬</span><span><span class="t">WhatsApp</span><br><span class="s" data-i18n="ci4_s">Schnell &amp; unkompliziert schreiben</span></span></a>
-          <p style="font-size:13.5px;margin-top:4px" data-i18n="ci_note">Du sprichst immer direkt mit mir – kein Vertrieb, kein Bot, keine Warteschleife.</p>
+    <div class="section-head">
+      <span class="eyebrow">Kostenlos · Ohne Verkaufsdruck</span>
+      <h2>Lass uns einfach mal reden.</h2>
+      <p>In 20 Minuten schauen wir gemeinsam auf deine Situation, und du erfährst, wo bei dir das größte Potenzial liegt. Kostenlos, unverbindlich – und du entscheidest danach in Ruhe.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="lead-form" id="leadform" onsubmit="return sendLead(event)" action="https://formsubmit.co/marc@aiclicks.de" method="POST">
+        <input type="hidden" name="_subject" value="Neue Anfrage über aiclicks.de">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field"><label for="ff-name">Name *</label><input id="ff-name" required name="name" autocomplete="name"></div>
+        <div class="field"><label for="ff-email">E-Mail *</label><input id="ff-email" required type="email" name="email" autocomplete="email"></div>
+        <div class="field"><label for="ff-phone">Telefon (für einen kurzen Rückruf)</label><input id="ff-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="ff-topic">Worum geht es? *</label>
+          <select id="ff-topic" required name="topic">
+            <option value="">Bitte wählen…</option>
+            <option>Mehr Umsatz im Onlineshop (Amazon / Shopify)</option>
+            <option>Mehr Anfragen (Google / Meta Ads)</option>
+            <option>Website in 5 Tagen</option>
+            <option>Automatisierung / individuelle Lösung</option>
+            <option>Werbevideos &amp; Anzeigen</option>
+            <option>Noch nicht sicher</option>
+          </select>
         </div>
+        <div class="field"><label for="ff-msg">Was beschäftigt dich gerade am meisten?</label><textarea id="ff-msg" name="msg" rows="3"></textarea></div>
+        <label class="consent"><input type="checkbox" required aria-label="Datenschutz-Einwilligung"><span>Ich habe die <a href="/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
+        <button class="btn lg" type="submit" id="ff-submit">Kostenloses Erstgespräch anfordern</button>
+        <div id="ff-ok" class="ff-ok" hidden><b>Danke – ist angekommen!</b><span>Marc meldet sich innerhalb von 24 Stunden persönlich bei dir. Wenn es schneller gehen soll: einfach anrufen oder WhatsApp schreiben.</span></div>
+        <p class="fine" style="text-align:center">Kostenlos &amp; unverbindlich · Antwort innerhalb von 24 Stunden · Kein Verkaufsgespräch, ein Plan</p>
+      </form>
+      <div class="ci">
+        <div class="next"><b>So geht es nach deiner Anfrage weiter</b><ol><li>Marc meldet sich innerhalb von 24 Stunden bei dir.</li><li>Kurzes Gespräch (20 Min): deine Ziele, deine Zahlen, dein Markt.</li><li>Du bekommst einen konkreten Plan – und entscheidest in Ruhe.</li></ol></div>
+        <a class="crow" href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener"><span class="em">📅</span><span><span class="t">Direkt Termin buchen</span><span class="s">20 Min · Video-Call oder Telefon · kostenlos</span></span></a>
+        <a class="crow" href="tel:+4915129810072"><span class="em">📞</span><span><span class="t">+49 151 29810072</span><span class="s">Direkt mit Marc – kein Callcenter</span></span></a>
+        <a class="crow" href="https://wa.me/4915129810072" target="_blank" rel="noopener"><span class="em">💬</span><span><span class="t">WhatsApp</span><span class="s">Schnell &amp; unkompliziert schreiben</span></span></a>
+        <a class="crow" href="mailto:marc@aiclicks.de"><span class="em">✉️</span><span><span class="t">marc@aiclicks.de</span><span class="s">Antwort innerhalb von 24 Stunden</span></span></a>
       </div>
     </div>
   </div>
@@ -901,45 +410,38 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 
 <!-- MOBILE STICKY CTA -->
 <div class="mcta" aria-label="Schnellkontakt">
-  <a href="tel:+4915129810072">📞 <span data-i18n="mc_call">Anrufen</span></a>
-  <a href="https://wa.me/4915129810072" target="_blank" rel="noopener">💬 WhatsApp</a>
-  <a href="#kontakt" class="primary" data-i18n="mc_cta">Kostenlose Analyse</a>
+  <a href="tel:+4915129810072">Anrufen</a>
+  <a href="https://wa.me/4915129810072" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="#kontakt" class="primary">Kostenloses Erstgespräch</a>
 </div>
 
 <!-- COOKIE BANNER -->
 <div id="cookiebar" role="dialog" aria-label="Cookie-Einwilligung">
-  <p><b>🍪 Cookies:</b> <span data-i18n="cb_txt">Wir nutzen Google Ads und Meta Pixel, um zu messen, welche Werbung funktioniert – erst nach deiner Zustimmung. Details in der</span> <a href="/datenschutz.html" data-i18n="cb_ds">Datenschutzerklärung</a>.</p>
-  <div class="cb-row">
-    <button class="cb-all" id="cbAll" data-i18n="cb_all">Alle akzeptieren</button>
-    <button id="cbNec" data-i18n="cb_nec">Nur notwendige</button>
-  </div>
+  <p><b>Cookies:</b> Wir nutzen Google Ads und Meta Pixel, um zu messen, welche Werbung funktioniert – erst nach deiner Zustimmung. Details in der <a href="/datenschutz.html">Datenschutzerklärung</a>.</p>
+  <div class="cb-btns"><button class="btn" id="cbAll">Alle akzeptieren</button><button class="btn secondary" id="cbNec">Nur notwendige</button></div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="#top" style="margin-bottom:12px"><img src="/logo.svg" alt="AIclicks" style="width:26px;height:26px"><span>AI<b style="color:var(--accent)">clicks</b></span></a>
-        <p style="font-size:14px" data-i18n="foot_tag">Performance-Marketing-Agentur<br>Friedrichshafen am Bodensee · <a href="tel:+4915129810072">+49 151 29810072</a></p>
+        <a class="brand" href="/"><img src="/icon.svg" alt="" width="28" height="28"><span>AI<b>clicks</b></span></a>
+        <p style="margin-top:12px">Agentur für Performance-Marketing, Websites und Automatisierung aus Friedrichshafen am Bodensee. Für Onlineshops, Handwerk und Dienstleister in Deutschland, Österreich und der Schweiz.</p>
       </div>
       <div>
-        <h3 data-i18n="foot_s">Leistungen</h3>
-        <a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/website-in-5-tagen.html">Website in 5 Tagen</a><a href="/automatisierung.html">Automatisierung</a><a href="/ki-werbevideos.html" data-i18n="foot_aivid">Werbevideos &amp; Anzeigen</a>
+        <h3>Leistungen</h3>
+        <a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/website-in-5-tagen.html">Website in 5 Tagen</a><a href="/automatisierung.html">Automatisierung</a><a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a>
       </div>
       <div>
-        <h3 data-i18n="foot_co">Unternehmen</h3>
-        <a href="#ergebnisse" data-i18n="foot_res">Ergebnisse</a><a href="#ueber" data-i18n="foot_about">Über uns</a><a href="#preise" data-i18n="foot_price">Preise</a><a href="/roi-rechner.html" data-i18n="foot_roi">Wachstums-Rechner</a><a href="#kontakt" data-i18n="foot_contact">Kontakt</a>
+        <h3>Kontakt</h3>
+        <a href="tel:+4915129810072">+49 151 29810072</a><a href="mailto:marc@aiclicks.de">marc@aiclicks.de</a><a href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener">Termin buchen</a><a href="/roi-rechner.html">Wachstums-Rechner</a>
       </div>
       <div>
-        <h3 data-i18n="foot_legal">Rechtliches</h3>
-        <a href="/impressum.html" data-i18n="foot_imp">Impressum</a><a href="/datenschutz.html" data-i18n="foot_ds">Datenschutz</a>
+        <h3>Rechtliches</h3>
+        <a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span data-i18n="foot_copy">© 2026 AIclicks · Marc Nothelfer · Friedrichshafen · <span title="Zuletzt aktualisiert">Stand: 01.10.2026</span></span>
-      <span data-i18n="foot_made">Made in Germany · Google Ads &amp; Meta Blueprint zertifiziert</span>
-    </div>
+    <div class="foot-bottom"><span>© 2026 AIclicks · Marc Nothelfer · Friedrichshafen · <span title="Zuletzt aktualisiert">Stand: 01.10.2026</span></span><span>Monatlich kündbar · Keine Setup-Gebühr · Deine Konten gehören dir</span></div>
   </div>
 </footer>
 
@@ -948,12 +450,17 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
 document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
 
+/* Reveal */
+(function(){
+  const els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('in'));return;}
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(e=>io.observe(e));
+})();
+
 /* ===== Consent + Tracking (Google Ads AW-304314047 · Meta Pixel 1385284170005589) ===== */
 const AW='AW-304314047', FB_ID='1385284170005589';
 const CONV={form:'oAlWCN_4ms4bEL_tjZEB',phone:'pbH2COX4ms4bEL_tjZEB',pdf:'X9LICOL4ms4bEL_tjZEB'};
-function hasMarketingConsent(){
-  try{const c=JSON.parse(localStorage.getItem('cookie-consent')||'null');return !!(c&&c.marketing);}catch(e){return false;}
-}
 function applyConsent(marketing){
   gtag('consent','update',{
     ad_storage:marketing?'granted':'denied',ad_user_data:marketing?'granted':'denied',
@@ -973,293 +480,30 @@ function saveConsent(marketing){
   document.getElementById('cbAll').addEventListener('click',()=>saveConsent(true));
   document.getElementById('cbNec').addEventListener('click',()=>saveConsent(false));
 })();
-function trackConversion(label,value){
-  gtag('event','conversion',{send_to:AW+'/'+label,value:value||100.0,currency:'EUR'});
-}
-function trackFB(ev,params){
-  if(window.fbq&&window.__fbqInit)fbq('track',ev,params||{});
-}
-/* Klick-Events: Telefon, WhatsApp, Calendly */
-document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{
-  trackConversion(CONV.phone,150);trackFB('Contact',{content_name:'Phone Click'});
-}));
-document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>{
-  trackFB('Contact',{content_name:'WhatsApp Click'});
-}));
-document.querySelectorAll('a[href*="calendly"]').forEach(a=>a.addEventListener('click',()=>{
-  trackConversion(CONV.form,100);trackFB('Contact',{content_name:'Calendly Click'});
-}));
+function trackConversion(label,value){gtag('event','conversion',{send_to:AW+'/'+label,value:value||100.0,currency:'EUR'});}
+function trackFB(ev,params){if(window.fbq&&window.__fbqInit)fbq('track',ev,params||{});}
+document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{trackConversion(CONV.phone,150);trackFB('Contact',{content_name:'Phone Click'});}));
+document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>{trackFB('Contact',{content_name:'WhatsApp Click'});}));
+document.querySelectorAll('a[href*="calendly"]').forEach(a=>a.addEventListener('click',()=>{trackConversion(CONV.form,100);trackFB('Contact',{content_name:'Calendly Click'});}));
 
-/* Lead form -> mailto fallback */
+/* Lead form: FormSubmit (AJAX), Fallback mailto */
 function sendLead(e){
   e.preventDefault();
   const f=e.target, g=n=>(f.querySelector('[name='+n+']')||{}).value||'';
   const btn=document.getElementById('ff-submit'); btn.disabled=true; btn.textContent='Wird gesendet…';
   trackConversion(CONV.form,100);
-  trackFB('Lead',{content_name:'Wachstumsanalyse',value:100,currency:'EUR'});
-  const data=new FormData(f);
-  fetch('https://formsubmit.co/ajax/marc@aiclicks.de',{method:'POST',headers:{'Accept':'application/json'},body:data})
+  trackFB('Lead',{content_name:'Erstgespräch',value:100,currency:'EUR'});
+  fetch('https://formsubmit.co/ajax/marc@aiclicks.de',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
     .then(r=>r.json()).then(j=>{
-      if(j&&(j.success==='true'||j.success===true)){f.querySelectorAll('.field,.consent,#ff-submit').forEach(el=>el.hidden=true);document.getElementById('ff-ok').hidden=false;}
+      if(j&&(j.success==='true'||j.success===true)){f.querySelectorAll('.field,.consent,#ff-submit,.fine').forEach(el=>el.hidden=true);document.getElementById('ff-ok').hidden=false;}
       else throw new Error('send failed');
     }).catch(()=>{
-      btn.disabled=false; btn.textContent='Kostenlose Analyse anfordern';
+      btn.disabled=false; btn.textContent='Kostenloses Erstgespräch anfordern';
       const body=encodeURIComponent('Name: '+g('name')+'\nE-Mail: '+g('email')+'\nTelefon: '+g('phone')+'\nThema: '+g('topic')+'\n\nNachricht:\n'+g('msg'));
-      window.location.href='mailto:marc@aiclicks.de?subject='+encodeURIComponent('Wachstumsanalyse-Anfrage – '+g('name'))+'&body='+body;
+      window.location.href='mailto:marc@aiclicks.de?subject='+encodeURIComponent('Anfrage über aiclicks.de – '+g('name'))+'&body='+body;
     });
   return false;
 }
-
-/* i18n DE/EN */
-const I18N={en:{
-  nav_services:"Services",nav_results:"Results",nav_pricing:"Pricing",nav_about:"About",mid1_h:"Curious what's possible for you?",mid1_p:"20 minutes, free, no sales pressure.",mid1_c:"Request analysis",mid2_h:"Not sure what you need?",mid2_p:"No problem – we'll figure it out together in a quick call.",mid2_c:"Let's talk",f_ok_h:"Thanks – received!",f_ok_p:"Marc will get back to you personally within 24 hours. Need it faster? Just call or WhatsApp.",nx_h:"What happens after you send this",nx_1:"Marc gets back to you within 24 hours.",nx_2:"A short 20-minute call: your goals, your numbers, your market.",nx_3:"You get a concrete plan – and decide at your own pace.",mc_call:"Call",mc_cta:"Free analysis",o1_badge:"For online shops &amp; Amazon sellers",o1_h:"More revenue in your online shop",o1_p:"Amazon advertising with automation, listings, ad videos, shop conversion and email flows – from someone who took his own brand to €1.6M.",o1_1:"Amazon PPC, Sponsored Brands &amp; Display",o1_2:"Listings, images &amp; ad videos",o1_3:"Shopify conversion &amp; Klaviyo flows",o1_4:"Google Shopping &amp; Meta Ads",o1_more:"More on Amazon &amp; shop →",o2_badge:"For trades &amp; service businesses",o2_h:"More enquiries for your business",o2_p:"Google Ads for people already searching for you, Meta Ads for people who don't know you yet – and a website that actually captures the enquiry.",o2_1:"Google Ads &amp; Meta Ads",o2_2:"Website in 5 days at a fixed price",o2_3:"Landing pages &amp; call tracking",o2_4:"Google Business Profile",o2_more:"More on enquiries →",o3_badge:"For any business with time-wasters",o3_h:"Workflows that run themselves",o3_p:"Quotes in minutes instead of hours, enquiries answered around the clock, receipts that sort themselves – and small tools built exactly for your process.",o3_1:"Answer &amp; qualify enquiries automatically",o3_2:"Quotes, follow-ups, review requests",o3_3:"Office automation (mail, receipts, reports)",o3_4:"Custom tools &amp; calculators",o3_more:"More on automation →",svc_also:"Also bookable on their own: <a href=\"/google-ads-agentur-bodensee.html\">Google Ads</a> · <a href=\"/meta-ads-agentur.html\">Meta Ads</a> · <a href=\"/amazon-ppc-agentur.html\">Amazon PPC</a> · <a href=\"/ki-werbevideos.html\">Ad videos &amp; creatives</a> · <a href=\"/website-in-5-tagen.html\">Website in 5 days</a> · <a href=\"/automatisierung.html\">Automation</a>",pk1_4:"Weekly reporting",pk1_cta:"Request free shop audit",pk_fix:"fixed price",pk3_cta:"See details",faq8_q:"What does a website cost with you?",faq8_a:"A complete website for trades and service businesses costs €1,990 fixed and is live within 5 working days – including copy, contact form, tracking, SEO basics, Google Business Profile and legal pages. Larger sites or shops are quoted upfront at a fixed price.",faq9_q:"Which workflows can you automate?",faq9_a:"Typical examples: answering and qualifying enquiries automatically (website, WhatsApp, phone), creating quotes from templates, sending follow-ups and review requests, sorting receipts and invoices, compiling reports automatically – plus small custom tools like price calculators or internal overviews. In the free process check we find out what saves you the most time.",f_t7:"Automation / custom solution",nav_cta:"Free call",
-  hero_eyebrow:"Performance Marketing Agency · Friedrichshafen, Lake Constance",
-  hero_h1:"More customers for your business.<br>No guesswork.",
-  hero_lead:"We bring your online shop more revenue, your business more enquiries – and take over the workflows that cost you time every day. Tested with our own money: over €1.9M in revenue with our own brands.",
-  hero_cta1:"Get my free growth analysis",hero_cta2:"How we work →",
-  hero_b1:"own Amazon revenue",hero_b2:"conversion in our own shop",hero_b3:"Google Ads &amp; Meta Blueprint certified",
-  proof1:"Amazon revenue (own brand)",proof2:"Shopify revenue (own shop)",proof3:"products sold",proof4a:"markets",proof4:"scaled internationally",
-  prob_h:"Marketing often feels like a gamble.<br>It doesn't have to.",
-  prob_p:"Sound familiar? You ran ads, maybe hired an agency, and got a report full of numbers – but still couldn't tell what it actually achieved. That's not on you. Usually three things are missing:",
-  prob1_h:"A clear goal",prob1_p:"Not clicks or reach, but one question: what does a new enquiry cost you – and is it worth it?",
-  prob2_h:"Speed",prob2_p:"If you only try something new every few weeks, you learn too slowly. We test every week.",
-  prob3_h:"Someone who has done it themselves",prob3_p:"There's plenty of marketing theory. We've made real money with our own brands – and know what works.",
-  mech_eye:"How we work",mech_h:"We take care of everything –<br>you see every week what it delivers.",
-  mech_p:"We take it all off your plate: strategy, ads, creatives, website, tracking, automation. With modern tools we produce faster and cheaper than classic agencies – but decisions are made by people who know what it feels like to spend their own ad budget. And it's not theory: this is exactly how we built our own brands.",
-  cmp_c1:"How it usually goes",cmp_1a:"A new ad video takes weeks",cmp_1b:"New creatives within days",cmp_2a:"Billed by the hour",cmp_2b:"Focused on your results",cmp_3a:"Decisions by gut feeling",cmp_3b:"Data, AI and first-hand experience",cmp_4a:"Lots of separate tactics",cmp_4b:"Everything works together",cmp_5a:"A report full of numbers",cmp_5b:"One number you understand: what a customer costs you",
-  res_eye:"What we've achieved ourselves",res_h:"We don't tell you how marketing works.<br>We've done it ourselves.",
-  res1_badge:"Own brand · Amazon",res1_h:"Over €1.6M revenue with our own Amazon brand",res1_p:"With AI-driven production of tens of thousands of designs and data-driven Amazon PPC, we scaled our own brand across 8 international marketplaces: <b style='color:var(--text)'>€1,616,822 revenue</b>, over €326,000 profit, 69,425 units sold.",
-  res2_badge:"Own brand · Shopify",res2_h:"9.7% conversion – where 2–3% is normal",res2_p:"Our own shop for personalised products: <b style='color:var(--text)'>€286,042 revenue</b>, 8,056 orders, conversion rates in peak months at 3–4× the industry average – at just a €28 basket.",
-  res_note:"Both are our own brands – built with our own money and our own risk. That's exactly the know-how we bring to you.",
-  res_cap:"Illustrative performance dashboard – how we keep an eye on your numbers at all times.",
-  proc_h:"How we get started together – in three relaxed steps.",
-  proc1_t:"Analysis",proc1_h:"We take a look together.",proc1_p:"In a free 20-minute call we look at your situation, your numbers and your goals. You get a concrete plan – even if you implement it without us.",
-  proc2_t:"Build",proc2_h:"We build it for you.",proc2_p:"Ads, AI creatives, clean tracking and the right automations. Live within days – not months.",
-  proc3_t:"Growth",proc3_h:"We scale what works.",proc3_p:"We test continuously, fine-tune the right levers and give more budget to what brings enquiries. Every week you know where you stand.",
-  svc_h:"Three ways we help you.",svc_p:"Pick what brings the most right now – or combine. Everything from one source, everything cancellable monthly.",
-  aud_h:"Who we're here for.",
-  aud1_h:"Online shops &amp; Amazon sellers",aud1_p:"Profitable growth instead of just revenue – on Shopify, your own shop and Amazon, in Germany and Europe.",
-  aud2_h:"Trades &amp; service businesses",aud2_p:"Full order books with enquiries from your region. You do your job, we fill the calendar.",
-  aud3_h:"Businesses short on time",aud3_p:"When quotes, enquiries, receipts and reports eat hours every day – we build the workflows that handle it for you.",
-  
-  pr_h:"Fair prices. No surprises.",pr_p:"You know the cost upfront. No setup fee, no minimum term, cancel monthly. Your ad budget goes straight to Google, Meta or Amazon – not to us.",
-  pk1_h:"More revenue in your online shop",pk1_1:"Amazon PPC or shop ads",pk1_2:"Listings, images &amp; videos",pk1_3:"Email flows &amp; conversion",
-  pk2_h:"More enquiries for your business",pk_mo:"/month",pk2_1:"Google Ads and/or Meta Ads",pk2_2:"Landing page &amp; call tracking",pk2_3:"Ongoing optimisation",pk2_4:"Weekly reporting",
-  pk_feat:"★ Recommended",pk3_h:"Website in 5 days",pk3_1:"Design, copy &amp; tech",pk3_2:"Contact form, tracking, SEO basics",pk3_3:"Google Business Profile",pk3_4:"Legal pages",
-  pk_cta:"Ask without obligation",pk4_h:"Automation &amp; custom solutions",pk4_1:"Free process check",pk4_2:"Fixed-price quote upfront",pk4_3:"Small automations from €490",pk4_4:"Tools &amp; projects from €1,990",pk4_cta:"Request process check",
-  pr_note:"Ad videos &amp; creatives are also available as a package from €690. For perspective: a single new job in the trades is often worth €3,000–10,000 – from the first additional customer it has paid for itself.",
-  guar_h:"You take no risk.",guar_p:"We want you to stay because it pays off – not because a contract holds you.",
-  g1_h:"No minimum term.",g1_p:"Cancellable monthly. You stay because it pays off.",g2_h:"Full transparency.",g2_p:"You see every week what we do and what it achieves. No setup fee.",g3_h:"Your accounts & data are yours.",g3_p:"Always – even if you leave.",
-  fnd_eye:"Who's behind it",fnd_role:"Founder of AIclicks",fnd_h:"Hi, I'm Marc.<br>Glad you're here.",
-  fnd_p1:"I founded AIclicks because I saw how many businesses pay for marketing without knowing what it brings them. Before doing marketing for others, I did it for myself – with my own money and my own risk: grew an Amazon brand to over €1.6M in revenue and built a shop with up to 9.7% conversion.",
-  fnd_p2:"So I know what every ad euro feels like – and that's how I treat your budget: as if it were mine. And yes, you always talk directly to me. <b style=\"color:var(--text)\">— Marc</b>",
-  faq_h:"Questions we get asked a lot.",
-  faq1_q:"What does AIclicks cost?",faq1_a:"\"More revenue in your online shop\" and \"More enquiries for your business\" each from €1,490 per month, the website in 5 days €1,990 fixed, automations from €490 fixed, ad videos &amp; creatives from €690 per package. Your ad budget goes straight to Google, Meta or Amazon. No setup fee, no hidden costs.",
-  faq2_q:"Do I have to commit long-term?",faq2_a:"No. Cancellable monthly. We keep you with results, not contracts.",
-  faq4_q:"When will I see results?",faq4_a:"First data in days, solid results usually in 30–90 days. In the analysis we tell you honestly what's realistic in your case – no blanket promises.",
-  faq5_q:"Do you also do Amazon PPC?",faq5_a:"Yes – Amazon Ads are one of our core competencies. We scaled our own Amazon brand past €1.6M with data-driven PPC and put exactly that knowledge to work for you.",
-  faq3_q:"How can you be faster and cheaper than other agencies?",faq3_a:"Because we consistently automate production and routine – ad videos, ad variants, copy, reporting – and run two brands of our own where we test every method first. The time we save goes into strategy and optimisation. You notice one thing: better numbers, faster.",faq7_q:"Where is AIclicks based and which regions do you serve?",faq7_a:"AIclicks is based in Friedrichshafen on Lake Constance (Germany). We serve clients in Friedrichshafen, Ravensburg, Konstanz, Lindau and the Bodenseekreis on site, and work remotely via video call across Germany, Austria and Switzerland.",faq6_q:"Who is AIclicks worth it for?",faq6_a:"For SMEs, trades, service providers and e-commerce with at least ~€1,000 monthly marketing budget who want predictably more customers. Not the right partner if you're looking for the cheapest provider.",
-  ct_eye:"Free · No sales pressure",ct_h:"Let's just talk.",ct_p:"In 20 minutes we look at your situation together and you'll learn where your biggest potential lies. Free, no obligation – and afterwards you decide in peace whether we work together.",
-  f_name:"Name *",f_mail:"Email *",f_phone:"Phone (for a quick call back)",f_topic:"What's it about? *",f_t0:"Please choose…",f_t1:"More revenue in my online shop (Amazon / Shopify)",f_t2:"More enquiries (Google / Meta Ads)",f_t3:"Ad videos &amp; creatives",f_t6:"Website in 5 days",f_t5:"Not sure yet",
-  f_msg:"What's on your mind right now?",f_consent:"I have read the privacy policy and consent to the processing of my data to handle my request.",f_submit:"Request free analysis",f_fine:"Free & non-binding · Reply within 24 hours · Not a sales call, a roadmap",
-  cb_txt:"We use Google Ads and Meta Pixel to measure which advertising works – only after your consent. Details in the",cb_ds:"privacy policy",cb_all:"Accept all",cb_nec:"Necessary only",
-  ci1_t:"Book an appointment directly",ci1_s:"20 min · Zoom or phone · free",ci2_s:"Directly with Marc – no call centre",ci3_s:"Reply within 24 hours",ci4_s:"Message quickly & easily",ci_note:"You always talk directly to me – no sales team, no bot, no hold music.",
-  foot_tag:"Marketing that adds up.<br>Friedrichshafen, Lake Constance.",foot_s:"Services",foot_aivid:"Ad videos &amp; creatives",foot_co:"Company",foot_res:"Results",foot_about:"About",foot_price:"Pricing",foot_roi:"Growth Calculator",foot_contact:"Contact",foot_legal:"Legal",foot_imp:"Imprint",foot_ds:"Privacy",foot_copy:"© 2026 AIclicks · Marc Nothelfer",foot_made:"Made in Germany · Google Ads & Meta Blueprint certified"
-}};
-const DE={};
-document.querySelectorAll('[data-i18n]').forEach(el=>DE[el.getAttribute('data-i18n')]=el.innerHTML);
-function setLang(l){
-  const dict=l==='en'?I18N.en:DE;
-  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(dict[k]!=null)el.innerHTML=dict[k];});
-  document.documentElement.lang=l;
-  document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
-  try{localStorage.setItem('aic_lang',l)}catch(e){}
-}
-document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
-(function(){let l='de';try{l=localStorage.getItem('aic_lang')||'de'}catch(e){}if(l==='en')setLang('en');})();
-
-/* ===== Scroll reveal (Panels + gestaffelte Cards/Stats/Tabellenzeilen) ===== */
-const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-if(!reduce){
-  document.querySelectorAll('.panel, .faq').forEach(el=>el.classList.add('reveal'));
-  document.querySelectorAll('.grid3,.grid4c,.grid2,.price-grid,.proof .grid4').forEach(grid=>{
-    [...grid.children].forEach((c,i)=>{c.classList.add('reveal-s');c.style.setProperty('--d',(i*90)+'ms');});
-  });
-  document.querySelectorAll('.vs-item').forEach((r,i)=>{r.classList.add('reveal-o');r.style.setProperty('--d',((i%5)*70)+'ms');});
-  const io=new IntersectionObserver((ents)=>{
-    ents.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
-  },{threshold:0.12, rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.reveal,.reveal-s,.reveal-o').forEach(el=>io.observe(el));
-}
-
-/* ===== Count-up für Proof-Zahlen ===== */
-(function(){
-  const els=[...document.querySelectorAll('.cnt')];
-  if(!els.length) return;
-  const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
-  const final=el=>fmt(parseFloat(el.dataset.target),+(el.dataset.decimals||0))+(el.dataset.suffix||'');
-  if(reduce){els.forEach(el=>el.textContent=final(el));return;}
-  const io2=new IntersectionObserver(ents=>{
-    ents.forEach(e=>{
-      if(!e.isIntersecting) return;
-      io2.unobserve(e.target);
-      const el=e.target,t=parseFloat(el.dataset.target),d=+(el.dataset.decimals||0),sfx=el.dataset.suffix||'';
-      const t0=performance.now(),dur=1600;
-      (function tick(now){
-        const p=Math.min((now-t0)/dur,1),ease=1-Math.pow(1-p,4);
-        el.textContent=fmt(t*ease,d)+sfx;
-        if(p<1)requestAnimationFrame(tick);else el.textContent=final(el);
-      })(t0);
-    });
-  },{threshold:0.6});
-  els.forEach(el=>io2.observe(el));
-})();
-
-/* ===== Smart-Header + Scroll-Progress ===== */
-(function(){
-  const hdr=document.querySelector('header'),sb=document.getElementById('scrollbar');
-  let lastY=0,tick2=false;
-  function upd(){
-    const y=window.pageYOffset,max=document.documentElement.scrollHeight-innerHeight;
-    if(sb)sb.style.width=(max>0?(y/max)*100:0)+'%';
-    if(!reduce&&hdr){
-      if(y>420&&y>lastY+4)hdr.classList.add('hid');
-      else if(y<lastY-4||y<=420)hdr.classList.remove('hid');
-    }
-    lastY=y;tick2=false;
-  }
-  window.addEventListener('scroll',()=>{if(!tick2){tick2=true;requestAnimationFrame(upd);}},{passive:true});
-  upd();
-})();
-
-</script>
-
-<!-- Premium-Animationen: GSAP ScrollTrigger + Lenis (self-hosted) -->
-<script src="/gsap.min.js" defer></script>
-<script src="/ScrollTrigger.min.js" defer></script>
-<script src="/lenis.min.js" defer></script>
-<script>
-window.addEventListener('DOMContentLoaded',function(){
-  if(!window.gsap||!window.ScrollTrigger) return;
-  gsap.registerPlugin(ScrollTrigger);
-  const fine=matchMedia('(pointer:fine)').matches, wide=innerWidth>900;
-
-  /* ===== Lenis Smooth Scroll ===== */
-  if(!reduce&&fine&&wide&&window.Lenis){
-    const lenis=new Lenis({lerp:.1,wheelMultiplier:1});
-    window.__lenis=lenis;
-    function raf(t){lenis.raf(t);requestAnimationFrame(raf);}
-    requestAnimationFrame(raf);
-    lenis.on('scroll',ScrollTrigger.update);
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click',e=>{
-        const id=a.getAttribute('href');
-        if(id.length>1&&document.querySelector(id)){e.preventDefault();lenis.scrollTo(id,{offset:-84,duration:1.1});}
-      });
-    });
-  }
-  if(reduce) return; // ab hier nur Motion
-
-  /* ===== Kinetic Typography: Hero-H1 Wort für Wort ===== */
-  function splitHero(){
-    const h1=document.querySelector('.hero h1');
-    if(!h1||h1.querySelector('.kw')) return;
-    const nodes=[...h1.childNodes];h1.textContent='';
-    nodes.forEach(n=>{
-      if(n.nodeType===3){
-        n.textContent.split(/\s+/).filter(Boolean).forEach(w=>{
-          const o=document.createElement('span');o.className='kw';
-          const i=document.createElement('span');i.className='kwi';i.textContent=w;
-          o.appendChild(i);h1.appendChild(o);h1.appendChild(document.createTextNode(' '));
-        });
-      } else h1.appendChild(n);
-    });
-    gsap.fromTo('.hero h1 .kwi',{yPercent:115},{yPercent:0,duration:1,stagger:.07,ease:'power4.out',delay:.15});
-  }
-  splitHero();
-  document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setTimeout(splitHero,60)));
-
-  /* ===== Parallax-Layer (scrub) ===== */
-  gsap.to('#heroBg',{yPercent:22,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
-  gsap.to('.hero-glow',{yPercent:10,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
-
-  /* ===== Bild-Drift in Rahmen (scrub) ===== */
-  document.querySelectorAll('.pimg img,.svc-img img,.figimg img').forEach(img=>{
-    gsap.fromTo(img,{yPercent:-6,scale:1.12},{yPercent:6,scale:1.12,ease:'none',
-      scrollTrigger:{trigger:img,start:'top bottom',end:'bottom top',scrub:true}});
-  });
-
-  /* ===== Mask-Reveal für Sektions-Headlines ===== */
-  document.querySelectorAll('.panel h2, section > .wrap > .section-head h2').forEach(h=>{
-    gsap.fromTo(h,{clipPath:'inset(0 0 100% 0)',y:26},{clipPath:'inset(0 0 -8% 0)',y:0,duration:.9,ease:'power3.out',
-      scrollTrigger:{trigger:h,start:'top 82%',once:true}});
-  });
-
-  /* ===== Pinned Section: Vergleichstabelle (Desktop) ===== */
-  if(wide){
-    const mp=document.getElementById('mechPanel');
-    // Pin-Panel aus dem CSS-Reveal-System nehmen (Transform-Transition kollidiert mit Pin)
-    mp.classList.remove('reveal');mp.style.opacity='1';mp.style.transform='none';
-    const rows=gsap.utils.toArray('#mechPanel .vs-item');
-    rows.forEach(r=>{r.classList.remove('reveal-o');r.classList.add('in');r.style.removeProperty('--d');});
-    const tl=gsap.timeline({scrollTrigger:{trigger:'#mechPanel',start:'top 15%',end:'+=55%',scrub:true,pin:true,pinSpacing:true}});
-    tl.from('#mechPanel .vs-old .vs-item',{opacity:0,x:-28,stagger:.14,ease:'none'},0)
-      .from('#mechPanel .vs-new .vs-item',{opacity:0,x:28,stagger:.14,ease:'none'},.07)
-      .from('#mechPanel .vs-badge',{scale:0,opacity:0,ease:'none'},0);
-    ScrollTrigger.refresh();
-  }
-
-  /* ===== Magnetic Buttons ===== */
-  if(fine){
-    document.querySelectorAll('.hero-cta .btn, .nav-right .btn').forEach(btn=>{
-      const str=14;
-      btn.addEventListener('pointermove',e=>{
-        const r=btn.getBoundingClientRect();
-        const x=(e.clientX-r.left-r.width/2)/(r.width/2), y=(e.clientY-r.top-r.height/2)/(r.height/2);
-        gsap.to(btn,{x:x*str,y:y*str*.6,duration:.3,ease:'power2.out'});
-      });
-      btn.addEventListener('pointerleave',()=>gsap.to(btn,{x:0,y:0,duration:.5,ease:'elastic.out(1,.45)'}));
-    });
-  }
-
-  /* ===== 3D-Tilt Cards (Preise + Cases) ===== */
-  if(fine&&wide){
-    document.querySelectorAll('.price, .case').forEach(card=>{
-      card.addEventListener('pointermove',e=>{
-        const r=card.getBoundingClientRect();
-        const x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
-        gsap.to(card,{rotateY:x*7,rotateX:-y*7,transformPerspective:800,duration:.35,ease:'power2.out'});
-      });
-      card.addEventListener('pointerleave',()=>gsap.to(card,{rotateX:0,rotateY:0,duration:.6,ease:'power3.out'}));
-    });
-  }
-
-  /* ===== Subtile Hero-Partikel ===== */
-  if(innerWidth>=768){
-    const cv=document.getElementById('fx');
-    if(cv){
-      const ctx=cv.getContext('2d');let W,H,run=false;
-      function size(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;}
-      size();addEventListener('resize',size,{passive:true});
-      const P=[...Array(34)].map(()=>({x:Math.random()*1,y:Math.random()*1,s:Math.random()*1.8+.6,v:Math.random()*.00045+.0002,a:Math.random()*.35+.1,ph:Math.random()*6.28}));
-      function draw(t){
-        if(!run) return;
-        ctx.clearRect(0,0,W,H);
-        for(const p of P){
-          p.y-=p.v; if(p.y<-.02){p.y=1.02;p.x=Math.random();}
-          const tw=.5+.5*Math.sin(t*.001+p.ph);
-          ctx.beginPath();ctx.arc(p.x*W+Math.sin(t*.0004+p.ph)*8,p.y*H,p.s,0,6.28);
-          ctx.fillStyle='rgba(0,224,198,'+(p.a*tw).toFixed(3)+')';ctx.fill();
-        }
-        requestAnimationFrame(draw);
-      }
-      new IntersectionObserver(es=>{
-        const vis=es[0].isIntersecting;
-        if(vis&&!run){run=true;requestAnimationFrame(draw);}else if(!vis){run=false;}
-      },{threshold:0}).observe(cv);
-    }
-  }
-});
 </script>
 </body>
 </html>
