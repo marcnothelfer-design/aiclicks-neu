@@ -222,7 +222,7 @@ PAGES.append(dict(
   </ul>
 
   <h2>Google Ads für Onlineshops: Shopping &amp; Performance Max</h2>
-  <p>Für E-Commerce setzen wir auf Google Shopping und Performance Max mit sauberem Produktfeed, Margen-basierten ROAS-Zielen und Suchkampagnen für Marken- und Kategoriebegriffe. Wir betreiben selbst einen Shopify-Shop mit 286.000 € Umsatz und Conversion-Raten bis 9,7 % – wir wissen also, wie sich Werbe-Euro anfühlen, wenn es die eigenen sind.</p>
+  <p>Für E-Commerce setzen wir auf Google Shopping und Performance Max mit sauberem Produktfeed, Margen-basierten ROAS-Zielen und Suchkampagnen für Marken- und Kategoriebegriffe. Wir betreiben selbst einen Shopify-Shop mit 235.000 € Umsatz und Conversion-Raten bis 9,7 % – wir wissen also, wie sich Werbe-Euro anfühlen, wenn es die eigenen sind.</p>
 
   <h2>Was kostet eine Google Ads Agentur?</h2>
   <table class="tbl">
