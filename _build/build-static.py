@@ -103,7 +103,7 @@ CALC_CSS = '''<style>
 .calc{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
 .calc-form{display:grid;gap:18px}
 .calc-form .field label small{display:block;font-weight:400;color:var(--muted);font-size:13px;margin-top:2px}
-.result{position:sticky;top:104px;background:var(--dark);color:var(--on-dark);border-radius:var(--r-lg);padding:34px 36px}
+.result{position:sticky;top:104px;background:var(--dark);border:1px solid var(--line);color:var(--on-dark);border-radius:var(--r-lg);padding:34px 36px}
 .result .lab{font-size:13.5px;color:var(--on-dark-muted);margin-bottom:10px}
 .result .big{font-family:var(--display);font-size:clamp(34px,3.6vw,46px);font-weight:500;letter-spacing:-.02em;line-height:1.05;color:#fff;font-variant-numeric:tabular-nums lining-nums}
 .result .row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
