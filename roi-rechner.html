@@ -3,103 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AIclicks – Wachstums-Potenzial-Rechner</title>
+<title>Wachstums-Rechner: Was ist mit deinem Werbebudget realistisch? | AIclicks</title>
 <meta name="description" content="Kostenloser Wachstums-Rechner: Wie viele Anfragen oder Bestellungen sind mit deinem Werbebudget realistisch? Schätzung für Handwerk, Dienstleister und E-Commerce.">
+<meta name="author" content="Marc Nothelfer – AIclicks">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#fbfaf7">
 <link rel="canonical" href="https://aiclicks.de/roi-rechner.html">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<meta name="geo.region" content="DE-BW">
+<meta name="geo.placename" content="Friedrichshafen">
+<meta property="og:title" content="Wachstums-Rechner: Was ist mit deinem Werbebudget realistisch? | AIclicks">
+<meta property="og:description" content="Kostenloser Wachstums-Rechner: Wie viele Anfragen oder Bestellungen sind mit deinem Werbebudget realistisch? Schätzung für Handwerk, Dienstleister und E-Commerce.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aiclicks.de/roi-rechner.html">
+<meta property="og:site_name" content="AIclicks">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://aiclicks.de/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wachstums-Rechner: Was ist mit deinem Werbebudget realistisch? | AIclicks">
+<meta name="twitter:description" content="Kostenloser Wachstums-Rechner: Wie viele Anfragen oder Bestellungen sind mit deinem Werbebudget realistisch? Schätzung für Handwerk, Dienstleister und E-Commerce.">
+<meta name="twitter:image" content="https://aiclicks.de/og-image.jpg">
+<!-- Google Consent Mode v2 (Default: alles abgelehnt) + Google Ads Tag -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+gtag('js',new Date());gtag('config','AW-304314047');
+try{const c=JSON.parse(localStorage.getItem('cookie-consent')||'null');if(c&&c.marketing){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-304314047"></script>
 <style>
-  :root{
-    --bg:#ffffff;
-    --card:#f6f8fa;
-    --card2:#ffffff;
-    --text:#0b1220;
-    --muted:#5b6678;
-    --line:#e6e9ee;
-    --accent:#0e9488;
-    --accent2:#0a6f66;
-    --accent-ink:#ffffff;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg);color:var(--text);
-    display:flex;justify-content:center;padding:24px;line-height:1.5;
-  }
-  .wrap{width:100%;max-width:860px}
-  .eyebrow{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
-  h1{font-size:clamp(24px,4vw,34px);line-height:1.15;letter-spacing:-.02em;margin-bottom:8px}
-  .sub{color:var(--muted);font-size:16px;margin-bottom:24px;max-width:640px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  @media(max-width:680px){.grid{grid-template-columns:1fr}}
-  label{display:block;font-size:14px;font-weight:600;margin-bottom:8px}
-  .hint{color:var(--muted);font-weight:400;font-size:12px}
-  input,select{
-    width:100%;background:var(--card2);border:1px solid var(--line);color:var(--text);
-    border-radius:10px;padding:13px 14px;font-size:16px;outline:none;transition:border-color .15s;
-  }
-  input:focus,select:focus{border-color:var(--accent)}
-  .field{margin-bottom:18px}
-  .result{
-    margin-top:8px;background:var(--card);
-    border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;
-  }
-  .result .lab{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
-  .result .big{font-size:clamp(28px,6vw,44px);font-weight:800;letter-spacing:-.02em;color:var(--accent)}
-  .result .row{display:flex;justify-content:space-around;gap:12px;margin-top:16px;flex-wrap:wrap}
-  .result .row div{flex:1;min-width:120px}
-  .result .row .n{font-size:22px;font-weight:700}
-  .result .row .t{font-size:12px;color:var(--muted);margin-top:2px}
-  .assump{font-size:12px;color:var(--muted);margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
-  .disclaimer{font-size:12px;color:var(--muted);margin-top:14px;background:var(--card2);border-radius:10px;padding:12px 14px;border-left:3px solid var(--accent2)}
-  .cta{margin-top:22px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px}
-  .cta h3{font-size:19px;margin-bottom:6px}
-  .cta p{color:var(--muted);font-size:14px;margin-bottom:16px}
-  .btn{
-    display:block;width:100%;background:var(--accent);color:var(--accent-ink);border:none;
-    border-radius:10px;padding:15px;font-size:16px;font-weight:700;cursor:pointer;transition:transform .08s,filter .15s;
-  }
-  .btn:hover{filter:brightness(1.06)}
-  .btn:active{transform:translateY(1px)}
-  .reassure{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
-  .ok{display:none;text-align:center;padding:10px 0}
-  .ok .big{color:var(--accent);font-size:22px;font-weight:700;margin-bottom:6px}
-  .footnote{color:var(--muted);font-size:11px;margin-top:18px;text-align:center}
-  a{color:var(--accent2)}
+.calc{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+.calc-form{display:grid;gap:18px}
+.calc-form .field label small{display:block;font-weight:400;color:var(--muted);font-size:13px;margin-top:2px}
+.result{position:sticky;top:104px;background:var(--dark);color:var(--on-dark);border-radius:var(--r-lg);padding:34px 36px}
+.result .lab{font-size:13.5px;color:var(--on-dark-muted);margin-bottom:10px}
+.result .big{font-family:var(--display);font-size:clamp(34px,3.6vw,46px);font-weight:500;letter-spacing:-.02em;line-height:1.05;color:#fff;font-variant-numeric:tabular-nums lining-nums}
+.result .row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
+.result .n{font-family:var(--display);font-size:22px;font-weight:500;color:#fff;font-variant-numeric:tabular-nums lining-nums}
+.result .t{font-size:13px;color:var(--on-dark-muted);margin-top:4px;line-height:1.4}
+.result .assump{font-size:13px;color:var(--on-dark-muted);margin-top:22px;line-height:1.5}
+.disclaimer{font-size:14px;color:var(--muted);margin-top:18px;max-width:none}
+.lead-box{margin-top:64px;padding-top:56px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:start}
+.lead-box form{display:grid;gap:16px}
+@media(max-width:860px){.calc{grid-template-columns:1fr}.result{position:static}.lead-box{grid-template-columns:1fr;gap:28px}.result .row{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="eyebrow">Wachstums-Potenzial-Rechner</div>
-  <h1>Was ist mit deinem Budget realistisch möglich?</h1>
-  <p class="sub">Gib deine Zahlen ein und sieh eine unverbindliche Orientierung, was mit sauber optimiertem Marketing branchenüblich erreichbar wäre. Eine Schätzung – kein Versprechen.</p>
-
-  <div class="card">
-    <div class="grid">
-      <div class="field">
-        <label>Branche <span class="hint">– bestimmt die Annahmen</span></label>
-        <select id="branche">
-          <option value="handwerk">Handwerk</option>
-          <option value="dienstleister">Dienstleister</option>
-          <option value="lokal">Lokales Geschäft</option>
-          <option value="ecommerce">E-Commerce / Onlineshop</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Monatliches Werbebudget (€) <span class="hint">– ohne Agenturhonorar</span></label>
-        <input id="budget" type="number" min="0" step="100" value="2000">
-      </div>
-      <div class="field">
-        <label>Ø Auftrags- / Bestellwert (€)</label>
-        <input id="wert" type="number" min="0" step="10" value="800">
-      </div>
-      <div class="field">
-        <label>Abschlussquote deiner Anfragen (%) <span class="hint" id="closeHint">– optional</span></label>
-        <input id="close" type="number" min="1" max="100" step="1" value="30">
-      </div>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/icon.svg" alt="" width="30" height="30"><span>AI<b>clicks</b></span></a>
+    <nav id="navlinks" aria-label="Hauptnavigation">
+      <a href="/#leistungen">Leistungen</a>
+      <a href="/#ablauf">Ablauf</a>
+      <a href="/#preise">Preise</a>
+      <a href="/#ueber">Über uns</a>
+      <a href="/#faq">Fragen</a>
+    </nav>
+    <div class="nav-right">
+      <a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false">Menü</button>
     </div>
+  </div>
+</header>
+<main id="main">
 
-    <div class="result" id="result">
-      <div class="lab">Geschätzter möglicher Zusatzumsatz / Monat</div>
+<section class="sub-hero"><div class="wrap">
+  <p class="crumbs"><a href="/">Start</a> › Wachstums-Rechner</p>
+  <h1>Was ist mit deinem Budget realistisch?</h1>
+  <p class="meta">Wachstums-Rechner · Schätzung auf Basis branchenüblicher Werte</p>
+  <p class="lead">Gib deine Zahlen ein und sieh eine unverbindliche Orientierung, was mit sauber optimiertem Marketing branchenüblich erreichbar wäre. Eine Schätzung – kein Versprechen.</p>
+</div></section>
+
+<section class="tight" style="padding-top:0"><div class="wrap">
+  <div class="calc">
+    <div class="calc-form">
+      <div class="field"><label for="branche">Branche<small>bestimmt die Annahmen</small></label>
+        <select id="branche"><option value="handwerk">Handwerk</option><option value="dienstleister">Dienstleister</option><option value="lokal">Lokales Geschäft</option><option value="ecommerce">E-Commerce / Onlineshop</option></select></div>
+      <div class="field"><label for="budget">Monatliches Werbebudget (€)<small>ohne Agenturhonorar</small></label><input id="budget" type="number" inputmode="numeric" min="0" step="100" value="2000"></div>
+      <div class="field"><label for="wert">Ø Auftrags- / Bestellwert (€)</label><input id="wert" type="number" inputmode="numeric" min="0" step="10" value="800"></div>
+      <div class="field"><label for="close">Abschlussquote deiner Anfragen (%)<small id="closeHint">optional</small></label><input id="close" type="number" inputmode="numeric" min="1" max="100" step="1" value="30"></div>
+      <p class="disclaimer"><strong>Wichtig:</strong> Diese Berechnung ist eine unverbindliche Schätzung auf Basis branchenüblicher Durchschnittswerte und stellt keine Zusage oder Garantie dar. Tatsächliche Ergebnisse hängen von Markt, Angebot, Wettbewerb und Umsetzung ab.</p>
+    </div>
+    <div class="result" id="result" aria-live="polite">
+      <div class="lab">Geschätzter möglicher Zusatzumsatz pro Monat</div>
       <div class="big" id="umsatz">– €</div>
       <div class="row">
         <div><div class="n" id="anfragen">–</div><div class="t">mögliche Anfragen / Monat</div></div>
@@ -108,32 +100,30 @@
       </div>
       <div class="assump" id="assump"></div>
     </div>
-
-    <div class="disclaimer">
-      <strong>Wichtig:</strong> Diese Berechnung ist eine unverbindliche Schätzung auf Basis branchenüblicher Durchschnittswerte und stellt <strong>keine Zusage oder Garantie</strong> dar. Tatsächliche Ergebnisse hängen von Markt, Angebot, Wettbewerb und Umsetzung ab.
-    </div>
   </div>
 
-  <div class="cta">
-    <h3>Willst du deine echten Zahlen statt einer Schätzung?</h3>
-    <p>In der kostenlosen Wachstumsanalyse rechnen wir dein konkretes Potenzial an deinen tatsächlichen Daten durch – ehrlich, ohne Verkaufsdruck.</p>
-    <div id="form">
-      <div class="grid">
-        <div class="field" style="margin-bottom:12px"><input id="name" type="text" placeholder="Dein Name"></div>
-        <div class="field" style="margin-bottom:12px"><input id="mail" type="email" placeholder="E-Mail"></div>
-      </div>
-      <div class="field" style="margin-bottom:14px"><input id="tel" type="tel" placeholder="Telefon (für den Analyse-Call)"></div>
-      <button class="btn" onclick="submitLead()">Kostenlose Wachstumsanalyse anfordern</button>
-      <div class="reassure">Kostenlos &amp; unverbindlich · Antwort in 24 Stunden · Kein Verkaufsgespräch, ein Fahrplan</div>
+  <div class="lead-box" id="analyse">
+    <div>
+      <h2 style="font-size:clamp(26px,3vw,36px)">Willst du deine echten Zahlen statt einer Schätzung?</h2>
+      <p style="margin-top:14px">In der kostenlosen Wachstumsanalyse rechnen wir dein Potenzial an deinen tatsächlichen Daten durch – ehrlich, ohne Verkaufsdruck. Deine Eingaben aus dem Rechner schicken wir gleich mit.</p>
     </div>
-    <div class="ok" id="ok">
-      <div class="big">Danke, <span id="okname">–</span >!</div>
-      <div style="color:var(--muted);font-size:14px">Wir melden uns innerhalb von 24 Stunden mit deinem persönlichen Wachstums-Report.</div>
-    </div>
+    <form id="calcform" onsubmit="return submitLead(event)" action="https://formsubmit.co/marc@aiclicks.de" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="Wachstumsanalyse angefordert (Rechner)">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="rechner" id="rechner-ctx">
+      <div class="field"><label for="name">Name *</label><input id="name" name="name" required autocomplete="name"></div>
+      <div class="field"><label for="mail">E-Mail *</label><input id="mail" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="tel">Telefon (für den Analyse-Call) *</label><input id="tel" name="phone" type="tel" required autocomplete="tel"></div>
+      <label class="consent"><input type="checkbox" required id="cf-consent"><span>Ich habe die <a href="/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
+      <p class="fine" id="cf-err" hidden role="alert">Bitte Name, E-Mail und Telefon ausfüllen und den Datenschutz bestätigen.</p>
+      <button class="btn lg" type="submit" id="cf-submit">Kostenlose Wachstumsanalyse anfordern</button>
+      <div id="cf-ok" class="ff-ok" hidden><b>Danke, <span id="okname">–</span>.</b><span>Marc meldet sich innerhalb von 24 Stunden mit deinem persönlichen Wachstums-Report.</span></div>
+      <p class="fine">Kostenlos &amp; unverbindlich · Antwort in 24 Stunden · Kein Verkaufsgespräch, ein Fahrplan</p>
+    </form>
   </div>
-
-  <div class="footnote">Annahmen transparent im Ergebnis ausgewiesen. AIclicks · Friedrichshafen am Bodensee</div>
-</div>
+</div></section>
 
 <script>
   // Branchen-Annahmen: konservative Kosten pro Anfrage (Lead) bzw. ROAS-Spanne. Bewusst vorsichtig.
@@ -144,66 +134,81 @@
     ecommerce:    {roasLow:2.0, roasHigh:4.0, label:"ROAS-Spanne 2,0–4,0 (branchenüblich bei sauberer Optimierung)"}
   };
   const fmt = n => new Intl.NumberFormat('de-DE',{maximumFractionDigits:0}).format(Math.round(n));
-
+  const $ = id => document.getElementById(id);
   function calc(){
-    const branche = document.getElementById('branche').value;
-    const budget = Math.max(0, +document.getElementById('budget').value || 0);
-    const wert   = Math.max(0, +document.getElementById('wert').value || 0);
-    const closeInput = Math.min(100, Math.max(1, +document.getElementById('close').value || 30))/100;
-    const closeHint = document.getElementById('closeHint');
-    const a = A[branche];
-    let umsatzLow, umsatzHigh, anfLow, anfHigh, aufLow, aufHigh, assumpText;
-
-    if(branche === 'ecommerce'){
-      closeHint.textContent = "– bei E-Commerce nicht nötig";
-      document.getElementById('close').disabled = true;
-      umsatzLow = budget * a.roasLow;
-      umsatzHigh = budget * a.roasHigh;
-      anfLow = wert>0 ? umsatzLow/wert : 0;
-      anfHigh = wert>0 ? umsatzHigh/wert : 0;
-      aufLow = anfLow; aufHigh = anfHigh; // bei Shop = Bestellungen
-      assumpText = "Annahme: " + a.label + ". Bestellungen = Umsatz ÷ Bestellwert.";
-      document.querySelectorAll('.t')[0].textContent = "mögliche Bestellungen / Monat";
-      document.querySelectorAll('.t')[1].textContent = "mögliche Bestellungen / Monat";
+    const branche=$('branche').value, budget=Math.max(0,+$('budget').value||0), wert=Math.max(0,+$('wert').value||0);
+    const closeInput=Math.min(100,Math.max(1,+$('close').value||30))/100, a=A[branche];
+    let umsatzLow,umsatzHigh,anfLow,anfHigh,aufLow,aufHigh,assumpText;
+    const t=document.querySelectorAll('.result .t');
+    if(branche==='ecommerce'){
+      $('closeHint').textContent="bei E-Commerce nicht nötig"; $('close').disabled=true;
+      umsatzLow=budget*a.roasLow; umsatzHigh=budget*a.roasHigh;
+      anfLow=wert>0?umsatzLow/wert:0; anfHigh=wert>0?umsatzHigh/wert:0; aufLow=anfLow; aufHigh=anfHigh;
+      assumpText="Annahme: "+a.label+". Bestellungen = Umsatz ÷ Bestellwert.";
+      t[0].textContent="mögliche Bestellungen / Monat"; t[1].textContent="mögliche Bestellungen / Monat";
     } else {
-      closeHint.textContent = "– optional";
-      document.getElementById('close').disabled = false;
-      anfLow = budget / a.cplHigh;   // teure Anfrage -> weniger
-      anfHigh = budget / a.cplLow;   // günstige Anfrage -> mehr
-      aufLow = anfLow * closeInput;
-      aufHigh = anfHigh * closeInput;
-      umsatzLow = aufLow * wert;
-      umsatzHigh = aufHigh * wert;
-      assumpText = "Annahmen: " + a.label + ", Abschlussquote " + Math.round(closeInput*100) + "%. Aufträge = Anfragen × Abschlussquote.";
-      document.querySelectorAll('.t')[0].textContent = "mögliche Anfragen / Monat";
-      document.querySelectorAll('.t')[1].textContent = "mögliche Aufträge / Monat";
+      $('closeHint').textContent="optional"; $('close').disabled=false;
+      anfLow=budget/a.cplHigh; anfHigh=budget/a.cplLow; aufLow=anfLow*closeInput; aufHigh=anfHigh*closeInput;
+      umsatzLow=aufLow*wert; umsatzHigh=aufHigh*wert;
+      assumpText="Annahmen: "+a.label+", Abschlussquote "+Math.round(closeInput*100)+" %. Aufträge = Anfragen × Abschlussquote.";
+      t[0].textContent="mögliche Anfragen / Monat"; t[1].textContent="mögliche Aufträge / Monat";
     }
-
-    document.getElementById('umsatz').textContent = fmt(umsatzLow) + " – " + fmt(umsatzHigh) + " €";
-    document.getElementById('anfragen').textContent = fmt(anfLow) + "–" + fmt(anfHigh);
-    document.getElementById('auftraege').textContent = fmt(aufLow) + "–" + fmt(aufHigh);
-    document.getElementById('jahr').textContent = fmt(umsatzLow*12) + " – " + fmt(umsatzHigh*12) + " €";
-    document.getElementById('assump').textContent = assumpText;
+    $('umsatz').textContent=fmt(umsatzLow)+" – "+fmt(umsatzHigh)+" €";
+    $('anfragen').textContent=fmt(anfLow)+"–"+fmt(anfHigh);
+    $('auftraege').textContent=fmt(aufLow)+"–"+fmt(aufHigh);
+    $('jahr').textContent=fmt(umsatzLow*12)+" – "+fmt(umsatzHigh*12)+" €";
+    $('assump').textContent=assumpText;
+    $('rechner-ctx').value="Branche: "+branche+" | Budget: "+budget+" € | Auftragswert: "+wert+" € | Abschlussquote: "+Math.round(closeInput*100)+" % | Schätzung: "+$('umsatz').textContent+" / Monat";
   }
-
-  function submitLead(){
-    const name = document.getElementById('name').value.trim();
-    const mail = document.getElementById('mail').value.trim();
-    const tel  = document.getElementById('tel').value.trim();
-    if(!name || !mail || !tel){ alert("Bitte Name, E-Mail und Telefon ausfüllen."); return; }
-    // TODO: hier an CRM/Backend senden (z. B. Webhook). Aktuell nur Bestätigung.
-    // Übergabe der Rechner-Werte als Lead-Kontext:
-    // {name, mail, tel, branche, budget, wert, close, geschätzterUmsatz}
-    document.getElementById('form').style.display='none';
-    document.getElementById('okname').textContent = name.split(' ')[0];
-    document.getElementById('ok').style.display='block';
+  function submitLead(e){
+    e.preventDefault();
+    const f=e.target, err=$('cf-err'), btn=$('cf-submit');
+    if(!f.checkValidity()){err.hidden=false;const bad=f.querySelector(':invalid');if(bad)bad.focus();return false;}
+    err.hidden=true; btn.disabled=true; btn.textContent='Wird gesendet …';
+    const name=$('name').value.trim();
+    fetch('https://formsubmit.co/ajax/marc@aiclicks.de',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(r=>r.json()).then(j=>{
+        if(j&&(j.success==='true'||j.success===true)){f.querySelectorAll('.field,.consent,#cf-submit,.fine').forEach(el=>el.hidden=true);$('okname').textContent=name.split(' ')[0];$('cf-ok').hidden=false;}
+        else throw new Error('send failed');
+      }).catch(()=>{
+        btn.disabled=false; btn.textContent='Kostenlose Wachstumsanalyse anfordern';
+        const body=encodeURIComponent('Name: '+name+'\nE-Mail: '+$('mail').value+'\nTelefon: '+$('tel').value+'\n\n'+$('rechner-ctx').value);
+        window.location.href='mailto:marc@aiclicks.de?subject='+encodeURIComponent('Wachstumsanalyse – '+name)+'&body='+body;
+      });
+    return false;
   }
-
-  ['branche','budget','wert','close'].forEach(id=>{
-    document.getElementById(id).addEventListener('input', calc);
-    document.getElementById(id).addEventListener('change', calc);
-  });
+  ['branche','budget','wert','close'].forEach(id=>{$(id).addEventListener('input',calc);$(id).addEventListener('change',calc);});
   calc();
+</script>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/"><img src="/icon.svg" alt="" width="30" height="30"><span>AI<b>clicks</b></span></a>
+        <p style="margin-top:12px">Agentur für Performance-Marketing, Websites und Automatisierung aus Friedrichshafen am Bodensee · <a href="tel:+4915129810072">+49 151 29810072</a></p>
+      </div>
+      <div>
+        <h3>Leistungen</h3>
+        <a href="/amazon-ppc-agentur.html">Amazon PPC Agentur</a><a href="/google-ads-agentur-bodensee.html">Google Ads Agentur</a><a href="/meta-ads-agentur.html">Meta Ads Agentur</a><a href="/website-in-5-tagen.html">Website in 5 Tagen</a><a href="/automatisierung.html">Automatisierung</a><a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <a href="/#ablauf">Ablauf</a><a href="/#ueber">Über uns</a><a href="/#preise">Preise</a><a href="/roi-rechner.html">Wachstums-Rechner</a><a href="/#kontakt">Kontakt</a>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 AIclicks · Marc Nothelfer · Friedrichshafen</span>
+      <span>Monatlich kündbar · Keine Setup-Gebühr · Deine Konten gehören dir</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){{var h=document.getElementById('top'),n=document.getElementById('navlinks'),b=document.getElementById('menuBtn');var s=function(){{h.classList.toggle('scrolled',window.scrollY>8)}};s();addEventListener('scroll',s,{{passive:true}});b.addEventListener('click',function(){{var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Schließen':'Menü';}});}})();
 </script>
 </body>
 </html>

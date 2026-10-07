@@ -7,7 +7,7 @@
 <meta name="description" content="Mehr Umsatz im Onlineshop, mehr Anfragen für Dienstleister, Abläufe automatisiert: Google Ads, Meta Ads, Amazon PPC, Websites &amp; Automatisierung aus Friedrichshafen.">
 <meta name="author" content="Marc Nothelfer – AIclicks">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#fbfaf7">
 <link rel="canonical" href="https://aiclicks.de/">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="alternate" type="text/plain" href="https://aiclicks.de/llms.txt" title="LLM-Kontext">
@@ -27,9 +27,9 @@
 <meta name="twitter:title" content="AIclicks – Mehr Kunden für dein Geschäft. Ohne Rätselraten.">
 <meta name="twitter:description" content="Mehr Umsatz im Onlineshop, mehr Anfragen für deinen Betrieb, Abläufe die von selbst laufen – Google Ads, Meta Ads, Amazon PPC, Websites & Automatisierung aus Friedrichshafen. Monatlich kündbar.">
 <meta name="twitter:image" content="https://aiclicks.de/og-image.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" href="/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" imagesrcset="/marc-cutout-m.webp 640w, /marc-cutout.webp 1024w" imagesizes="(max-width: 860px) 90vw, 40vw" fetchpriority="high">
 <link rel="stylesheet" href="/styles.css">
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script type="application/ld+json">
@@ -122,7 +122,7 @@
       "isPartOf": { "@id": "https://aiclicks.de/#website" },
       "about": { "@id": "https://aiclicks.de/#organization" },
       "inLanguage": "de-DE",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-07",
       "primaryImageOfPage": { "@type": "ImageObject", "url": "https://aiclicks.de/og-image.jpg" }
     },
     {
@@ -161,19 +161,19 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header>
+<header id="top">
   <div class="wrap nav">
-    <a class="brand" href="/"><img src="/icon.svg" alt="AIclicks Logo" width="28" height="28"><span>AI<b>clicks</b></span></a>
+    <a class="brand" href="/"><img src="/icon.svg" alt="" width="30" height="30"><span>AI<b>clicks</b></span></a>
     <nav id="navlinks" aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
       <a href="#ablauf">Ablauf</a>
       <a href="#preise">Preise</a>
       <a href="#ueber">Über uns</a>
-      <a href="#faq">FAQ</a>
+      <a href="#faq">Fragen</a>
     </nav>
     <div class="nav-right">
       <a href="#kontakt" class="btn">Kostenloses Erstgespräch</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen" aria-controls="navlinks">Menü</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navlinks">Menü</button>
     </div>
   </div>
 </header>
@@ -184,159 +184,159 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Marketing, Websites &amp; Automatisierung · Friedrichshafen am Bodensee</span>
-      <h1>Mehr Kunden für dein Geschäft.<br>Ohne Rätselraten.</h1>
-      <p class="lead">Wir bringen Onlineshops mehr Umsatz, Betrieben mehr Anfragen – und nehmen dir die Abläufe ab, die jeden Tag Zeit fressen. Ausprobiert mit eigenem Geld: über 1,9 Mio. € Umsatz mit unseren eigenen Marken.</p>
-      <div class="cta-row">
+      <h1 class="rise" style="--i:0">Mehr Kunden für dein Geschäft. Ohne Rätselraten.</h1>
+      <p class="lead rise" style="--i:1">Wir bringen Onlineshops mehr Umsatz, Betrieben mehr Anfragen – und nehmen dir die Abläufe ab, die jeden Tag Zeit fressen. Zuerst mit eigenem Geld ausprobiert: über 1,9 Mio. € Umsatz mit unseren eigenen Marken.</p>
+      <div class="cta-row rise" style="--i:2">
         <a href="#kontakt" class="btn lg">Kostenloses Erstgespräch</a>
-        <a href="#leistungen" class="btn secondary lg">Was wir machen</a>
+        <a href="#leistungen" class="link">Was wir machen</a>
       </div>
-      <div class="trust"><span>Monatlich kündbar</span><span>Keine Setup-Gebühr</span><span>Du sprichst direkt mit dem Gründer</span></div>
+      <div class="trust rise" style="--i:3"><span>Monatlich kündbar</span><span>Keine Setup-Gebühr</span><span>Du sprichst direkt mit dem Gründer</span></div>
     </div>
-    <div class="hero-visual">
-      <img src="/marc-nothelfer.webp" alt="Marc Nothelfer, Gründer von AIclicks" width="720" height="720" fetchpriority="high" decoding="async">
-      <div class="stat-float"><b>Marc Nothelfer</b><span>Gründer · bei AIclicks sprichst du immer direkt mit ihm – kein Vertrieb, kein Callcenter</span></div>
+    <div class="rise" style="--i:1">
+      <div class="portrait">
+        <img src="/marc-cutout.webp" srcset="/marc-cutout-m.webp 640w, /marc-cutout.webp 1024w" sizes="(max-width: 860px) 90vw, 40vw" alt="Marc Nothelfer, Gründer von AIclicks" width="1024" height="1431" fetchpriority="high" decoding="async">
+      </div>
+      <p class="portrait-caption"><b>Marc Nothelfer</b><span>Gründer · Friedrichshafen am Bodensee</span></p>
     </div>
   </div>
 </section>
 
-<!-- PROOF -->
+<!-- NACHWEIS -->
 <div class="proof">
-  <div class="wrap proof-grid">
-    <div class="proof-item"><b>1.616.822 €</b><span>Umsatz mit der eigenen Amazon-Marke, 69.425 verkaufte Einheiten</span></div>
-    <div class="proof-item"><b>9,7 %</b><span>Conversion-Rate im eigenen Shopify-Shop – Branchenschnitt sind 1–3 %</span></div>
-    <div class="proof-item"><b>24 h</b><span>Antwort auf jede Anfrage – persönlich von Marc, kein Callcenter</span></div>
+  <div class="wrap ledger">
+    <div class="ledger-intro">
+      <h2>Erst mit eigenem Geld, dann für Kunden.</h2>
+      <p>Jede Methode, die wir dir empfehlen, haben wir vorher an unseren eigenen Marken bezahlt und bewiesen.</p>
+    </div>
+    <dl>
+      <div><dt>Eigene Amazon-Marke<small>69.425 verkaufte Einheiten in 8 Ländern</small></dt><dd>1.616.822 €<small>Umsatz</small></dd></div>
+      <div><dt>Eigener Shopify-Shop<small>Branchenschnitt liegt bei 1–3 %</small></dt><dd>9,7 %<small>Conversion-Rate</small></dd></div>
+      <div><dt>Antwort auf jede Anfrage<small>persönlich von Marc, kein Callcenter</small></dt><dd>24 h<small>spätestens</small></dd></div>
+    </dl>
   </div>
 </div>
 
-<!-- OFFERS -->
+<!-- LEISTUNGEN -->
 <section id="leistungen">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Drei Wege, wie wir dir helfen</span>
-      <h2>Such dir aus, was dich gerade am meisten weiterbringt.</h2>
-      <p>Alles aus einer Hand, alles monatlich kündbar. Und wenn du nicht sicher bist, was du brauchst: Das klären wir im kostenlosen Erstgespräch.</p>
+  <div class="wrap offers">
+    <div class="offers-head">
+      <h2>Drei Wege, wie wir dir helfen.</h2>
+      <p>Alles aus einer Hand, alles monatlich kündbar. Wenn du nicht sicher bist, was du brauchst, klären wir das im kostenlosen Erstgespräch.</p>
+      <p class="fine">Auch einzeln buchbar:<br><a href="/google-ads-agentur-bodensee.html">Google Ads</a> · <a href="/meta-ads-agentur.html">Meta Ads</a> · <a href="/amazon-ppc-agentur.html">Amazon PPC</a> · <a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a> · <a href="/website-in-5-tagen.html">Website in 5 Tagen</a> · <a href="/automatisierung.html">Automatisierung</a></p>
     </div>
+    <div class="offer-list">
 
-    <div class="offer reveal">
-      <div>
-        <div class="num">01 <small>Für Onlineshops &amp; Amazon-Händler</small></div>
-        <h3>Mehr Umsatz im Onlineshop</h3>
+      <article class="offer">
+        <div class="offer-top"><h3>Mehr Umsatz im Onlineshop</h3><span class="who">Für Onlineshops &amp; Amazon-Händler</span></div>
         <p>Amazon-Werbung mit Automatisierung, bessere Listings, Shop-Conversion und E-Mail-Flows – von jemandem, der es selbst auf 1,6 Mio. € gebracht hat.</p>
         <ul class="checks">
           <li>Amazon PPC, Sponsored Brands &amp; Display mit automatischer Gebotssteuerung</li>
           <li>Listings, Bilder &amp; Werbevideos, die verkaufen</li>
           <li>Shopify-Conversion, Google Shopping &amp; Klaviyo-Flows</li>
         </ul>
-        <div class="cta-row"><a href="#kontakt" class="btn">Kostenlosen Shop-Audit anfordern</a><a href="/amazon-ppc-agentur.html" class="link">Mehr zu Amazon &amp; Shop</a></div>
-        <div class="price-line"><b>ab 1.490 € / Monat</b> · Werbebudget geht direkt an Amazon, Google oder Meta</div>
-      </div>
-      <div class="offer-media"><div class="fact"><span class="fl">Unser eigener Nachweis</span><b>1,6 Mio. €</b><p>Umsatz mit der eigenen Amazon-Marke – 69.425 Einheiten in 8 Ländern, gesteuert mit genau der PPC-Automatisierung, die du bekommst.</p><div class="fact-row"><div><b>9,7 %</b><span>Conversion im eigenen Shopify-Shop</span></div><div><b>286.000 €</b><span>Shop-Umsatz, Klaviyo-Flows inklusive</span></div></div></div></div>
-    </div>
+        <div class="offer-foot">
+          <a href="#kontakt" class="btn ghost">Kostenlosen Shop-Audit anfordern</a>
+          <a href="/amazon-ppc-agentur.html" class="link">Mehr zu Amazon &amp; Shop</a>
+          <span class="price"><b>ab 1.490 € / Monat</b> · Werbebudget geht direkt an Amazon, Google oder Meta</span>
+        </div>
+      </article>
 
-    <div class="offer reveal">
-      <div>
-        <div class="num">02 <small>Für Handwerk, Praxen &amp; Dienstleister</small></div>
-        <h3>Mehr Anfragen für deinen Betrieb</h3>
+      <article class="offer">
+        <div class="offer-top"><h3>Mehr Anfragen für deinen Betrieb</h3><span class="who">Für Handwerk, Praxen &amp; Dienstleister</span></div>
         <p>Google Ads für alle, die schon nach dir suchen. Meta Ads für alle, die dich noch nicht kennen. Und eine Website, die die Anfrage auch einsammelt.</p>
         <ul class="checks">
           <li>Google Ads &amp; Meta Ads mit Anruf- und Formular-Tracking</li>
           <li>Website in 5 Tagen zum Festpreis – inklusive Texten und Google-Optimierung</li>
           <li>Wöchentliches Reporting auf eine Zahl: Kosten pro Anfrage</li>
         </ul>
-        <div class="cta-row"><a href="#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/google-ads-agentur-bodensee.html" class="link">Mehr zu Google &amp; Meta Ads</a></div>
-        <div class="price-line"><b>ab 1.490 € / Monat</b> · Website in 5 Tagen: <b>1.990 € Festpreis</b></div>
-      </div>
-      <div class="offer-media"><div class="fact"><span class="fl">Rechenbeispiel Handwerk</span><b>20–35 Anfragen</b><p>pro Monat bei 1.500 € Werbebudget und 40–80 € je Anfrage. Ein einziger Auftrag bringt im Handwerk oft 3.000–10.000 € – ab dem ersten zusätzlichen Kunden ist das Honorar bezahlt.</p><div class="fact-row"><div><b>5 Tage</b><span>bis deine neue Website online ist</span></div><div><b>1 Zahl</b><span>Kosten pro Anfrage – jede Woche im Reporting</span></div></div></div></div>
-    </div>
+        <div class="offer-foot">
+          <a href="#kontakt" class="btn ghost">Kostenloses Erstgespräch</a>
+          <a href="/google-ads-agentur-bodensee.html" class="link">Mehr zu Google &amp; Meta Ads</a>
+          <span class="price"><b>ab 1.490 € / Monat</b> · Website in 5 Tagen: <b>1.990 € Festpreis</b></span>
+        </div>
+        <aside class="note"><b>Rechenbeispiel Handwerk</b><p><strong>20–35 Anfragen</strong> im Monat bei 1.500 € Werbebudget und 40–80 € je Anfrage. Ein einziger Auftrag bringt im Handwerk oft 3.000–10.000 € – ab dem ersten zusätzlichen Kunden ist das Honorar bezahlt.</p></aside>
+      </article>
 
-    <div class="offer reveal">
-      <div>
-        <div class="num">03 <small>Für jeden Betrieb mit Zeitfressern</small></div>
-        <h3>Abläufe, die von allein laufen</h3>
+      <article class="offer">
+        <div class="offer-top"><h3>Abläufe, die von allein laufen</h3><span class="who">Für jeden Betrieb mit Zeitfressern</span></div>
         <p>Angebote in Minuten statt Stunden, Anfragen rund um die Uhr beantwortet, Belege, die sich selbst sortieren – und kleine Tools, die genau euren Ablauf abbilden.</p>
         <ul class="checks">
           <li>Anfragen automatisch beantworten, qualifizieren und eintragen</li>
           <li>Angebote, Nachfassen, Bewertungsanfragen, Büro-Automatisierung</li>
-          <li>Individuelle Tools, Schnittstellen und Dashboards</li>
+          <li>Individuelle Tools, Schnittstellen und Dashboards – ohne Systemwechsel</li>
         </ul>
-        <div class="cta-row"><a href="#kontakt" class="btn">Kostenlosen Prozess-Check anfordern</a><a href="/automatisierung.html" class="link">Mehr zu Automatisierung</a></div>
-        <div class="price-line">Kleine Automatisierungen <b>ab 490 € Festpreis</b> · Tools &amp; Projekte ab 1.990 €</div>
-      </div>
-      <div class="offer-media"><div class="fact"><span class="fl">Faustregel</span><b>≈ 3.000 € / Jahr</b><p>kostet eine Aufgabe, die jemanden jeden Tag 30 Minuten beschäftigt. Die meisten Automatisierungen haben sich deshalb nach 2–4 Monaten bezahlt – und laufen dann einfach weiter.</p><div class="fact-row"><div><b>2–5 Tage</b><span>bis eine kleine Automatisierung läuft</span></div><div><b>0 Systemwechsel</b><span>wir verbinden, was du schon nutzt</span></div></div></div></div>
-    </div>
+        <div class="offer-foot">
+          <a href="#kontakt" class="btn ghost">Kostenlosen Prozess-Check anfordern</a>
+          <a href="/automatisierung.html" class="link">Mehr zu Automatisierung</a>
+          <span class="price">Kleine Automatisierungen <b>ab 490 € Festpreis</b> · Tools &amp; Projekte ab 1.990 €</span>
+        </div>
+        <aside class="note"><b>Faustregel</b><p><strong>≈ 3.000 € im Jahr</strong> kostet eine Aufgabe, die jemanden jeden Tag 30 Minuten beschäftigt. Die meisten Automatisierungen haben sich deshalb nach 2–4 Monaten bezahlt – und laufen dann einfach weiter.</p></aside>
+      </article>
 
-    <p class="fine" style="margin-top:36px">Auch einzeln buchbar: <a href="/google-ads-agentur-bodensee.html">Google Ads</a> · <a href="/meta-ads-agentur.html">Meta Ads</a> · <a href="/amazon-ppc-agentur.html">Amazon PPC</a> · <a href="/ki-werbevideos.html">Werbevideos &amp; Anzeigen</a> · <a href="/website-in-5-tagen.html">Website in 5 Tagen</a> · <a href="/automatisierung.html">Automatisierung</a></p>
+    </div>
   </div>
 </section>
 
-<!-- PROCESS -->
+<!-- ABLAUF -->
 <section id="ablauf" class="soft">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">So läuft es ab</span>
       <h2>Drei Schritte. Keine Überraschungen.</h2>
       <p>Der erste Schritt ist kostenlos – und du entscheidest danach in Ruhe, ob wir zusammenarbeiten.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><div class="no">SCHRITT 1 · KOSTENLOS</div><h3>Erstgespräch</h3><p>20 Minuten: deine Ziele, deine Zahlen, dein Markt. Wir schauen uns bestehende Konten, Website und Abläufe an und sagen dir ehrlich, wo das größte Potenzial liegt.</p></div>
-      <div class="step reveal"><div class="no">SCHRITT 2 · IN TAGEN</div><h3>Aufbau</h3><p>Kampagnen, Website oder Automatisierung – wir bauen es auf, inklusive sauberem Tracking. Setup in Tagen, nicht in Monaten.</p></div>
-      <div class="step reveal"><div class="no">SCHRITT 3 · LAUFEND</div><h3>Messen &amp; verbessern</h3><p>Wöchentlich bekommst du die eine Zahl, die zählt: Kosten pro Anfrage oder Bestellung. Was funktioniert, bekommt mehr – was nicht, fliegt raus.</p></div>
+      <div class="step"><div class="no">1<small>KOSTENLOS</small></div><h3>Erstgespräch</h3><p>20 Minuten: deine Ziele, deine Zahlen, dein Markt. Wir schauen uns bestehende Konten, Website und Abläufe an und sagen dir ehrlich, wo das größte Potenzial liegt.</p></div>
+      <div class="step"><div class="no">2<small>IN TAGEN</small></div><h3>Aufbau</h3><p>Kampagnen, Website oder Automatisierung – wir bauen es auf, inklusive sauberem Tracking. Setup in Tagen, nicht in Monaten.</p></div>
+      <div class="step"><div class="no">3<small>LAUFEND</small></div><h3>Messen &amp; verbessern</h3><p>Wöchentlich bekommst du die eine Zahl, die zählt: Kosten pro Anfrage oder Bestellung. Was funktioniert, bekommt mehr – was nicht, fliegt raus.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
+<!-- PREISE -->
 <section id="preise">
   <div class="wrap">
-    <div class="section-head center">
-      <span class="eyebrow">Preise</span>
+    <div class="section-head">
       <h2>Du weißt vorher, was es kostet.</h2>
       <p>Keine Setup-Gebühr, keine Mindestlaufzeit, monatlich kündbar. Werbebudget geht immer direkt an Google, Meta oder Amazon – nicht an uns.</p>
     </div>
-    <div class="plans reveal">
-      <div class="plan featured">
-        <div class="pn">Mehr Umsatz im Onlineshop</div>
-        <div class="pp">ab 1.490 €<small>/ Monat</small></div>
-        <div class="pd">Amazon PPC oder Shop-Ads, Listings &amp; Creatives, E-Mail-Flows, Conversion.</div>
+    <div class="price-table">
+      <div class="price-row featured">
+        <div><h3>Mehr Umsatz im Onlineshop</h3><div class="for">Amazon PPC oder Shop-Ads, Listings &amp; Creatives, E-Mail-Flows, Conversion</div></div>
         <ul><li>Gebots-Automatisierung inklusive</li><li>Wöchentliches Reporting</li><li>Einstieg: kostenloser Shop-Audit</li></ul>
-        <a href="#kontakt" class="btn">Shop-Audit anfordern</a>
+        <div class="amount">ab 1.490 €<small>pro Monat</small></div>
+        <div class="act"><a href="#kontakt" class="btn">Shop-Audit anfordern</a></div>
       </div>
-      <div class="plan">
-        <div class="pn">Mehr Anfragen für deinen Betrieb</div>
-        <div class="pp">ab 1.490 €<small>/ Monat</small></div>
-        <div class="pd">Google Ads und/oder Meta Ads mit Landingpage und Anruf-Tracking.</div>
+      <div class="price-row">
+        <div><h3>Mehr Anfragen für deinen Betrieb</h3><div class="for">Google Ads und/oder Meta Ads mit Landingpage und Anruf-Tracking</div></div>
         <ul><li>Laufende Optimierung</li><li>Wöchentliches Reporting</li><li>Empfohlenes Werbebudget ab 1.000 €</li></ul>
-        <a href="#kontakt" class="btn secondary">Erstgespräch</a>
+        <div class="amount">ab 1.490 €<small>pro Monat</small></div>
+        <div class="act"><a href="#kontakt" class="btn secondary">Erstgespräch</a></div>
       </div>
-      <div class="plan">
-        <div class="pn">Website in 5 Tagen</div>
-        <div class="pp">1.990 €<small>Festpreis</small></div>
-        <div class="pd">Komplette Website für Handwerk, Praxen und Dienstleister – in 5 Werktagen online.</div>
+      <div class="price-row">
+        <div><h3>Website in 5 Tagen</h3><div class="for">Komplette Website für Handwerk, Praxen und Dienstleister – in 5 Werktagen online</div></div>
         <ul><li>Texte, Design &amp; Technik</li><li>Kontaktformular &amp; Tracking</li><li>Google-Optimierung inklusive</li></ul>
-        <a href="/website-in-5-tagen.html" class="btn secondary">Details ansehen</a>
+        <div class="amount">1.990 €<small>Festpreis</small></div>
+        <div class="act"><a href="/website-in-5-tagen.html" class="btn secondary">Details ansehen</a></div>
       </div>
-      <div class="plan">
-        <div class="pn">Automatisierung &amp; Lösungen</div>
-        <div class="pp">ab 490 €<small>Festpreis</small></div>
-        <div class="pd">Vom kostenlosen Prozess-Check bis zum individuellen Tool – immer zum Festpreis.</div>
+      <div class="price-row">
+        <div><h3>Automatisierung &amp; Lösungen</h3><div class="for">Vom kostenlosen Prozess-Check bis zum individuellen Tool – immer zum Festpreis</div></div>
         <ul><li>Kleine Automatisierung ab 490 €</li><li>Ablauf-Paket ab 1.490 €</li><li>Tools &amp; Projekte ab 1.990 €</li></ul>
-        <a href="#kontakt" class="btn secondary">Prozess-Check anfordern</a>
+        <div class="amount">ab 490 €<small>Festpreis</small></div>
+        <div class="act"><a href="#kontakt" class="btn secondary">Prozess-Check anfordern</a></div>
       </div>
     </div>
     <p class="pricing-note">Alle Preise netto. Werbevideos &amp; Anzeigen als Zusatz ab 690 € pro Paket. Nicht sicher, was passt? <a href="#kontakt">Kurz sprechen</a> – wir sagen dir ehrlich, was sinnvoll ist.</p>
   </div>
 </section>
 
-<!-- FOUNDER -->
+<!-- GRÜNDER -->
 <section id="ueber" class="soft">
   <div class="wrap founder">
-    <img src="/marc-nothelfer.webp" alt="Marc Nothelfer, Gründer von AIclicks" width="640" height="640" loading="lazy" decoding="async">
+    <div class="portrait"><img src="/marc-cutout-m.webp" alt="Marc Nothelfer, Gründer von AIclicks" width="640" height="894" loading="lazy" decoding="async"></div>
     <div>
-      <span class="eyebrow">Wer dahintersteckt</span>
-      <blockquote>„Bevor ich Marketing für andere gemacht habe, habe ich es für mich selbst gemacht – mit eigenem Geld und eigenem Risiko. Deshalb weiß ich, wie sich jeder Werbe-Euro anfühlt. Und genau so gehe ich mit deinem Budget um: als wäre es meins."</blockquote>
+      <blockquote>Bevor ich Marketing für andere gemacht habe, habe ich es für mich selbst gemacht – mit eigenem Geld und eigenem Risiko. Deshalb weiß ich, wie sich jeder Werbe-Euro anfühlt. Und genau so gehe ich mit deinem Budget um: als wäre es meins.</blockquote>
       <p>Marc hat AIclicks gegründet, weil er gesehen hat, wie viele Unternehmen für Marketing zahlen, ohne zu wissen, was es bringt. Vorher: eine eigene Amazon-Marke auf über 1,6 Mio. € Umsatz gebracht, einen eigenen Shop mit bis zu 9,7 % Conversion aufgebaut – und die Abläufe dahinter so automatisiert, dass ein kleines Team acht Länder beliefern kann.</p>
-      <p class="sig" style="margin-top:18px"><b>Marc Nothelfer</b>Gründer AIclicks · Friedrichshafen am Bodensee · Du sprichst immer direkt mit ihm.</p>
+      <p class="sig"><b>Marc Nothelfer</b>Gründer AIclicks · Friedrichshafen am Bodensee · Du sprichst immer direkt mit ihm.</p>
     </div>
   </div>
 </section>
@@ -345,11 +345,10 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
 <section id="faq">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">Häufige Fragen</span>
       <h2>Was Kunden uns vorher fragen.</h2>
     </div>
     <div class="faq">
-      <details class="faqit"><summary>Was kostet AIclicks?</summary><div class="ans">„Mehr Umsatz im Onlineshop" und „Mehr Anfragen für deinen Betrieb" jeweils ab 1.490 € im Monat, die Website in 5 Tagen 1.990 € Festpreis, Automatisierungen ab 490 € Festpreis, Werbevideos &amp; Anzeigen ab 690 € pro Paket. Dein Werbebudget geht direkt an Google, Meta oder Amazon. Keine Setup-Gebühr, keine versteckten Kosten – im Erstgespräch sagen wir dir vorher, was für dich sinnvoll ist.</div></details>
+      <details class="faqit"><summary>Was kostet AIclicks?</summary><div class="ans">„Mehr Umsatz im Onlineshop“ und „Mehr Anfragen für deinen Betrieb“ jeweils ab 1.490 € im Monat, die Website in 5 Tagen 1.990 € Festpreis, Automatisierungen ab 490 € Festpreis, Werbevideos &amp; Anzeigen ab 690 € pro Paket. Dein Werbebudget geht direkt an Google, Meta oder Amazon. Keine Setup-Gebühr, keine versteckten Kosten – im Erstgespräch sagen wir dir vorher, was für dich sinnvoll ist.</div></details>
       <details class="faqit"><summary>Muss ich mich langfristig binden?</summary><div class="ans">Nein. Alle Pakete sind monatlich kündbar – ohne Setup-Gebühr und ohne Kleingedrucktes.</div></details>
       <details class="faqit"><summary>Wie könnt ihr schneller und günstiger sein als andere Agenturen?</summary><div class="ans">Weil wir Produktion und Routine konsequent automatisieren – Werbevideos, Anzeigen-Varianten, Texte, Reporting – und selbst zwei Marken betreiben, an denen wir jede Methode zuerst testen. Die Zeit, die wir dadurch sparen, steckt in Strategie und Optimierung. Du merkst es an einem: bessere Zahlen, schneller.</div></details>
       <details class="faqit"><summary>Wann sehe ich Ergebnisse?</summary><div class="ans">Erste Daten siehst du schon nach wenigen Tagen, belastbare Ergebnisse meist nach 30–90 Tagen. Im Erstgespräch sagen wir dir ehrlich, was in deinem Fall realistisch ist – ohne Pauschalversprechen.</div></details>
@@ -362,26 +361,25 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- KONTAKT -->
 <section id="kontakt" class="soft">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Kostenlos · Ohne Verkaufsdruck</span>
       <h2>Lass uns einfach mal reden.</h2>
       <p>In 20 Minuten schauen wir gemeinsam auf deine Situation, und du erfährst, wo bei dir das größte Potenzial liegt. Kostenlos, unverbindlich – und du entscheidest danach in Ruhe.</p>
     </div>
     <div class="contact-grid">
-      <form class="lead-form" id="leadform" onsubmit="return sendLead(event)" action="https://formsubmit.co/marc@aiclicks.de" method="POST">
+      <form class="lead-form" id="leadform" onsubmit="return sendLead(event)" action="https://formsubmit.co/marc@aiclicks.de" method="POST" novalidate>
         <input type="hidden" name="_subject" value="Neue Anfrage über aiclicks.de">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-        <div class="field"><label for="ff-name">Name *</label><input id="ff-name" required name="name" autocomplete="name"></div>
-        <div class="field"><label for="ff-email">E-Mail *</label><input id="ff-email" required type="email" name="email" autocomplete="email"></div>
-        <div class="field"><label for="ff-phone">Telefon (für einen kurzen Rückruf)</label><input id="ff-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="ff-name">Name *</label><input id="ff-name" required name="name" autocomplete="name" placeholder="Vor- und Nachname"></div>
+        <div class="field"><label for="ff-email">E-Mail *</label><input id="ff-email" required type="email" name="email" autocomplete="email" placeholder="name@firma.de"></div>
+        <div class="field"><label for="ff-phone">Telefon (für einen kurzen Rückruf)</label><input id="ff-phone" name="phone" type="tel" autocomplete="tel" placeholder="+49 …"></div>
         <div class="field"><label for="ff-topic">Worum geht es? *</label>
           <select id="ff-topic" required name="topic">
-            <option value="">Bitte wählen…</option>
+            <option value="">Bitte wählen …</option>
             <option>Mehr Umsatz im Onlineshop (Amazon / Shopify)</option>
             <option>Mehr Anfragen (Google / Meta Ads)</option>
             <option>Website in 5 Tagen</option>
@@ -390,18 +388,19 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
             <option>Noch nicht sicher</option>
           </select>
         </div>
-        <div class="field"><label for="ff-msg">Was beschäftigt dich gerade am meisten?</label><textarea id="ff-msg" name="msg" rows="3"></textarea></div>
-        <label class="consent"><input type="checkbox" required aria-label="Datenschutz-Einwilligung"><span>Ich habe die <a href="/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
+        <div class="field"><label for="ff-msg">Was beschäftigt dich gerade am meisten?</label><textarea id="ff-msg" name="msg" rows="3" placeholder="Ein, zwei Sätze reichen."></textarea></div>
+        <label class="consent"><input type="checkbox" required id="ff-consent"><span>Ich habe die <a href="/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
+        <p class="fine" id="ff-err" hidden role="alert">Bitte fülle Name, E-Mail und Thema aus und bestätige den Datenschutz.</p>
         <button class="btn lg" type="submit" id="ff-submit">Kostenloses Erstgespräch anfordern</button>
-        <div id="ff-ok" class="ff-ok" hidden><b>Danke – ist angekommen!</b><span>Marc meldet sich innerhalb von 24 Stunden persönlich bei dir. Wenn es schneller gehen soll: einfach anrufen oder WhatsApp schreiben.</span></div>
-        <p class="fine" style="text-align:center">Kostenlos &amp; unverbindlich · Antwort innerhalb von 24 Stunden · Kein Verkaufsgespräch, ein Plan</p>
+        <div id="ff-ok" class="ff-ok" hidden><b>Danke – ist angekommen.</b><span>Marc meldet sich innerhalb von 24 Stunden persönlich bei dir. Wenn es schneller gehen soll: einfach anrufen oder WhatsApp schreiben.</span></div>
+        <p class="fine">Kostenlos &amp; unverbindlich · Antwort innerhalb von 24 Stunden · Kein Verkaufsgespräch, ein Plan</p>
       </form>
       <div class="ci">
         <div class="next"><b>So geht es nach deiner Anfrage weiter</b><ol><li>Marc meldet sich innerhalb von 24 Stunden bei dir.</li><li>Kurzes Gespräch (20 Min): deine Ziele, deine Zahlen, dein Markt.</li><li>Du bekommst einen konkreten Plan – und entscheidest in Ruhe.</li></ol></div>
-        <a class="crow" href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener"><span class="em">📅</span><span><span class="t">Direkt Termin buchen</span><span class="s">20 Min · Video-Call oder Telefon · kostenlos</span></span></a>
-        <a class="crow" href="tel:+4915129810072"><span class="em">📞</span><span><span class="t">+49 151 29810072</span><span class="s">Direkt mit Marc – kein Callcenter</span></span></a>
-        <a class="crow" href="https://wa.me/4915129810072" target="_blank" rel="noopener"><span class="em">💬</span><span><span class="t">WhatsApp</span><span class="s">Schnell &amp; unkompliziert schreiben</span></span></a>
-        <a class="crow" href="mailto:marc@aiclicks.de"><span class="em">✉️</span><span><span class="t">marc@aiclicks.de</span><span class="s">Antwort innerhalb von 24 Stunden</span></span></a>
+        <a class="crow" href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span><span class="t">Direkt Termin buchen</span><span class="s">20 Min · Video-Call oder Telefon · kostenlos</span></span></a>
+        <a class="crow" href="tel:+4915129810072"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><span class="t">+49 151 29810072</span><span class="s">Direkt mit Marc – kein Callcenter</span></span></a>
+        <a class="crow" href="https://wa.me/4915129810072" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.2 19.1L4 20z"/><path d="M9 9.5c.3 2.3 2.2 4.2 4.5 4.5l1-1.2 2 1c-.3 1.3-1.3 1.8-2.3 1.7A7 7 0 0 1 8.5 9.8c0-1 .5-2 1.7-2.3l1 2L9 9.5z"/></svg><span><span class="t">WhatsApp</span><span class="s">Schnell &amp; unkompliziert schreiben</span></span></a>
+        <a class="crow" href="mailto:marc@aiclicks.de"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><span class="t">marc@aiclicks.de</span><span class="s">Antwort innerhalb von 24 Stunden</span></span></a>
       </div>
     </div>
   </div>
@@ -425,8 +424,8 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="/"><img src="/icon.svg" alt="" width="28" height="28"><span>AI<b>clicks</b></span></a>
-        <p style="margin-top:12px">Agentur für Performance-Marketing, Websites und Automatisierung aus Friedrichshafen am Bodensee. Für Onlineshops, Handwerk und Dienstleister in Deutschland, Österreich und der Schweiz.</p>
+        <a class="brand" href="/"><img src="/icon.svg" alt="" width="30" height="30"><span>AI<b>clicks</b></span></a>
+        <p>Agentur für Performance-Marketing, Websites und Automatisierung aus Friedrichshafen am Bodensee. Für Onlineshops, Handwerk und Dienstleister in Deutschland, Österreich und der Schweiz.</p>
       </div>
       <div>
         <h3>Leistungen</h3>
@@ -441,21 +440,17 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,do
         <a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a>
       </div>
     </div>
-    <div class="foot-bottom"><span>© 2026 AIclicks · Marc Nothelfer · Friedrichshafen · <span title="Zuletzt aktualisiert">Stand: 01.10.2026</span></span><span>Monatlich kündbar · Keine Setup-Gebühr · Deine Konten gehören dir</span></div>
+    <div class="foot-bottom"><span>© 2026 AIclicks · Marc Nothelfer · Friedrichshafen · <span title="Zuletzt aktualisiert">Stand: 07.10.2026</span></span><span>Monatlich kündbar · Keine Setup-Gebühr · Deine Konten gehören dir</span></div>
   </div>
 </footer>
 
 <script>
-/* Mobile menu */
-document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
-document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
-
-/* Reveal */
+/* Header-Linie beim Scrollen, mobiles Menü */
 (function(){
-  const els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('in'));return;}
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{rootMargin:'0px 0px -8% 0px'});
-  els.forEach(e=>io.observe(e));
+  const h=document.getElementById('top'),nl=document.getElementById('navlinks'),mb=document.getElementById('menuBtn');
+  const onS=()=>h.classList.toggle('scrolled',window.scrollY>8);onS();addEventListener('scroll',onS,{passive:true});
+  mb.addEventListener('click',()=>{const o=nl.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.textContent=o?'Schließen':'Menü';});
+  nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');mb.setAttribute('aria-expanded','false');mb.textContent='Menü';}));
 })();
 
 /* ===== Consent + Tracking (Google Ads AW-304314047 · Meta Pixel 1385284170005589) ===== */
@@ -486,11 +481,14 @@ document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('clic
 document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>{trackFB('Contact',{content_name:'WhatsApp Click'});}));
 document.querySelectorAll('a[href*="calendly"]').forEach(a=>a.addEventListener('click',()=>{trackConversion(CONV.form,100);trackFB('Contact',{content_name:'Calendly Click'});}));
 
-/* Lead form: FormSubmit (AJAX), Fallback mailto */
+/* Lead-Formular: FormSubmit (AJAX), Fallback mailto */
 function sendLead(e){
   e.preventDefault();
   const f=e.target, g=n=>(f.querySelector('[name='+n+']')||{}).value||'';
-  const btn=document.getElementById('ff-submit'); btn.disabled=true; btn.textContent='Wird gesendet…';
+  const err=document.getElementById('ff-err');
+  if(!f.checkValidity()){err.hidden=false;const bad=f.querySelector(':invalid');if(bad)bad.focus();return false;}
+  err.hidden=true;
+  const btn=document.getElementById('ff-submit'); btn.disabled=true; btn.textContent='Wird gesendet …';
   trackConversion(CONV.form,100);
   trackFB('Lead',{content_name:'Erstgespräch',value:100,currency:'EUR'});
   fetch('https://formsubmit.co/ajax/marc@aiclicks.de',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})

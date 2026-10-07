@@ -6,8 +6,8 @@ Der Ordner _build/ wird von GitHub Pages nicht veröffentlicht (Unterstrich)."""
 import json, pathlib, html, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TODAY = "2026-10-01"
-TODAY_DE = "01.10.2026"
+TODAY = "2026-10-07"
+TODAY_DE = "07.10.2026"
 
 HEAD = """<!DOCTYPE html>
 <html lang="de">
@@ -18,12 +18,11 @@ HEAD = """<!DOCTYPE html>
 <meta name="description" content="{desc}">
 <meta name="author" content="Marc Nothelfer – AIclicks">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#fbfaf7">
 <link rel="canonical" href="https://aiclicks.de/{slug}">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" href="/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 <meta name="geo.region" content="DE-BW">
 <meta name="geo.placename" content="Friedrichshafen">
@@ -54,15 +53,15 @@ try{{const c=JSON.parse(localStorage.getItem('cookie-consent')||'null');if(c&&c.
 </head>
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
-<header>
+<header id="top">
   <div class="wrap nav">
-    <a class="brand" href="/"><img src="/icon.svg" alt="AIclicks Logo" width="28" height="28"><span>AI<b>clicks</b></span></a>
+    <a class="brand" href="/"><img src="/icon.svg" alt="" width="30" height="30"><span>AI<b>clicks</b></span></a>
     <nav id="navlinks" aria-label="Hauptnavigation">
       <a href="/#leistungen">Leistungen</a>
       <a href="/#ablauf">Ablauf</a>
       <a href="/#preise">Preise</a>
       <a href="/#ueber">Über uns</a>
-      <a href="/#faq">FAQ</a>
+      <a href="/#faq">Fragen</a>
     </nav>
     <div class="nav-right">
       <a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a>
@@ -79,7 +78,6 @@ FOOT = """
   <div class="wrap">
     <div class="inner">
       <div>
-        <p class="eyebrow">Kostenlos · Kein Pitch</p>
         <h2>{cta_h}</h2>
         <p>{cta_p}</p>
         <p style="margin-top:16px;font-size:14.5px">Oder direkt: <a href="tel:+4915129810072" style="color:#fff">+49 151 29810072</a> · <a href="mailto:marc@aiclicks.de" style="color:#fff">marc@aiclicks.de</a> · <a href="https://calendly.com/marc-aiclicks/30min" target="_blank" rel="noopener" style="color:#fff">Termin buchen</a></p>
@@ -94,7 +92,7 @@ FOOT = """
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="/"><img src="/icon.svg" alt="" width="28" height="28"><span>AI<b>clicks</b></span></a>
+        <a class="brand" href="/"><img src="/icon.svg" alt="" width="30" height="30"><span>AI<b>clicks</b></span></a>
         <p style="margin-top:12px">Agentur für Performance-Marketing, Websites und Automatisierung aus Friedrichshafen am Bodensee · <a href="tel:+4915129810072">+49 151 29810072</a></p>
       </div>
       <div>
@@ -117,7 +115,7 @@ FOOT = """
   </div>
 </footer>
 <script>
-document.getElementById('menuBtn').addEventListener('click',function(){{var n=document.getElementById('navlinks');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'));}});
+(function(){{var h=document.getElementById('top'),n=document.getElementById('navlinks'),b=document.getElementById('menuBtn');var s=function(){{h.classList.toggle('scrolled',window.scrollY>8)}};s();addEventListener('scroll',s,{{passive:true}});b.addEventListener('click',function(){{var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Schließen':'Menü';}});}})();
 </script>
 </body>
 </html>
@@ -171,9 +169,9 @@ PROCESS = """
 <section class="soft"><div class="wrap">
   <div class="section-head"><h2>So läuft die Zusammenarbeit ab</h2><p>Drei Schritte, keine Überraschungen. Der erste ist kostenlos.</p></div>
   <div class="steps">
-    <div class="step"><div class="no">01 · ANALYSE</div><h3>Kostenloses Erstgespräch</h3><p>Wir prüfen bestehende Konten, Zielgruppe, Tracking und Zahlen. Du bekommst einen konkreten Plan – ob du mit uns arbeitest oder nicht.</p></div>
-    <div class="step"><div class="no">02 · AUFBAU</div><h3>Kampagnen, Creatives, Tracking</h3><p>Setup in Tagen, nicht Monaten: Kampagnenstruktur, Conversion-Tracking, erste Creative-Varianten und Landingpage-Check.</p></div>
-    <div class="step"><div class="no">03 · SKALIERUNG</div><h3>Testen, messen, skalieren</h3><p>Wöchentliches Reporting mit einer Zahl, die zählt: Kosten pro Anfrage bzw. Bestellung. Was funktioniert, bekommt mehr Budget.</p></div>
+    <div class="step"><div class="no">1<small>ANALYSE</small></div><h3>Kostenloses Erstgespräch</h3><p>Wir prüfen bestehende Konten, Zielgruppe, Tracking und Zahlen. Du bekommst einen konkreten Plan – ob du mit uns arbeitest oder nicht.</p></div>
+    <div class="step"><div class="no">2<small>AUFBAU</small></div><h3>Kampagnen, Creatives, Tracking</h3><p>Setup in Tagen, nicht Monaten: Kampagnenstruktur, Conversion-Tracking, erste Creative-Varianten und Landingpage-Check.</p></div>
+    <div class="step"><div class="no">3<small>SKALIERUNG</small></div><h3>Testen, messen, skalieren</h3><p>Wöchentliches Reporting mit einer Zahl, die zählt: Kosten pro Anfrage bzw. Bestellung. Was funktioniert, bekommt mehr Budget.</p></div>
   </div>
 </div></section>
 """
@@ -203,8 +201,8 @@ PAGES.append(dict(
     body="""
 <section class="sub-hero"><div class="wrap">
   <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Google Ads Agentur</p>
-  <p class="eyebrow">Google Ads Agentur · Friedrichshafen am Bodensee</p>
   <h1>Google Ads, die Anfragen bringen.<br>Nicht nur Klicks.</h1>
+  <p class="meta">Google Ads Agentur · Friedrichshafen am Bodensee</p>
   <p class="lead">AIclicks ist eine Google Ads Agentur aus Friedrichshafen am Bodensee. Wir bauen Suchkampagnen für Handwerk, Dienstleister, Mittelstand und Onlineshops, die auf eine Zahl optimiert werden: Kosten pro Anfrage bzw. Bestellung. Ab 1.490 € im Monat, monatlich kündbar.</p>
   <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/#preise" class="btn secondary">Preise ansehen</a></div>
 </div></section>
@@ -272,8 +270,8 @@ PAGES.append(dict(
     body="""
 <section class="sub-hero"><div class="wrap">
   <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Meta Ads Agentur</p>
-  <p class="eyebrow">Meta Ads Agentur · Facebook &amp; Instagram · Bodensee</p>
   <h1>Meta Ads, die Nachfrage erzeugen –<br>bevor jemand sucht.</h1>
+  <p class="meta">Meta Ads Agentur · Facebook &amp; Instagram · Bodensee</p>
   <p class="lead">AIclicks ist eine Meta Ads Agentur aus Friedrichshafen am Bodensee. Wir schalten Facebook- und Instagram-Anzeigen für Onlineshops, lokale Betriebe und Dienstleister – mit KI-produzierten Creatives im Wochentakt, sauberem Conversion-Tracking und einem Ziel: Bestellungen und Anfragen zu Kosten, die sich rechnen.</p>
   <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/ki-werbevideos.html" class="btn secondary">Werbevideos ansehen</a></div>
 </div></section>
@@ -339,8 +337,8 @@ PAGES.append(dict(
     body="""
 <section class="sub-hero"><div class="wrap">
   <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Amazon PPC Agentur</p>
-  <p class="eyebrow">Amazon PPC Agentur · Sponsored Products, Brands &amp; Display</p>
   <h1>Amazon PPC von Leuten,<br>die selbst 7-stellig auf Amazon verkaufen.</h1>
+  <p class="meta">Amazon PPC Agentur · Sponsored Products, Brands &amp; Display</p>
   <p class="lead">AIclicks ist eine Amazon PPC Agentur mit eigener Amazon-Marke: über 1,6 Mio. € Umsatz, 69.425 verkaufte Einheiten und acht internationale Marktplätze – gesteuert mit datengetriebener PPC-Automatisierung. Genau dieses System setzen wir für dein Amazon-Werbekonto ein.</p>
   <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloser PPC-Audit</a><a href="/#ergebnisse" class="btn secondary">Unsere eigenen Zahlen</a></div>
 </div></section>
@@ -405,8 +403,8 @@ PAGES.append(dict(
     body="""
 <section class="sub-hero"><div class="wrap">
   <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Werbevideos &amp; Anzeigen</p>
-  <p class="eyebrow">Werbevideos &amp; Anzeigen für Meta, TikTok, YouTube und Amazon</p>
   <h1>Werbevideos in Tagen.<br>Nicht in Wochen.</h1>
+  <p class="meta">Werbevideos &amp; Anzeigen für Meta, TikTok, YouTube und Amazon</p>
   <p class="lead">Wir produzieren Werbevideos und Bild-Anzeigen aus deinem vorhandenen Foto- und Videomaterial – mit moderner Produktionstechnik statt Filmteam. Für Facebook, Instagram, TikTok, YouTube und Amazon. Mehr Varianten, schneller getestet, ab 690 € pro Paket. Ohne Filmteam, ohne Drehtag, ohne Wochen Wartezeit.</p>
   <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloses Erstgespräch</a><a href="/meta-ads-agentur.html" class="btn secondary">Creatives + Meta Ads</a></div>
 </div></section>
@@ -473,8 +471,8 @@ PAGES.append(dict(
     body="""
 <section class="sub-hero"><div class="wrap">
   <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Website in 5 Tagen</p>
-  <p class="eyebrow">Website erstellen lassen · Festpreis · Friedrichshafen am Bodensee</p>
   <h1>Deine Website in 5 Tagen.<br>1.990 € Festpreis. Fertig.</h1>
+  <p class="meta">Website erstellen lassen · Festpreis · Friedrichshafen am Bodensee</p>
   <p class="lead">Eine professionelle Website für deinen Betrieb – Texte, Design, Kontaktformular, Google-Optimierung, mobil perfekt – innerhalb von fünf Werktagen online. Kein monatelanges Hin und Her, kein Baukasten, keine versteckten Kosten.</p>
   <div class="cta-row"><a href="/#kontakt" class="btn">Kostenlos anfragen</a><a href="#preis" class="btn secondary">Was ist drin?</a></div>
 </div></section>
@@ -540,8 +538,8 @@ PAGES.append(dict(
     body="""
 <section class="sub-hero"><div class="wrap">
   <p class="crumbs"><a href="/">Start</a> › <a href="/#leistungen">Leistungen</a> › Automatisierung</p>
-  <p class="eyebrow">Automatisierung &amp; individuelle Lösungen · Friedrichshafen am Bodensee</p>
   <h1>Abläufe, die von selbst laufen.<br>Statt jeden Tag von Hand.</h1>
+  <p class="meta">Automatisierung &amp; individuelle Lösungen · Friedrichshafen am Bodensee</p>
   <p class="lead">Anfragen beantworten, Angebote schreiben, Belege sortieren, Bestellungen übertragen, Berichte zusammenstellen – vieles davon macht in deinem Betrieb jemand jeden Tag per Hand. Wir bauen dir Abläufe, die das übernehmen. Kleine Automatisierungen ab 490 € Festpreis, individuelle Tools ab 1.990 €.</p>
   <div class="cta-row"><a href="/#kontakt" class="btn">Kostenloser Prozess-Check</a><a href="#beispiele" class="btn secondary">Beispiele ansehen</a></div>
 </div></section>
