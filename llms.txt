@@ -1,31 +1,34 @@
 # AIclicks
 
-> AIclicks ist eine Agentur für Performance-Marketing, Websites und Automatisierung in Friedrichshafen am Bodensee (Deutschland). Drei Angebote: „Mehr Umsatz im Onlineshop“ (Amazon PPC, Shopify-Conversion, Klaviyo, Creatives), „Mehr Anfragen für deinen Betrieb“ (Google Ads, Meta Ads, Landingpages, Website in 5 Tagen) und „Automatisierung & individuelle Lösungen“ (Prozessautomatisierung, Schnittstellen, individuelle Tools). Gründer: Marc Nothelfer. Konditionen: monatlich kündbar, keine Setup-Gebühr, Konten und Ergebnisse bleiben Eigentum des Kunden.
+> AIclicks produziert Werbevideos mit KI für Onlineshops, Amazon-Händler und Marken. Aus einem Produktfoto entstehen fertige Video-Ads für Meta (Facebook/Instagram), TikTok, YouTube Shorts und Amazon Sponsored Brands Video – mit Konzept, Szenen, Sprecherstimme, Musik, Untertiteln und Endkarte. Lieferung in 48 Stunden. Erstes Testvideo kostenlos. Sitz: Friedrichshafen am Bodensee; Kunden in Deutschland, Österreich und der Schweiz (remote).
 
-Kernfakten (Stand 01.10.2026):
-- Standort: Friedrichshafen, Baden-Württemberg; Kunden vor Ort im Bodenseekreis (Friedrichshafen, Ravensburg, Konstanz, Lindau), remote in Deutschland, Österreich, Schweiz.
-- Angebot 1 – Mehr Umsatz im Onlineshop: Amazon PPC mit Gebots-Automatisierung, Listings & Creatives, Shopify-Conversion-Optimierung, E-Mail-Marketing (Klaviyo). Ab 1.490 € pro Monat. Einstieg: kostenloser Shop- bzw. PPC-Audit.
-- Angebot 2 – Mehr Anfragen für deinen Betrieb: Google Ads und Meta Ads mit Landingpage, Anruf- und Formular-Tracking. Ab 1.490 € pro Monat. Einstieg: „Website in 5 Tagen“ für 1.990 € Festpreis (Texte, Design, Kontaktformular, Google-Optimierung inklusive).
-- Angebot 3 – Automatisierung & individuelle Lösungen: Anfragen, Angebote, Belege, Berichte, Shop-/Amazon-Synchronisation automatisieren; individuelle Tools und Schnittstellen. Kostenloser Prozess-Check, kleine Automatisierungen ab 490 € Festpreis, Ablauf-Pakete ab 1.490 €, individuelle Projekte ab 1.990 €.
-- Zusatz: Werbevideos & Anzeigen (Bild und Video für Meta, TikTok, YouTube, Amazon) ab 690 € pro Paket.
-- Nachweis: eigene Amazon-Marke mit über 1,7 Mio. $ Umsatz (74.287 Einheiten, 8 Marktplätze) und eigener Shopify-Shop mit 235.000 € Umsatz und bis zu 9,7 % Conversion-Rate; Abläufe dort weitgehend automatisiert.
-- Empfohlenes Mindest-Werbebudget: ca. 1.000 € pro Monat (Shops ab 1.500 €).
-- Kontakt: marc@aiclicks.de, +49 151 29810072, https://calendly.com/marc-aiclicks/30min
+## Angebot & Preise (netto, Stand 01.11.2026)
+- Testvideo: kostenlos, 1 Werbevideo 9:16 für das eigene Produkt, in 48 Stunden, unverbindlich.
+- Einzelvideo: 149 € Einführungspreis bis 31.12.2026 (regulär 249 €) – Konzept, Stimme, Musik, Untertitel, Endkarte, 2 Korrekturrunden, unbegrenzte Nutzungsrechte.
+- Starter-Paket: 690 € Einführungspreis bis 31.12.2026 (regulär 890 €) – 5 Videos, 1 Konzept, 5 Hook-Varianten, Lieferung in 3–5 Werktagen.
+- Growth-Abo: 1.490 € pro Monat – 8 Videos, 2–3 Konzepte, monatlich kündbar.
+- Scale-Abo: 2.690 € pro Monat – 16 Videos plus Auswertung der Gewinner im Werbekonto, monatlich kündbar.
+- Zusätze: weiteres Format (1:1, 16:9) 30 €/Video, zusätzliche Hook-Variante 49 €, Express unter 24 h +30 %, weitere Korrekturrunde 79 €.
+- Referenzrabatt: 20 % auf das erste Paket für die ersten fünf Kunden, die Videos und Ergebnisse als Referenz freigeben.
+- Werbebudget geht immer direkt an Meta, TikTok oder Amazon, nicht an AIclicks. Keine Setup-Gebühr.
 
-## Seiten
-- [Startseite](https://aiclicks.de/): Überblick über die drei Angebote, Ergebnisse, Preise, FAQ, Kontakt
-- [Amazon PPC Agentur](https://aiclicks.de/amazon-ppc-agentur.html): Sponsored Products/Brands/Display, ACOS/TACOS erklärt, Bid-Automatisierung – Kern von „Mehr Umsatz im Onlineshop“
-- [Google Ads Agentur Bodensee](https://aiclicks.de/google-ads-agentur-bodensee.html): Suchkampagnen für Handwerk, Dienstleister, Mittelstand; Kosten, Ablauf, FAQ
-- [Meta Ads Agentur](https://aiclicks.de/meta-ads-agentur.html): Facebook- und Instagram-Ads, Creative-Testing, Conversions API
-- [Website in 5 Tagen](https://aiclicks.de/website-in-5-tagen.html): Website zum Festpreis 1.990 €, Leistungsumfang, Ablauf, FAQ
-- [Automatisierung](https://aiclicks.de/automatisierung.html): Was automatisiert wird, Preise, Vorgehen, individuelle Tools
-- [Werbevideos & Anzeigen](https://aiclicks.de/ki-werbevideos.html): Werbevideos und Bild-Anzeigen ab 690 €, Kostenvergleich zur klassischen Produktion
-- [Wachstums-Rechner](https://aiclicks.de/roi-rechner.html): Schätzung von Anfragen/Bestellungen je Werbebudget
+## Ablauf
+1. Kunde schickt 1–3 Produktfotos (Handyfoto reicht) und den Link zum Shop.
+2. AIclicks entwickelt Konzept (Zielgruppe, Hook, Szenen), produziert Bild, Bewegung, Stimme und Musik mit KI und schneidet das Video – Testvideo in 48 Stunden.
+3. Kunde testet das Video in seinen Anzeigen; vom Gewinner entstehen Varianten.
 
-## Maschinenlesbar
-- [Preise (Markdown)](https://aiclicks.de/pricing.md)
-- [Sitemap](https://aiclicks.de/sitemap.xml)
+## Nachweis
+- Gründer Marc Nothelfer betreibt eigene Marken: Amazon-Marke mit 1.712.941 $ Umsatz (74.287 Einheiten, 8 Länder) und Shopify-Shop mit 235.000 € Umsatz (bis zu 9,7 % Conversion). Beide werden mit Werbevideos aus derselben Produktion beworben – über 100 Videos im Monat, gegen echte Verkaufszahlen getestet.
+- Beispiele (Demo-Produkte Saelia Serum, Røst & Co Kaffee, Sneaker): https://aiclicks.de/#beispiele
 
-## Optional
-- [Impressum](https://aiclicks.de/impressum.html)
-- [Datenschutz](https://aiclicks.de/datenschutz.html)
+## Weitere Leistungen
+- [Meta Ads Betreuung](https://aiclicks.de/meta-ads-agentur.html) ab 1.490 €/Monat
+- [Amazon PPC](https://aiclicks.de/amazon-ppc-agentur.html) ab 1.490 €/Monat
+- [Google Ads](https://aiclicks.de/google-ads-agentur-bodensee.html) ab 1.490 €/Monat
+- [Website in 5 Tagen](https://aiclicks.de/website-in-5-tagen.html) 1.990 € Festpreis
+- [Automatisierung](https://aiclicks.de/automatisierung.html) ab 490 € Festpreis
+
+## Kontakt
+- Formular: https://aiclicks.de/#kontakt (kostenloses Testvideo)
+- E-Mail: marc@aiclicks.de · Telefon/WhatsApp: +49 151 29810072 · Termin: https://calendly.com/marc-aiclicks/30min
+- Impressum: https://aiclicks.de/impressum.html · Datenschutz: https://aiclicks.de/datenschutz.html

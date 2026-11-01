@@ -384,3 +384,85 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;font-size:15px;color
 .visual img{width:100%;border-radius:20px;border:1px solid var(--line);background:var(--paper-2)}
 .offer-visual{margin:4px 0 22px}
 .offer-visual img{width:100%;aspect-ratio:16/7;object-fit:cover;object-position:center 45%;border-radius:16px;border:1px solid var(--line)}
+
+/* ===== KI-Werbevideos – Startseite (01.11.2026) ===== */
+.hero-video .hero-grid{grid-template-columns:1.08fr .92fr;align-items:center}
+.hero-video h1{max-width:17ch;font-size:clamp(38px,4.7vw,62px)}
+.hero-demo{display:grid;justify-items:center;gap:18px;position:relative;margin:0}
+.hero-demo::before{content:"";position:absolute;inset:-40px 0;background:radial-gradient(50% 50% at 50% 55%,var(--glow),transparent 70%);filter:blur(44px);z-index:-1;opacity:.45;pointer-events:none}
+.phone{position:relative;width:100%;max-width:292px;aspect-ratio:9/19.2;margin:0;background:#05070a;border:1px solid var(--line-strong);border-radius:42px;padding:10px;box-shadow:var(--shadow),inset 0 0 0 1px rgba(255,255,255,.04)}
+.phone::before{content:"";position:absolute;top:18px;left:50%;transform:translateX(-50%);width:86px;height:22px;border-radius:999px;background:#05070a;z-index:3}
+.phone video{width:100%;height:100%;object-fit:cover;border-radius:32px;display:block;background:#000}
+.phone .sound{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(8,10,14,.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font:600 14px/1 var(--text);cursor:pointer;z-index:3;transition:background-color .15s var(--ease),transform .16s var(--ease-out)}
+.phone .sound:hover{background:rgba(8,10,14,.82)}
+.phone .sound:active{transform:translateX(-50%) scale(.97)}
+.phone .sound svg{width:18px;height:18px}
+.phone .sound .on{display:none}.phone .sound.is-on .on{display:block}.phone .sound.is-on .off{display:none}
+.demo-cap{display:flex;gap:14px;align-items:center;max-width:320px;font-size:14px;line-height:1.45;color:var(--muted)}
+.demo-cap img{width:52px;height:52px;object-fit:cover;object-position:center 40%;border-radius:12px;border:1px solid var(--line-strong);flex:none}
+.demo-cap b{color:var(--ink);font-weight:600}
+
+/* Vorher/Nachher */
+.compare-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.compare{--pos:50%;position:relative;aspect-ratio:2/3;margin:0;border-radius:20px;overflow:hidden;border:1px solid var(--line-strong);background:var(--paper-3);isolation:isolate;touch-action:pan-y}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;margin:0;max-width:none}
+.compare .after{clip-path:inset(0 0 0 var(--pos))}
+.compare .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.25);z-index:2;pointer-events:none}
+.compare .handle::after{content:"";position:absolute;top:50%;left:50%;width:44px;height:44px;transform:translate(-50%,-50%);border-radius:50%;background:var(--accent);box-shadow:0 6px 20px -6px rgba(0,0,0,.6);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306201c' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 7l-5 5 5 5M15 7l5 5-5 5'/></svg>");background-repeat:no-repeat;background-position:center;background-size:22px}
+.compare input[type=range]{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:4;-webkit-appearance:none;appearance:none;background:transparent}
+.compare input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:60px;height:100vh}
+.compare input[type=range]::-moz-range-thumb{width:60px;height:100vh;border:0}
+.compare input[type=range]:focus-visible{opacity:1;outline:3px solid var(--accent);outline-offset:-3px;background:transparent}
+.compare .tag{position:absolute;top:14px;z-index:3;padding:6px 11px;border-radius:999px;background:rgba(5,7,10,.62);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;font-size:12.5px;font-weight:600;pointer-events:none}
+.compare .tag-l{left:14px}.compare .tag-r{right:14px;color:var(--accent)}
+.compare figcaption{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:36px 16px 14px;font-size:13.5px;color:#fff;background:linear-gradient(180deg,transparent,rgba(5,7,10,.75));pointer-events:none}
+.demo-note{margin-top:22px;max-width:70ch}
+
+/* Beispiel-Videos */
+.vid-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+.phone.vid{max-width:none;aspect-ratio:auto;padding:0;background:none;border:0;box-shadow:none;border-radius:0}
+.phone.vid::before{display:none}
+.phone.vid video{aspect-ratio:9/16;height:auto;border-radius:22px;border:1px solid var(--line-strong);cursor:pointer}
+.phone.vid .play{position:absolute;left:50%;top:calc((100% - 92px)/2);transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;border:0;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 30px -8px rgba(0,0,0,.7);transition:transform .16s var(--ease-out),background-color .15s var(--ease);z-index:2}
+.phone.vid .play svg{width:28px;height:28px;margin-left:3px}
+.phone.vid .play:hover{background:var(--accent-hover)}
+.phone.vid .play:active{transform:translate(-50%,-50%) scale(.95)}
+.phone.vid.playing .play{display:none}
+.phone.vid figcaption{margin-top:12px;font-size:14px;line-height:1.45;color:var(--muted);min-height:70px}
+.phone.vid figcaption b{display:block;color:var(--ink);font-weight:600;margin-bottom:3px}
+
+/* Vergleich */
+.cmp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl.cmp{min-width:680px;margin-top:0}
+.tbl.cmp th,.tbl.cmp td{padding:15px 18px 15px 0}
+.tbl.cmp td:first-child{width:22%}
+.tbl.cmp .hi{color:var(--ink);font-weight:600;background:linear-gradient(90deg,var(--accent-soft),transparent);padding-left:14px;border-radius:8px 0 0 8px}
+.tbl.cmp th.hi{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* Gründer-Nachweis */
+.proof-ledger{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 28px;margin:28px 0 6px;padding-top:22px;border-top:1px solid var(--line)}
+.proof-ledger dd{font-family:var(--display);font-size:clamp(26px,2.3vw,32px);font-weight:500;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums lining-nums;color:var(--ink);margin-bottom:8px}
+.proof-ledger dt{font-size:14.5px;color:var(--ink-2);line-height:1.4}
+.proof-ledger dt small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.founder .portrait{align-self:start}
+
+@media(max-width:1100px){.vid-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:860px){
+  .hero-video .hero-grid{grid-template-columns:1fr}
+  .hero-demo{padding-top:8px}
+  .proof-ledger{grid-template-columns:1fr;gap:16px}
+}
+@media(max-width:640px){
+  .vid-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .phone.vid .play{width:52px;height:52px}
+  .phone.vid figcaption{font-size:13px;min-height:0}
+  .phone{max-width:260px}
+  .compare-grid{gap:18px}
+}
+@media(prefers-reduced-motion:reduce){.phone .sound,.phone.vid .play,.compare .handle{transition:none}}
+.tbl.cmp{display:table}
+.tbl.cmp th:first-child,.tbl.cmp td:first-child{position:sticky;left:0;background:var(--paper-2);z-index:1}
+@media(max-width:640px){.tbl.cmp{display:table;min-width:640px}.tbl.cmp td:first-child{width:auto;min-width:120px;padding-right:12px}}
+.price-row .amount s{display:block;font-size:17px;color:var(--muted);text-decoration-color:var(--muted);margin-bottom:6px;font-weight:400}
+.ref-note{margin-top:4px}
+.ref-note p strong{font-size:1.05em}
