@@ -466,3 +466,32 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;font-size:15px;color
 .price-row .amount s{display:block;font-size:17px;color:var(--muted);text-decoration-color:var(--muted);margin-bottom:6px;font-weight:400}
 .ref-note{margin-top:4px}
 .ref-note p strong{font-size:1.05em}
+
+/* ===== Update 01.11.2026 (abends): CTA-Band, Erklärvideo, Gründer kompakt ===== */
+.cta-band{padding:56px 0;background:linear-gradient(180deg,rgba(0,224,198,.06),rgba(0,224,198,.02));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cta-band-in{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.cta-band h2{font-size:clamp(26px,3vw,38px);margin:0 0 10px}
+.cta-band p{color:var(--ink-2);margin:0;max-width:620px}
+.cta-band .btn{flex-shrink:0;white-space:nowrap}
+.ablauf-row{display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:center}
+.phone.vid.explain{max-width:280px;justify-self:end}
+.founder.compact{grid-template-columns:200px 1fr;gap:48px;align-items:center}
+.founder.compact .portrait{height:270px;border-radius:16px;align-self:center}
+.founder.compact .portrait img{top:2px}
+.founder.compact h2{font-size:clamp(26px,3vw,36px);margin-bottom:18px}
+.founder.compact p{color:var(--ink-2)}
+.proof-line{list-style:none;padding:18px 0 0;margin:22px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 32px;font-size:14.5px;color:var(--muted)}
+.proof-line b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums lining-nums;margin-right:4px}
+@media(max-width:900px){
+  .cta-band-in{flex-direction:column;align-items:flex-start}
+  .ablauf-row{grid-template-columns:1fr;gap:40px}
+  .phone.vid.explain{justify-self:center}
+  .founder.compact{grid-template-columns:160px 1fr;gap:28px}
+  .founder.compact .portrait{height:220px;max-width:160px}
+}
+@media(max-width:640px){
+  .founder.compact{grid-template-columns:1fr}
+  .founder.compact .portrait{height:260px;max-width:200px}
+  .cta-band{padding:44px 0}
+  .cta-band .btn{white-space:normal;width:100%;text-align:center}
+}
