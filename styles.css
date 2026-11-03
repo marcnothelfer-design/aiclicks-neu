@@ -513,3 +513,8 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;font-size:15px;color
 @media(max-width:1100px){.vid-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.vid-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
 @media(prefers-reduced-motion:reduce){.js .mo{opacity:1;transform:none;transition:none}.phone-hero{transition:none}}
+/* Hero-Phone kompakter (03.11.2026, Marc: zu groß/zu lang) */
+.phone-hero{max-width:236px;aspect-ratio:9/17.2;border-radius:36px;padding:8px}
+.phone-hero video{border-radius:28px}
+.phone-hero::before{width:70px;height:18px;top:14px}
+@media(max-width:700px){.phone-hero{max-width:210px}}
