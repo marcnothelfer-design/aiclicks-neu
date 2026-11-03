@@ -495,3 +495,21 @@ footer{border-top:1px solid var(--line);padding:64px 0 44px;font-size:15px;color
   .cta-band{padding:44px 0}
   .cta-band .btn{white-space:normal;width:100%;text-align:center}
 }
+
+/* ===== Motion (03.11.2026): Scroll-Reveal, Hero-Tilt, 6er-Video-Raster ===== */
+.vid-grid{grid-template-columns:repeat(3,1fr);gap:28px 24px;max-width:960px;margin:0 auto}
+.phone.vid{max-width:292px;justify-self:center}
+.js .mo{opacity:0;transform:translateY(26px) scale(.985);transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms);will-change:opacity,transform}
+.js .mo.in{opacity:1;transform:none}
+.js .phone.vid.mo{transform:translateY(34px) rotateX(8deg) scale(.96);transform-origin:50% 100%}
+.js .phone.vid.mo.in{transform:none}
+.vid-grid{perspective:1200px}
+.hero-demo{perspective:1400px}
+.phone-hero{transform-style:preserve-3d;transition:transform .35s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.hero-video{--gy:0px}
+.hero-video::after{content:"";position:absolute;left:0;right:0;top:-20%;height:120%;transform:translateY(var(--gy));background:radial-gradient(60% 55% at 50% 30%,rgba(0,224,198,.13),transparent 70%);pointer-events:none;z-index:0}
+.hero-video{position:relative}
+.hero-video .wrap{position:relative;z-index:1}
+@media(max-width:1100px){.vid-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.vid-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+@media(prefers-reduced-motion:reduce){.js .mo{opacity:1;transform:none;transition:none}.phone-hero{transition:none}}
