@@ -6,11 +6,12 @@
   "cta": "Kostenloses Testvideo für dein Produkt → Link in Bio (aiclicks.de)",
   "items": [
     {
-      "date": "2026-11-03",
-      "slug": "reveal-frau",
-      "video_url": "https://aiclicks.de/media/ig/reveal-frau.mp4",
-      "cover_url": "https://aiclicks.de/media/reveal-frau.jpg",
-      "caption": "Diese Frau gibt es nicht.\n\nKein Drehteam, kein Model, kein Studio. Jedes Haar, jede Bewegung, jedes Wort: KI. Gemacht aus einem einzigen Produktfoto – in 48 Stunden.\n\nGenau solche Videos laufen gerade als Ads für Onlineshops. Und die meisten scrollen vorbei, ohne zu merken, dass es KI ist. Das ist der Punkt.\n\nWillst du so ein Video für dein Produkt?\n\n👉 Kommentiere VIDEO – wir melden uns per DM und machen dir dein erstes Testvideo kostenlos.\n\n#kiwerbevideo #aiugc #werbevideo #onlineshop #ecommercedeutschland"
+      "date": "2026-11-05",
+      "slug": "showreel-handyfoto",
+      "video_url": "https://aiclicks.de/media/ig/showreel-handyfoto.mp4",
+      "cover_url": "https://aiclicks.de/media/showreel-handyfoto-b.jpg",
+      "caption": "5 Produkte. 5 Handyfotos. 5 fertige Werbespots.\n\nKaffee, Sneaker, Hundesnacks, Kerze, Uhr – jedes Video ist aus einem einzigen Produktfoto entstanden. Keine Models, kein Studio, kein Drehtag.\n\nSo sieht Werbung aus, wenn KI die Produktion übernimmt und du dich aufs Verkaufen konzentrierst.\n\n👉 Kommentiere VIDEO – wir melden uns per DM und machen dir dein erstes Testvideo kostenlos.\n\n#kiwerbevideo #werbevideo #onlineshop #ecommercedeutschland #shopifydeutschland",
+      "status": "freigabe_offen"
     },
     {
       "date": "2026-11-05",
@@ -20,11 +21,21 @@
       "caption": "Du hast ein gutes Produkt, aber deine Werbung bringt keine Verkäufe?\n\nIn 44 Sekunden: warum es meistens nicht am Produkt liegt – und wie aus einem einzigen Produktfoto fertige Werbevideos werden, die du testen und skalieren kannst.\n\nKein Dreh. Keine Models. Ein Bruchteil der Kosten.\n\n👉 Kommentiere VIDEO – wir melden uns per DM und machen dir dein erstes Testvideo kostenlos.\n\n#kiwerbevideo #werbevideo #onlineshop #ecommercedeutschland #shopifydeutschland"
     },
     {
+      "date": "2026-11-06",
+      "slug": "multireveal-b2",
+      "video_url": "https://aiclicks.de/media/ig/multireveal-b2.mp4",
+      "cover_url": "https://aiclicks.de/media/cover-endcard.jpg",
+      "caption": "Drei Menschen. Drei Produkte. Null davon echt.\n\nSneaker, Kerze, Uhr – jede Person, jede Stimme, jedes Wort: KI. Gemacht aus je einem Produktfoto, fertig in 48 Stunden.\n\nGenau solche Videos laufen gerade als Ads für Onlineshops. Und niemand scrollt vorbei, weil es nach Werbung aussieht – sondern nach echten Menschen.\n\nWillst du das für dein Produkt?\n\n👉 Kommentiere VIDEO – wir melden uns per DM und machen dir dein erstes Testvideo kostenlos.\n\n#kiwerbevideo #aiugc #werbevideo #onlineshop #ecommercedeutschland",
+      "status": "freigabe_offen",
+      "credits": "Musik: \"Technology - Upbeat Loop\" by ispeakwaves, CC BY 4.0 (freesound); SFX CC0 (Kinoton, qubodup)"
+    },
+    {
       "date": "2026-11-07",
-      "slug": "v1-vorher-nachher",
-      "video_url": "https://aiclicks.de/media/ig/v1-vorher-nachher.mp4",
-      "cover_url": "https://aiclicks.de/media/v1-vorher-nachher.jpg",
-      "caption": "Links: ein Handyfoto. Rechts: die fertige Werbung.\n\nMehr brauchen wir nicht von dir. Produkt, Etikett und Farben bleiben exakt erhalten – nur die Welt drumherum bauen wir neu.\n\n48 Stunden. Mit Stimme, Musik und Untertiteln.\n\n👉 Kommentiere VIDEO – wir melden uns per DM und machen dir dein erstes Testvideo kostenlos.\n\n#vorhernachher #kiwerbevideo #werbevideo #onlineshop #ecommercedeutschland"
+      "slug": "reveal-frau-v8",
+      "video_url": "https://aiclicks.de/media/ig/reveal-frau-v8.mp4",
+      "cover_url": "https://aiclicks.de/media/cover-endcard.jpg",
+      "caption": "Diese Frau gibt es nicht.\n\nKein Drehteam, kein Model, kein Studio. Jedes Haar, jede Bewegung, jedes Wort: KI. Gemacht aus einem einzigen Produktfoto – in 48 Stunden.\n\nGenau solche Videos laufen gerade als Ads für Onlineshops. Und die meisten scrollen vorbei, ohne zu merken, dass es KI ist. Das ist der Punkt.\n\nWillst du so ein Video für dein Produkt?\n\n👉 Kommentiere VIDEO – wir melden uns per DM und machen dir dein erstes Testvideo kostenlos.\n\n#kiwerbevideo #aiugc #werbevideo #onlineshop #ecommercedeutschland",
+      "status": "freigabe_offen"
     },
     {
       "date": "2026-11-10",
@@ -88,6 +99,19 @@
       "date": "2026-11-02",
       "slug": "uhr",
       "media_id": "18129604729918365"
+    },
+    {
+      "date": "2026-11-03",
+      "slug": "multireveal-b1",
+      "media_id": "17920795023462141",
+      "cover": "endcard"
+    },
+    {
+      "date": "2026-11-03",
+      "slug": "v1-vorher-nachher-v3",
+      "media_id": "18110871881628273",
+      "cover": "endcard"
     }
-  ]
+  ],
+  "note": "Posting nur nach Marcs Go (seit 02.11.2026). Automatischer Posting-Task ist deaktiviert."
 }
